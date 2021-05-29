@@ -1,0 +1,565 @@
+============================ slowest test durations ============================
+87.42s call     gensim/test/test_ldamodel.py::TestLdaMulticore::testPasses
+49.13s call     gensim/test/test_sklearn_api.py::TestLdaSeqWrapper::testSetGetParams
+44.30s call     gensim/test/test_sklearn_api.py::TestLdaSeqWrapper::testPipeline
+33.32s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_parallel
+25.95s call     gensim/test/test_keras_integration.py::TestKerasWord2VecWrapper::testEmbeddingLayer20NewsGroup
+24.89s call     gensim/test/test_sklearn_api.py::TestLdaSeqWrapper::testTransform
+24.58s call     gensim/test/test_sklearn_api.py::TestLdaSeqWrapper::testPersistence
+23.63s call     gensim/test/test_ldaseqmodel.py::TestLdaSeq::testTopicWord
+23.44s call     gensim/test/test_ldaseqmodel.py::TestLdaSeq::testDocTopic
+23.20s call     gensim/test/test_ldaseqmodel.py::TestLdaSeq::testDtypeBackwardCompatibility
+23.05s call     gensim/test/test_sklearn_api.py::TestLdaSeqWrapper::testModelNotFitted
+21.97s call     gensim/test/test_word2vec.py::TestWord2VecModel::testParallel
+21.02s call     gensim/test/test_word2vec.py::TestWord2VecModel::testLoadOldModel
+10.30s call     gensim/test/test_fasttext.py::TestFastTextModel::testLoadOldModel
+7.73s call     gensim/test/test_corpora.py::TestMmCorpusOverflow::test_load
+7.14s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_training
+6.41s call     gensim/test/test_word2vec.py::TestWord2VecModel::testEvaluateWordPairs
+6.17s call     gensim/test/test_fasttext.py::SaveFacebookFormatModelTest::test_skipgram
+5.80s call     gensim/test/test_nmf.py::TestNmf::testGenerator
+5.76s call     gensim/test/test_ldamodel.py::TestLdaMulticore::testTransform
+5.58s call     gensim/test/test_nmf.py::TestNmf::testRandomState
+5.11s call     gensim/test/test_ldamodel.py::TestLdaMulticore::testGetDocumentTopics
+4.96s call     gensim/test/test_word2vec.py::TestWord2VecModel::testEvaluateWordPairsFromFile
+4.64s call     gensim/test/test_fasttext.py::SaveFacebookFormatModelTest::test_cbow
+4.49s call     gensim/test/test_sklearn_api.py::TestText2BowTransformer::testPipeline
+4.43s call     gensim/test/test_scripts.py::TestSegmentWiki::test_segment_and_write_all_articles
+4.41s call     gensim/test/test_sklearn_api.py::TestTfIdfTransformer::testPipeline
+4.40s call     gensim/test/test_ldamodel.py::TestLdaMulticore::testTermTopics
+4.19s call     gensim/test/test_fasttext.py::SaveGensimByteIdentityTest::test_skipgram
+4.15s call     gensim/test/test_sklearn_api.py::TestLdaWrapper::testPipeline
+4.01s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_training_fromfile
+3.97s call     gensim/test/test_nmf.py::TestNmf::testUpdate
+3.86s call     gensim/test/test_ldamodel.py::TestLdaMulticore::testEtaAuto
+3.83s call     gensim/test/test_word2vec.py::TestWord2VecModel::test_sg_neg_online
+3.58s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_delete_temporary_training_data
+3.56s call     gensim/test/test_corpora.py::TestWikiCorpus::test_lower_case_set_true
+3.55s call     gensim/test/test_corpora.py::TestWikiCorpus::test_min_token_len_not_set
+3.55s call     gensim/test/test_corpora.py::TestWikiCorpus::test_max_token_len_set
+3.54s call     gensim/test/test_corpora.py::TestWikiCorpus::test_min_token_len_set
+3.54s call     gensim/test/test_corpora.py::TestWikiCorpus::test_max_token_len_not_set
+3.53s call     gensim/test/test_api.py::TestApi::test_multipart_load
+3.49s call     gensim/test/test_fasttext.py::SaveGensimByteIdentityTest::test_cbow
+3.46s call     gensim/test/test_corpora.py::TestWikiCorpus::test_lower_case_set_false
+3.46s call     gensim/test/test_corpora.py::TestWikiCorpus::test_first_element
+3.42s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::testLoadOldModel
+3.34s call     gensim/test/test_lda_callback.py::TestLdaCallback::testCallbackUpdateGraph
+3.32s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testPasses
+3.30s call     gensim/test/test_word2vec.py::TestWord2VecModel::test_sg_neg_fromfile
+3.28s call     gensim/test/test_word2vec.py::TestWord2VecModel::testLocking
+3.21s call     gensim/test/test_sklearn_api.py::TestHdpTransformer::testPipeline
+3.16s call     gensim/test/test_corpora.py::TestWikiCorpus::test_custom_tokenizer
+3.12s call     gensim/test/test_word2vec.py::TestWord2VecModel::test_sg_neg
+2.98s call     gensim/test/test_ldamodel.py::TestLdaMulticore::testPersistence
+2.86s call     gensim/test/test_ldamodel.py::TestLdaMulticore::testDtypeBackwardCompatibility
+2.80s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_dmc_neg_fromfile
+2.78s call     gensim/test/test_ldamodel.py::TestLdaMulticore::testAlpha
+2.76s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_dmc_neg
+2.75s call     gensim/test/test_ldamodel.py::TestLdaMulticore::testAlphaAuto
+2.70s call     gensim/test/test_ldamodel.py::TestLdaMulticore::test_show_topics
+2.69s call     gensim/test/test_ldamodel.py::TestLdaModel::testPasses
+2.63s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_dmc_hs
+2.61s call     gensim/test/test_ldamodel.py::TestLdaMulticore::test_print_topics
+2.60s call     gensim/test/test_ldamodel.py::TestLdaMulticore::testPersistenceIgnore
+2.59s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_dmc_hs_fromfile
+2.57s call     gensim/test/test_ldamodel.py::TestLdaMulticore::testRandomStateBackwardCompatibility
+2.53s call     gensim/test/test_scripts.py::TestSegmentWiki::test_generator_len
+2.52s call     gensim/test/test_ldamodel.py::TestLdaMulticore::testEta
+2.51s call     gensim/test/test_ldamodel.py::TestLdaMulticore::test_print_topic
+2.47s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_dmm_neg_fromfile
+2.44s call     gensim/test/test_fasttext.py::TestFastTextModel::test_sg_hs_training
+2.44s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_deterministic_dmc
+2.43s call     gensim/test/test_sklearn_api.py::TestLdaWrapper::testPartialFit
+2.43s call     gensim/test/test_scripts.py::TestSegmentWiki::test_json_len
+2.41s call     gensim/test/test_fasttext.py::TestFastTextModel::test_sg_neg_training
+2.39s call     gensim/test/test_ldamodel.py::TestLdaMulticore::testModelCompatibilityWithPythonVersions
+2.39s call     gensim/test/test_ldamodel.py::TestLdaMulticore::test_show_topic
+2.38s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_dms_hs_fromfile
+2.37s call     gensim/test/test_ldamodel.py::TestLdaMulticore::test_get_topics
+2.34s call     gensim/test/test_ldamodel.py::TestLdaMulticore::testPersistenceCompressed
+2.34s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_dms_neg_fromfile
+2.31s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_dmm_neg
+2.30s call     gensim/test/test_fasttext.py::TestFastTextModel::test_sg_neg_training_fromfile
+2.30s call     gensim/test/test_fasttext.py::TestFastTextModel::test_sg_hs_training_fromfile
+2.29s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_dms_neg
+2.26s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_dmm_hs_fromfile
+2.23s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_dms_hs
+2.21s call     gensim/test/test_api.py::TestApi::test_load_model
+2.19s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_dmm_hs
+2.18s call     gensim/test/test_ldamodel.py::TestLdaMulticore::testGetTopicTerms
+2.06s call     gensim/test/test_ldamodel.py::TestLdaMulticore::testLargeMmap
+2.04s call     gensim/test/test_nmf.py::TestNmf::testDtypeBackwardCompatibility
+2.02s call     gensim/test/test_nmf.py::TestNmf::test_show_topic
+2.01s call     gensim/test/test_fasttext.py::TestFastTextModel::test_vocab_pruning
+2.01s call     gensim/test/test_nmf.py::TestNmf::test_print_topics
+2.01s call     gensim/test/test_nmf.py::TestNmf::testTransform
+2.00s call     gensim/test/test_nmf.py::TestNmf::testTopTopics
+1.99s call     gensim/test/test_nmf.py::TestNmf::testGetDocumentTopics
+1.98s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_dbow_neg_fromfile
+1.98s call     gensim/test/test_nmf.py::TestNmf::testLargeMmap
+1.98s call     gensim/test/test_word2vec.py::TestWord2VecModel::test_sg_hs_online
+1.96s call     gensim/test/test_nmf.py::TestNmf::testPersistence
+1.95s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_dbow_neg
+1.95s call     gensim/test/test_ldamodel.py::TestLdaMulticore::testTopTopics
+1.94s call     gensim/test/test_nmf.py::TestNmf::test_get_topics
+1.94s call     gensim/test/test_nmf.py::TestNmf::testLargeMmapCompressed
+1.93s call     gensim/test/test_nmf.py::TestNmf::test_show_topics
+1.93s call     gensim/test/test_nmf.py::TestNmf::testGetTopicTerms
+1.92s call     gensim/test/test_api.py::TestApi::test_load_dataset
+1.92s call     gensim/test/test_nmf.py::TestNmf::testTermTopics
+1.92s call     gensim/test/test_nmf.py::TestNmf::test_print_topic
+1.83s call     gensim/test/test_ldamodel.py::TestLdaMulticore::testLargeMmapCompressed
+1.76s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_deterministic_hs
+1.75s call     gensim/test/test_lee.py::TestLeeTest::test_lee
+1.73s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_dbow_hs
+1.65s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_deterministic_neg
+1.64s call     gensim/test/test_corpora.py::TestWikiCorpus::test_custom_filterfunction
+1.63s call     gensim/test/test_fasttext.py::TestFastTextModel::test_cbow_hs_training
+1.61s call     gensim/test/test_fasttext.py::TestFastTextModel::test_cbow_hs_training_fromfile
+1.58s call     gensim/test/test_fasttext.py::TestFastTextModel::test_cbow_neg_training
+1.55s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_dbow_hs_fromfile
+1.53s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::testPersistenceWord2VecFormat
+1.49s call     gensim/test/test_fasttext.py::TestFastTextModel::test_cbow_neg_training_fromfile
+1.46s call     gensim/test/test_word2vec.py::TestWord2VecModel::test_sg_hs_fromfile
+1.45s call     gensim/test/test_miislita.py::TestMiislita::test_textcorpus
+1.44s call     gensim/test/test_sharded_corpus.py::TestShardedCorpus::test_getitem_sparse2sparse
+1.41s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::testLoadOnClassError
+1.36s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_persistence
+1.36s call     gensim/test/test_word2vec.py::TestWord2VecModel::test_sg_hs
+1.27s call     gensim/test/test_word2vec.py::TestWord2VecModel::test_cbow_neg_fromfile
+1.27s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_unicode_in_doctag
+1.23s call     gensim/test/test_word2vec.py::TestWord2VecModel::test_cbow_neg_online
+1.19s call     gensim/test/test_sharded_corpus.py::TestShardedCorpus::test_getitem_sparse2dense
+1.18s call     gensim/test/test_word2vec.py::TestWord2VecModel::test_cbow_neg
+1.17s call     gensim/test/test_sharded_corpus.py::TestShardedCorpus::test_getitem_dense2dense
+1.16s call     gensim/test/test_sharded_corpus.py::TestShardedCorpus::test_init
+1.13s call     gensim/test/test_sharded_corpus.py::TestShardedCorpus::test_resize
+1.13s call     gensim/test/test_fasttext_wrapper.py::TestFastText::testLoadFileName
+1.12s call     gensim/test/test_sharded_corpus.py::TestShardedCorpus::test_load
+1.11s call     gensim/test/test_sharded_corpus.py::TestShardedCorpus::test_getitem_dense2gensim
+1.08s call     gensim/test/test_sharded_corpus.py::TestShardedCorpus::test_getitem
+1.06s call     gensim/test/test_sharded_corpus.py::TestShardedCorpus::test_getitem_dense2sparse
+1.06s call     gensim/test/test_sharded_corpus.py::TestShardedCorpus::test_init_with_generator
+1.05s call     gensim/test/test_sharded_corpus.py::TestShardedCorpus::test_sparse_serialization
+0.93s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_persistence_fromfile
+0.89s call     gensim/test/test_sklearn_api.py::TestLdaWrapper::testSetGetParams
+0.88s call     gensim/test/test_word2vec.py::TestWord2VecModel::test_cbow_hs_online
+0.88s call     gensim/test/test_word2vec.py::TestWord2VecModel::testVocab
+0.86s call     gensim/test/test_fasttext.py::TestFastTextModel::test_sg_hs_online
+0.85s call     gensim/test/test_word2vec.py::TestWord2VecModel::testEvaluateWordAnalogies
+0.83s call     gensim/test/test_fasttext.py::TestFastTextModel::test_cbow_hs_online
+0.83s call     gensim/test/test_sklearn_api.py::TestLdaWrapper::testConsistencyWithGensimModel
+0.81s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testNewAuthorTopics
+0.80s call     gensim/test/test_fasttext.py::TestFastTextModel::test_sg_neg_online
+0.78s call     gensim/test/test_fasttext_wrapper.py::TestFastText::testLoadFastTextNewFormat
+0.76s call     gensim/test/test_sklearn_api.py::TestLsiWrapper::testPipeline
+0.75s call     gensim/test/test_word2vec.py::TestWord2VecModel::test_cbow_hs
+0.75s call     gensim/test/test_fasttext_wrapper.py::TestFastText::testLoadFastTextFormat
+0.74s call     gensim/test/test_word2vec.py::TestWord2VecModel::test_cbow_hs_fromfile
+0.63s call     gensim/test/test_corpora.py::TestWikiCorpus::test_removed_table_markup
+0.62s call     gensim/test/test_glove2word2vec.py::TestGlove2Word2Vec::testConversion
+0.59s call     gensim/test/test_similarity_metrics.py::TestHellinger::test_distributions
+0.58s call     gensim/test/test_fasttext.py::TestFastTextModel::test_cbow_neg_online
+0.56s call     gensim/test/test_ldamodel.py::TestLdaModel::testGetDocumentTopics
+0.55s call     gensim/test/test_similarity_metrics.py::TestKL::test_distributions
+0.55s call     gensim/test/test_ldamodel.py::TestLdaModel::testTermTopics
+0.55s call     gensim/test/test_ldamodel.py::TestLdaModel::testTransform
+0.53s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testTransformSerialized
+0.50s call     gensim/test/test_sklearn_api.py::TestAuthorTopicWrapper::testPartialFit
+0.50s call     gensim/test/test_sklearn_api.py::TestAuthorTopicWrapper::testSetGetParams
+0.50s call     gensim/test/test_sklearn_api.py::TestAuthorTopicWrapper::testPipeline
+0.49s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_similarity_unseen_docs
+0.49s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testTermTopics
+0.48s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testTransform
+0.47s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testGetAuthorTopics
+0.45s call     gensim/test/test_corpora.py::TestWikiCorpus::test_len
+0.44s call     gensim/test/test_fasttext_wrapper.py::TestFastText::testNSimilarity
+0.44s call     gensim/test/test_fasttext_wrapper.py::TestFastText::testMostSimilarCosmul
+0.43s call     gensim/test/test_corpora.py::TestWikiCorpus::test_unicode_element
+0.42s call     gensim/test/test_fasttext_wrapper.py::TestFastText::testNormalizedVectorsNotSaved
+0.42s call     gensim/test/test_fasttext_wrapper.py::TestFastText::testModelSize
+0.42s call     gensim/test/test_fasttext_wrapper.py::TestFastText::testPersistence
+0.41s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testEtaAuto
+0.40s call     gensim/test/test_lee.py::TestLeeTest::test_corpus
+0.40s call     gensim/test/test_fasttext_wrapper.py::TestFastText::testMostSimilar
+0.40s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_missing_string_doctag
+0.40s call     gensim/test/test_fasttext_wrapper.py::TestFastText::testLoadModelWithNonAsciiVocab
+0.40s call     gensim/test/test_fasttext_wrapper.py::TestFastText::testLoadModelNonUtf8Encoding
+0.39s call     gensim/test/test_fasttext_wrapper.py::TestFastText::testPersistenceForOldVersions
+0.39s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_string_doctags
+0.39s call     gensim/test/test_ldamodel.py::TestLdaModel::testAlphaAuto
+0.39s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_int_doctags
+0.38s call     gensim/test/test_fasttext_wrapper.py::TestFastText::testLookup
+0.38s call     gensim/test/test_fasttext_wrapper.py::TestFastText::testMinCount
+0.38s call     gensim/test/test_fasttext_wrapper.py::TestFastText::testLoadModelSupervised
+0.38s call     gensim/test/test_fasttext_wrapper.py::TestFastText::testTraining
+0.38s call     gensim/test/test_fasttext_wrapper.py::TestFastText::testContains
+0.37s call     gensim/test/test_fasttext_wrapper.py::TestFastText::testDoesntMatch
+0.37s call     gensim/test/test_fasttext_wrapper.py::TestFastText::testConsistentDtype
+0.37s call     gensim/test/test_fasttext_wrapper.py::TestFastText::testHash
+0.37s call     gensim/test/test_fasttext_wrapper.py::TestFastText::testWmdistance
+0.37s call     gensim/test/test_sklearn_api.py::TestLdaWrapper::testCSRMatrixConversion
+0.37s call     gensim/test/test_fasttext_wrapper.py::TestFastText::testSimilarity
+0.37s call     gensim/test/test_ldamodel.py::TestLdaModel::testEtaAuto
+0.36s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testAlphaAuto
+0.33s call     gensim/test/test_ldamodel.py::TestLdaModel::testPersistenceIgnore
+0.33s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testEta
+0.32s call     gensim/test/test_ldamodel.py::TestLdaModel::testPersistence
+0.32s call     gensim/test/test_scripts.py::TestSegmentWiki::test_segment_all_articles
+0.31s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testEmptyDocument
+0.31s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testLargeMmapCompressed
+0.30s call     gensim/test/test_ldamodel.py::TestLdaModel::test_print_topic
+0.30s call     gensim/test/test_ldamodel.py::TestLdaModel::testTopTopics
+0.30s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testUpdateNewDataOldAuthor
+0.30s call     gensim/test/test_sklearn_api.py::TestRpWrapper::testPipeline
+0.30s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testAuthor2docMissing
+0.30s call     gensim/test/test_ldamodel.py::TestLdaModel::testLargeMmapCompressed
+0.30s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testDoc2authorMissing
+0.29s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testUpdate
+0.29s call     gensim/test/test_ldamodel.py::TestLdaModel::test_show_topics
+0.29s call     gensim/test/test_ldamodel.py::TestLdaModel::test_print_topics
+0.29s call     gensim/test/test_ldamodel.py::TestLdaModel::testGetTopicTerms
+0.28s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::test_show_topic
+0.28s call     gensim/test/test_ldamodel.py::TestLdaModel::testModelCompatibilityWithPythonVersions
+0.28s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testPersistenceIgnore
+0.28s call     gensim/test/test_sklearn_api.py::TestLdaWrapper::testPersistence
+0.28s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testBasic
+0.28s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testLargeMmap
+0.27s call     gensim/test/test_ldamodel.py::TestLdaModel::testAlpha
+0.27s call     gensim/test/test_ldamodel.py::TestLdaModel::testLargeMmap
+0.27s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testUpdateNewDataNewAuthor
+0.27s call     gensim/test/test_ldamodel.py::TestLdaModel::test_show_topic
+0.27s call     gensim/test/test_ldamodel.py::TestLdaModel::test_get_topics
+0.27s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testPersistence
+0.27s call     gensim/test/test_summarization.py::TestSummarizationTest::test_mz_keywords
+0.27s call     gensim/test/test_sklearn_api.py::TestLdaWrapper::testModelNotFitted
+0.27s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testPersistenceCompressed
+0.27s call     gensim/test/test_ldamodel.py::TestLdaModel::testRandomStateBackwardCompatibility
+0.26s call     gensim/test/test_similarity_metrics.py::TestHellinger::test_inputs
+0.26s call     gensim/test/test_sklearn_api.py::TestLdaWrapper::testTransform
+0.26s call     gensim/test/test_sklearn_api.py::TestAuthorTopicWrapper::testTransform
+0.26s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testDtypeBackwardCompatibility
+0.26s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::test_get_topics
+0.26s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::test_show_topics
+0.26s call     gensim/test/test_ldamodel.py::TestLdaModel::testPersistenceCompressed
+0.26s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testAlpha
+0.26s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::test_print_topic
+0.26s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testTopTopics
+0.26s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testGetTopicTerms
+0.26s call     gensim/test/test_ldamodel.py::TestLdaModel::testEta
+0.26s call     gensim/test/test_similarity_metrics.py::TestKL::test_inputs
+0.25s call     gensim/test/test_ldamodel.py::TestLdaModel::testDtypeBackwardCompatibility
+0.25s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::testSerialized
+0.25s call     gensim/test/test_sklearn_api.py::TestAuthorTopicWrapper::testModelNotFitted
+0.25s call     gensim/test/test_sklearn_api.py::TestAuthorTopicWrapper::testPersistence
+0.24s call     gensim/test/test_scripts.py::TestWord2Vec2Tensor::testConversion
+0.24s call     gensim/test/test_BM25.py::TestBM25::test_multiprocessing
+0.22s call     gensim/test/test_corpora.py::TestWikiCorpus::test_default_preprocessing
+0.22s call     gensim/test/test_corpora.py::TestWikiCorpus::test_load
+0.22s call     gensim/test/test_corpora.py::TestWikiCorpus::test_load_with_metadata
+0.22s call     gensim/test/test_atmodel.py::TestAuthorTopicModel::test_print_topics
+0.22s call     gensim/test/test_fasttext.py::TestFastTextModel::test_persistence
+0.21s call     gensim/test/test_api.py::TestApi::test_info
+0.20s call     gensim/test/test_fasttext.py::TestFastTextModel::test_norm_vectors_not_saved
+0.18s call     gensim/test/test_keras_integration.py::TestKerasWord2VecWrapper::testEmbeddingLayerCosineSim
+0.18s call     gensim/test/test_fasttext.py::TestFastTextModel::test_persistence_fromfile
+0.16s call     gensim/test/test_similarities.py::TestWord2VecNmslibIndexer::test_indexing_keyedvectors
+0.15s call     gensim/test/test_word2vec.py::TestWord2VecSentenceIterators::testLineSentenceWorksWithCompressedFile
+0.15s call     gensim/test/test_fasttext.py::TestFastTextModel::test_load_fasttext_new_format
+0.15s call     gensim/test/test_fasttext.py::TestFastTextModel::test_load_fasttext_format
+0.14s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::testTrainWarning
+0.13s call     gensim/test/test_fasttext.py::TestFastTextModel::test_n_similarity
+0.12s call     gensim/test/test_fasttext.py::TestFastTextModel::test_most_similar_cosmul
+0.12s call     gensim/test/test_fasttext.py::TestFastTextModel::test_contains
+0.12s call     gensim/test/test_fasttext.py::TestFastTextModel::test_similarity
+0.11s call     gensim/test/test_corpora.py::TestWikiCorpus::test_switch_id2word
+0.11s call     gensim/test/test_fasttext.py::NativeTrainingContinuationTest::test_continuation_gensim
+0.10s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::testDoc2vecTrainParameters
+0.10s call     gensim/test/test_text_analysis.py::TestParallelWordOccurrenceAccumulator::test_occurrence_counting2
+0.10s call     gensim/test/test_text_analysis.py::TestParallelWordOccurrenceAccumulator::test_occurrence_counting
+0.10s call     gensim/test/test_text_analysis.py::TestParallelWordOccurrenceAccumulator::test_occurences_for_irrelevant_words
+0.10s call     gensim/test/test_fasttext.py::TestFastTextModel::test_online_learning_after_save_fromfile
+0.10s call     gensim/test/test_fasttext.py::TestFastTextModel::test_online_learning_after_save
+0.10s call     gensim/test/test_similarities.py::TestSimilarity::testSharding
+0.09s call     gensim/test/test_fasttext.py::TestFastTextModel::test_persistence_word2vec_format
+0.09s call     gensim/test/test_fasttext.py::TestFastTextModel::test_training
+0.09s call     gensim/test/test_fasttext.py::TestFastTextModel::test_bucket_ngrams
+0.09s call     gensim/test/test_fasttext.py::TestFastTextModel::test_online_learning_fromfile
+0.09s call     gensim/test/test_fasttext.py::TestFastTextModel::test_online_learning
+0.08s call     gensim/test/test_fasttext.py::TestFastTextModel::test_load_model_non_utf8_encoding
+0.08s call     gensim/test/test_fasttext.py::TestFastTextModel::testFastTextTrainParameters
+0.08s call     gensim/test/test_fasttext.py::TestFastTextModel::test_load_model_with_non_ascii_vocab
+0.08s call     gensim/test/test_fasttext.py::TestFastTextModel::test_training_fromfile
+0.08s call     gensim/test/test_summarization.py::TestSummarizationTest::test_keywords_runs
+0.08s call     gensim/test/test_fasttext.py::TestFastTextModel::test_get_vocab_word_vecs
+0.08s call     gensim/test/test_coherencemodel.py::TestCoherenceModel::testCompareCoherenceForModels
+0.08s call     gensim/test/test_fasttext.py::TestFastTextModel::test_estimate_memory
+0.08s call     gensim/test/test_fasttext.py::TestFastTextModel::test_wm_distance
+0.08s call     gensim/test/test_fasttext.py::TestFastTextModel::test_most_similar
+0.08s call     gensim/test/test_fasttext.py::TestFastTextModel::test_oov_similarity
+0.08s call     gensim/test/test_fasttext.py::TestFastTextModel::test_lookup
+0.08s call     gensim/test/test_fasttext.py::TestFastTextModel::test_load_model_supervised
+0.06s call     gensim/test/test_word2vec.py::TestWord2VecModel::testTrainWarning
+0.06s call     gensim/test/test_similarities.py::TestWord2VecNmslibIndexer::test_fasttext
+0.06s call     gensim/test/test_word2vec.py::TestWord2VecSentenceIterators::testLineSentenceWorksWithNormalFile
+0.05s call     gensim/test/test_varembed_wrapper.py::TestVarembed::testAddMorphemesToEmbeddings
+0.05s call     gensim/test/test_keywords.py::TestKeywordsTest::test_keywords_ratio
+0.05s call     gensim/test/test_tmdiff.py::TestLdaDiff::testIdentity
+0.04s call     gensim/test/test_poincare.py::TestPoincareModel::test_reproducible
+0.04s call     gensim/test/test_similarities.py::TestSoftCosineSimilarity::testNumBest
+0.04s call     gensim/test/test_summarization.py::TestSummarizationTest::test_repeated_keywords
+0.04s call     gensim/test/test_poincare.py::TestPoincareModel::test_train_old_model_after_load
+0.04s call     gensim/test/test_tmdiff.py::TestLdaDiff::testBasic
+0.04s call     gensim/test/test_sklearn_api.py::TestHdpTransformer::testSetGetParams
+0.04s call     gensim/test/test_translation_matrix.py::TestBackMappingTranslationMatrix::test_infer_vector
+0.04s teardown gensim/test/test_sharded_corpus.py::TestShardedCorpus::test_sparse_serialization
+0.04s call     gensim/test/test_tmdiff.py::TestLdaDiff::testInput
+0.04s call     gensim/test/test_sklearn_api.py::TestD2VTransformer::testConsistencyWithGensimModel
+0.04s call     gensim/test/test_matutils.py::TestLdaModelInner::testDirichletExpectation
+0.04s call     gensim/test/test_keyedvectors.py::TestKeyedVectors::test_add_single
+0.03s call     gensim/test/test_summarization.py::TestSummarizationTest::test_corpus_summarization_ratio
+0.03s call     gensim/test/test_keyedvectors.py::TestKeyedVectors::test_add_multiple
+0.03s call     gensim/test/test_keyedvectors.py::TestKeyedVectors::test_relative_cosine_similarity
+0.03s call     gensim/test/test_keyedvectors.py::TestKeyedVectors::test_similar_by_vector
+0.03s call     gensim/test/test_keyedvectors.py::TestKeyedVectors::test_set_item
+0.03s call     gensim/test/test_keyedvectors.py::TestKeyedVectors::test_rank
+0.03s call     gensim/test/test_keyedvectors.py::TestKeyedVectors::test_similar_by_word
+0.03s call     gensim/test/test_keyedvectors.py::TestKeyedVectors::test_most_similar_restrict_vocab
+0.03s call     gensim/test/test_keyedvectors.py::TestKeyedVectors::test_most_similar_raises_keyerror
+0.03s call     gensim/test/test_keyedvectors.py::TestKeyedVectors::test_most_similar_with_vector_input
+0.03s call     gensim/test/test_translation_matrix.py::TestBackMappingTranslationMatrix::test_translation_matrix
+0.03s call     gensim/test/test_fasttext.py::NativeTrainingContinuationTest::test_save_load_gensim
+0.03s call     gensim/test/test_translation_matrix.py::TestTranslationMatrix::test_translate_gc
+0.03s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_word_vec_non_writeable
+0.03s call     gensim/test/test_translation_matrix.py::TestTranslationMatrix::test_translation_matrix
+0.03s call     gensim/test/test_translation_matrix.py::TestTranslationMatrix::test_translate_nn
+0.03s call     gensim/test/test_keywords.py::TestKeywordsTest::test_text_keywords
+0.03s call     gensim/test/test_keywords.py::TestKeywordsTest::test_text_keywords_pos
+0.03s call     gensim/test/test_keywords.py::TestKeywordsTest::test_text_keywords_words
+0.03s call     gensim/test/test_hdpmodel.py::TestHdpModel::testLDAmodel
+0.03s call     gensim/test/test_hdpmodel.py::TestHdpModel::test_get_topics
+0.03s call     gensim/test/test_sklearn_api.py::TestD2VTransformer::testFitTransform
+0.03s call     gensim/test/test_poincare.py::TestPoincareModel::test_gradients_check
+0.03s call     gensim/test/test_keyedvectors.py::TestKeyedVectors::test_most_similar_to_given
+0.03s call     gensim/test/test_translation_matrix.py::TestTranslationMatrix::testPersistence
+0.03s call     gensim/test/test_sklearn_api.py::TestD2VTransformer::testPipeline
+0.03s call     gensim/test/test_keyedvectors.py::TestWordEmbeddingSimilarityIndex::test_most_similar
+0.03s call     gensim/test/test_fasttext.py::NativeTrainingContinuationTest::test_save_load_native
+0.03s call     gensim/test/test_hdpmodel.py::TestHdpModel::test_show_topics
+0.03s call     gensim/test/test_hdpmodel.py::TestHdpModel::test_print_topic
+0.03s call     gensim/test/test_hdpmodel.py::TestHdpModel::testTopicValues
+0.03s call     gensim/test/test_hdpmodel.py::TestHdpModel::test_print_topics
+0.03s call     gensim/test/test_hdpmodel.py::TestHdpModel::test_show_topic
+0.03s call     gensim/test/test_keyedvectors.py::TestKeyedVectors::test_add_type
+0.03s call     gensim/test/test_fasttext.py::NativeTrainingContinuationTest::test_continuation_native
+0.03s call     gensim/test/test_keyedvectors.py::TestKeyedVectors::test_similarity_matrix
+0.03s call     gensim/test/test_word2vec.py::TestWord2VecModel::testLoadPreKeyedVectorModelCFormat
+0.03s call     gensim/test/test_similarities.py::TestWmdSimilarity::testIter
+0.03s call     gensim/test/test_fasttext.py::NativeTrainingContinuationTest::test_continuation_load_gensim
+0.03s call     gensim/test/test_sklearn_api.py::TestFastTextWrapper::testPipeline
+0.03s call     gensim/test/test_keyedvectors.py::TestKeyedVectors::test_similarity
+0.02s call     gensim/test/test_sklearn_api.py::TestD2VTransformer::testSetGetParams
+0.02s call     gensim/test/test_similarities.py::TestWmdSimilarity::testChunking
+0.02s call     gensim/test/test_word2vec.py::TestWord2VecModel::testDeleteTemporaryTrainingData
+0.02s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_empty_errors
+0.02s call     gensim/test/test_word2vec.py::TestWord2VecModel::testOnlineLearningFromFile
+0.02s call     gensim/test/test_keyedvectors.py::WordEmbeddingsKeyedVectorsTest::test_get_keras_embedding_word_index_passed
+0.02s call     gensim/test/test_poincare.py::TestPoincareModel::test_training_multiple
+0.02s call     gensim/test/test_keyedvectors.py::TestKeyedVectors::test_words_closer_than
+0.02s call     gensim/test/test_keyedvectors.py::WordEmbeddingsKeyedVectorsTest::test_get_keras_embedding_word_index_none
+0.02s call     gensim/test/test_sklearn_api.py::TestFastTextWrapper::testConsistencyWithGensimModel
+0.02s call     gensim/test/test_keyedvectors.py::TestKeyedVectors::test_wv_property
+0.02s call     gensim/test/test_sklearn_api.py::TestHdpTransformer::testTransform
+0.02s call     gensim/test/test_matutils.py::TestLdaModelInner::testLogSumExp
+0.02s call     gensim/test/test_sklearn_api.py::TestWord2VecWrapper::testConsistencyWithGensimModel
+0.02s call     gensim/test/test_word2vec.py::TestWord2VecModel::testPersistence
+0.02s call     gensim/test/test_matutils.py::TestLdaModelInner::testMeanAbsoluteDifference
+0.02s call     gensim/test/test_sklearn_api.py::TestWord2VecWrapper::testPipeline
+0.02s teardown gensim/test/test_sharded_corpus.py::TestShardedCorpus::test_getitem_dense2gensim
+0.02s teardown gensim/test/test_sharded_corpus.py::TestShardedCorpus::test_getitem_dense2dense
+0.02s teardown gensim/test/test_sharded_corpus.py::TestShardedCorpus::test_getitem_dense2sparse
+0.02s teardown gensim/test/test_sharded_corpus.py::TestShardedCorpus::test_init_with_generator
+0.02s teardown gensim/test/test_sharded_corpus.py::TestShardedCorpus::test_getitem_sparse2sparse
+0.02s teardown gensim/test/test_sharded_corpus.py::TestShardedCorpus::test_load
+0.02s teardown gensim/test/test_sharded_corpus.py::TestShardedCorpus::test_init
+0.02s teardown gensim/test/test_sharded_corpus.py::TestShardedCorpus::test_getitem_sparse2dense
+0.02s teardown gensim/test/test_sharded_corpus.py::TestShardedCorpus::test_resize
+0.02s call     gensim/test/test_keyedvectors.py::TestKeyedVectors::test_ft_kv_backward_compat_w_360
+0.02s call     gensim/test/test_similarities.py::TestWmdSimilarity::testNumBest
+0.02s call     gensim/test/test_word2vec.py::TestWord2VecModel::testOnlineLearningAfterSaveFromFile
+0.02s call     gensim/test/test_word2vec.py::TestWord2VecSentenceIterators::testCythonLineSentenceWorksWithFilename
+0.02s call     gensim/test/test_keyedvectors.py::TestKeyedVectors::test_most_similar_topn
+0.02s call     gensim/test/test_keyedvectors.py::TestKeyedVectors::test_distance
+0.02s call     gensim/test/test_keyedvectors.py::TestKeyedVectors::test_most_similar
+0.02s call     gensim/test/test_coherencemodel.py::TestCoherenceModel::testCv
+0.02s call     gensim/test/test_sklearn_api.py::TestFastTextWrapper::testSetGetParams
+0.02s call     gensim/test/test_doc2vec.py::TestDoc2VecModel::test_load_mmap
+0.02s call     gensim/test/test_similarities.py::TestSparseTermSimilarityMatrix::test_inner_product
+0.02s call     gensim/test/test_poincare.py::TestPoincareModel::test_training
+0.02s call     gensim/test/test_coherencemodel.py::TestCoherenceModel::testPersistenceAfterProbabilityEstimationUsingTexts
+0.02s call     gensim/test/test_coherencemodel.py::TestCoherenceModel::testCompareCoherenceForTopics
+0.02s call     gensim/test/test_fasttext.py::HashTest::test_out_of_vocab
+0.02s call     gensim/test/test_corpora_hashdictionary.py::TestHashDictionary::test_saveAsText
+0.02s call     gensim/test/test_sklearn_api.py::TestLsiWrapper::testPartialFit
+0.02s call     gensim/test/test_fasttext.py::HashTest::test_ascii
+0.02s call     gensim/test/test_fasttext.py::HashTest::test_unicode
+0.01s call     gensim/test/test_sklearn_api.py::TestHdpTransformer::testPersistence
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testPredictOutputWord
+0.01s call     gensim/test/test_keyedvectors.py::WordEmbeddingsKeyedVectorsTest::test_get_keras_embedding_word_index_passed_with_oov_word
+0.01s call     gensim/test/test_fasttext.py::NativeTrainingContinuationTest::test_no_ngrams
+0.01s call     gensim/test/test_fasttext.py::NativeTrainingContinuationTest::test_load_native_vectors
+0.01s call     gensim/test/test_similarities.py::TestSimilarity::testNumBest
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testPersistenceWord2VecFormatNonBinary
+0.01s call     gensim/test/test_sklearn_api.py::TestD2VTransformer::testPersistence
+0.01s call     gensim/test/test_sklearn_api.py::TestWord2VecWrapper::testSetGetParams
+0.01s call     gensim/test/test_sklearn_api.py::TestHdpTransformer::testModelNotFitted
+0.01s call     gensim/test/test_sklearn_api.py::TestD2VTransformer::testTransform
+0.01s call     gensim/test/test_similarities.py::TestWmdSimilarity::testLargeCompressed
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testOnlineLearning
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testOnlineLearningAfterSave
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testTraining
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testPersistenceFromFile
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testTrainingCbow
+0.01s call     gensim/test/test_similarities.py::TestDoc2VecNmslibIndexer::test_approx_neighbors_match_exact
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::test_reset_from
+0.01s call     gensim/test/test_sklearn_api.py::TestD2VTransformer::testModelNotFitted
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testPruneVocab
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testTrainingCbowNegative
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testTrainingSgNegative
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testLargeMmap
+0.01s call     gensim/test/test_similarities.py::TestWmdSimilarity::testMmap
+0.01s call     gensim/test/test_similarities.py::TestWord2VecNmslibIndexer::test_word2vec
+0.01s call     gensim/test/test_similarities.py::TestWmdSimilarity::testLarge
+0.01s call     gensim/test/test_similarities.py::TestWmdSimilarity::testMmapCompressed
+0.01s call     gensim/test/test_poincare.py::TestPoincareModel::test_no_duplicates_and_positives_in_negative_sample
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecSentenceIterators::testLineSentenceWorksWithFilename
+0.01s call     gensim/test/test_poincare.py::TestPoincareKeyedVectors::test_descendants
+0.01s call     gensim/test/test_similarities.py::TestDoc2VecNmslibIndexer::test_save_load
+0.01s call     gensim/test/test_sklearn_api.py::TestFastTextWrapper::testPersistence
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testPersistenceWord2VecFormatCombinationWithStandardPersistence
+0.01s call     gensim/test/test_poincare.py::TestPoincareKeyedVectors::test_ancestors
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testPersistenceWithConstructorRule
+0.01s call     gensim/test/test_poincare.py::TestPoincareKeyedVectors::test_most_similar_topn
+0.01s call     gensim/test/test_similarities.py::TestSoftCosineSimilarity::testFull
+0.01s call     gensim/test/test_similarities.py::TestDoc2VecNmslibIndexer::test_save
+0.01s call     gensim/test/test_similarities.py::TestWmdSimilarity::testNonIncreasing
+0.01s call     gensim/test/test_coherencemodel.py::TestCoherenceModel::testCnpmi
+0.01s call     gensim/test/test_similarities.py::TestDoc2VecNmslibIndexer::test_document_is_similar_to_itself
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testPersistenceWord2VecFormat
+0.01s call     gensim/test/test_similarities.py::TestDoc2VecNmslibIndexer::test_load_not_exist
+0.01s call     gensim/test/test_keywords.py::TestKeywordsTest::test_text_summarization_raises_exception_on_short_input_text
+0.01s call     gensim/test/test_sklearn_api.py::TestFastTextWrapper::testModelNotFitted
+0.01s call     gensim/test/test_lsimodel.py::TestLsiModel::testOnlineTransform
+0.01s call     gensim/test/test_poincare.py::TestPoincareModel::test_vector_dtype
+0.01s call     gensim/test/test_sklearn_api.py::TestFastTextWrapper::testTransform
+0.01s call     gensim/test/test_poincare.py::TestPoincareKeyedVectors::test_closest_parent
+0.01s call     gensim/test/test_poincare.py::TestPoincareKeyedVectors::test_closest_child
+0.01s call     gensim/test/test_poincare.py::TestPoincareKeyedVectors::test_most_similar_to_given
+0.01s call     gensim/test/test_similarities.py::TestWmdSimilarity::testPersistencyCompressed
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testTooShortTextWord2VecFormat
+0.01s call     gensim/test/test_poincare.py::TestPoincareKeyedVectors::test_rank
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testPersistenceKeyedVectorsFormatWithVocab
+0.01s call     gensim/test/test_poincare.py::TestPoincareKeyedVectors::test_distances_with_vector_input
+0.01s call     gensim/test/test_poincare.py::TestPoincareKeyedVectors::test_words_closer_than
+0.01s call     gensim/test/test_poincare.py::TestPoincareKeyedVectors::test_distances
+0.01s call     gensim/test/test_similarities.py::TestWmdSimilarity::testFull
+0.01s call     gensim/test/test_similarities.py::TestSoftCosineSimilarity::testChunking
+0.01s call     gensim/test/test_keras_integration.py::TestKerasWord2VecWrapper::testWord2VecTraining
+0.01s call     gensim/test/test_poincare.py::TestPoincareKeyedVectors::test_similarity
+0.01s call     gensim/test/test_poincare.py::TestPoincareKeyedVectors::test_poincare_distance
+0.01s call     gensim/test/test_poincare.py::TestPoincareKeyedVectors::test_difference_in_hierarchy
+0.01s call     gensim/test/test_poincare.py::TestPoincareKeyedVectors::test_most_similar_with_vector_input
+0.01s call     gensim/test/test_poincare.py::TestPoincareKeyedVectors::test_poincare_distances_batch
+0.01s call     gensim/test/test_poincare.py::TestPoincareKeyedVectors::test_most_similar
+0.01s call     gensim/test/test_poincare.py::TestPoincareKeyedVectors::test_distance
+0.01s call     gensim/test/test_poincare.py::TestPoincareKeyedVectors::test_most_similar_restrict_vocab
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testRNG
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testSyn0NormNotSaved
+0.01s call     gensim/test/test_poincare.py::TestPoincareKeyedVectors::test_most_similar_raises_keyerror
+0.01s call     gensim/test/test_sklearn_api.py::TestWord2VecWrapper::testPersistence
+0.01s call     gensim/test/test_similarities.py::TestWmdSimilarity::testPersistency
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testNormalizeAfterTrainingData
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testPersistenceWord2VecFormatWithVocab
+0.01s call     gensim/test/test_similarities.py::TestWmdSimilarity::test_scipy2scipy_clipped
+0.01s call     gensim/test/test_fasttext.py::NativeTrainingContinuationTest::test_sanity
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testLoadOnClassError
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testNoTrainingCFormat
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testTrainingFromFile
+0.01s call     gensim/test/test_word2vec.py::TestWMD::testIdenticalSentences
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testScoring
+0.01s call     gensim/test/test_sklearn_api.py::TestWord2VecWrapper::testModelNotFitted
+0.01s call     gensim/test/test_sklearn_api.py::TestWord2VecWrapper::testTransform
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testLambdaRule
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testTooShortBinaryWord2VecFormat
+0.01s call     gensim/test/test_summarization.py::TestSummarizationTest::test_text_summarization
+0.01s call     gensim/test/test_indirect_confirmation.py::TestIndirectConfirmation::testWord2VecSimilarity
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::test_cosmul
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::test_compute_training_loss
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testSimilarBy
+0.01s call     gensim/test/test_coherencemodel.py::TestCoherenceModel::testCuci
+0.01s call     gensim/test/test_similarities.py::TestWmdSimilarity::testEmptyQuery
+0.01s call     gensim/test/test_utils_any2vec.py::LoadWord2VecFormatTest::test_load_word2vec_format_limit
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testSimilarities
+0.01s call     gensim/test/test_similarities.py::TestWmdSimilarity::test_full2sparse_clipped
+0.01s call     gensim/test/test_word2vec.py::TestWord2VecModel::testRuleWithMinCount
+0.01s call     gensim/test/test_summarization.py::TestSummarizationTest::test_corpus_summarization
+0.01s call     gensim/test/test_summarization.py::TestSummarizationTest::test_summary_from_unrelated_sentences
+0.01s call     gensim/test/test_poincare.py::TestPoincareModel::test_train_after_load
+0.01s call     gensim/test/test_fasttext.py::ZeroBucketTest::test_in_vocab
+0.01s call     gensim/test/test_similarities.py::TestSimilarity::testChunksize
+0.01s call     gensim/test/test_word2vec.py::TestWMD::testSymmetry
+(0.00 durations hidden.  Use -vv to show these durations.)
+=========================== short test summary info ============================
+SKIPPED [1] gensim/test/test_coherencemodel.py:147: Mallet not installed
+SKIPPED [1] gensim/test/test_coherencemodel.py:176: Vowpal Wabbit not installed
+SKIPPED [1] gensim/test/test_coherencemodel.py:142: Mallet not installed
+SKIPPED [1] gensim/test/test_coherencemodel.py:171: Vowpal Wabbit not installed
+SKIPPED [1] gensim/test/test_coherencemodel.py:132: Mallet not installed
+SKIPPED [1] gensim/test/test_coherencemodel.py:161: Vowpal Wabbit not installed
+SKIPPED [1] gensim/test/test_coherencemodel.py:137: Mallet not installed
+SKIPPED [1] gensim/test/test_coherencemodel.py:166: Vowpal Wabbit not installed
+SKIPPED [1] gensim/test/test_coherencemodel.py:123: Mallet not installed
+SKIPPED [1] gensim/test/test_coherencemodel.py:152: Vowpal Wabbit not installed
+SKIPPED [1] gensim/test/test_doc2vec.py:221: See another test for posix above
+SKIPPED [1] gensim/test/test_dtm.py:58: $DTM_PATH is not properly set up.
+SKIPPED [1] gensim/test/test_dtm.py:43: $DTM_PATH is not properly set up.
+SKIPPED [1] gensim/test/test_dtm.py:29: $DTM_PATH is not properly set up.
+SKIPPED [1] gensim/test/test_fasttext.py:828: FT_HOME env variable not set, skipping test
+SKIPPED [1] gensim/test/test_fasttext.py:848: FT_HOME env variable not set, skipping test
+SKIPPED [1] gensim/test/test_fasttext.py:1031: this test does not pass currently, I suspect a bug in our FT implementation
+SKIPPED [1] gensim/test/test_fasttext.py:1478: FT_HOME env variable not set, skipping test
+SKIPPED [1] gensim/test/test_fasttext.py:1475: FT_HOME env variable not set, skipping test
+SKIPPED [1] gensim/test/test_fasttext.py:1529: FT_HOME env variable not set, skipping test
+SKIPPED [1] gensim/test/test_fasttext.py:1526: FT_HOME env variable not set, skipping test
+SKIPPED [1] gensim/test/test_ldamallet_wrapper.py:149: MALLET_HOME not specified. Skipping Mallet tests.
+SKIPPED [1] gensim/test/test_ldamallet_wrapper.py:166: MALLET_HOME not specified. Skipping Mallet tests.
+SKIPPED [1] gensim/test/test_ldamallet_wrapper.py:89: MALLET_HOME not specified. Skipping Mallet tests.
+SKIPPED [1] gensim/test/test_ldamallet_wrapper.py:112: MALLET_HOME not specified. Skipping Mallet tests.
+SKIPPED [1] gensim/test/test_ldamallet_wrapper.py:125: MALLET_HOME not specified. Skipping Mallet tests.
+SKIPPED [1] gensim/test/test_ldamallet_wrapper.py:137: MALLET_HOME not specified. Skipping Mallet tests.
+SKIPPED [1] gensim/test/test_ldamallet_wrapper.py:65: MALLET_HOME not specified. Skipping Mallet tests.
+SKIPPED [1] gensim/test/test_ldamallet_wrapper.py:43: MALLET_HOME not specified. Skipping Mallet tests.
+SKIPPED [1] gensim/test/basetmtests.py:46: MALLET_HOME not specified. Skipping Mallet tests.
+SKIPPED [1] gensim/test/basetmtests.py:16: MALLET_HOME not specified. Skipping Mallet tests.
+SKIPPED [1] gensim/test/basetmtests.py:22: MALLET_HOME not specified. Skipping Mallet tests.
+SKIPPED [1] gensim/test/test_ldamallet_wrapper.py:178: MALLET_HOME not specified. Skipping Mallet tests.
+SKIPPED [1] gensim/test/basetmtests.py:29: MALLET_HOME not specified. Skipping Mallet tests.
+SKIPPED [1] gensim/test/basetmtests.py:36: MALLET_HOME not specified. Skipping Mallet tests.
+SKIPPED [1] gensim/test/test_ldavowpalwabbit_wrapper.py:177: Environment variable 'VOWPAL_WABBIT_PATH' not specified, skipping tests
+SKIPPED [1] gensim/test/test_ldavowpalwabbit_wrapper.py:101: Environment variable 'VOWPAL_WABBIT_PATH' not specified, skipping tests
+SKIPPED [1] gensim/test/test_ldavowpalwabbit_wrapper.py:116: Environment variable 'VOWPAL_WABBIT_PATH' not specified, skipping tests
+SKIPPED [1] gensim/test/test_ldavowpalwabbit_wrapper.py:67: Environment variable 'VOWPAL_WABBIT_PATH' not specified, skipping tests
+SKIPPED [1] gensim/test/test_ldavowpalwabbit_wrapper.py:130: Environment variable 'VOWPAL_WABBIT_PATH' not specified, skipping tests
+SKIPPED [1] gensim/test/test_ldavowpalwabbit_wrapper.py:198: Environment variable 'VOWPAL_WABBIT_PATH' not specified, skipping tests
+SKIPPED [1] gensim/test/test_poincare.py:180: autograd needs to be installed for this test
+SKIPPED [1] gensim/test/test_similarities.py:582: Annoy library is not available: No module named 'annoy'
+SKIPPED [1] gensim/test/test_similarities.py:563: Annoy library is not available: No module named 'annoy'
+SKIPPED [1] gensim/test/test_similarities.py:592: Annoy library is not available: No module named 'annoy'
+SKIPPED [1] gensim/test/test_similarities.py:553: Annoy library is not available: No module named 'annoy'
+SKIPPED [1] gensim/test/test_similarities.py:668: Annoy library is not available: No module named 'annoy'
+SKIPPED [1] gensim/test/test_similarities.py:661: Annoy library is not available: No module named 'annoy'
+SKIPPED [1] gensim/test/test_similarities.py:684: Annoy library is not available: No module named 'annoy'
+SKIPPED [1] gensim/test/test_similarities.py:678: Annoy library is not available: No module named 'annoy'
+SKIPPED [1] gensim/test/test_similarities.py:690: Annoy library is not available: No module named 'annoy'
+========= 1047 passed, 51 skipped, 22138 warnings in 839.93s (0:13:59) =========

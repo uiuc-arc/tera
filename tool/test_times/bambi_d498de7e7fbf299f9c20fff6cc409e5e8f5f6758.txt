@@ -1,0 +1,90 @@
+============================= test session starts ==============================
+platform linux -- Python 3.7.7, pytest-5.4.3, py-1.8.2, pluggy-0.13.1
+rootdir: /home/aryaman4/bambi
+collected 28 items
+
+bambi/tests/test_built_models.py ...........                             [ 39%]
+bambi/tests/test_model_construction.py .........                         [ 71%]
+bambi/tests/test_priors.py .......                                       [ 96%]
+bambi/tests/test_utils.py .                                              [100%]
+
+=============================== warnings summary ===============================
+/home/aryaman4/anaconda3/envs/bambi/lib/python3.7/site-packages/patsy/constraint.py:13
+  /home/aryaman4/anaconda3/envs/bambi/lib/python3.7/site-packages/patsy/constraint.py:13: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+    from collections import Mapping
+
+/home/aryaman4/anaconda3/envs/bambi/lib/python3.7/site-packages/theano/compat/__init__.py:16
+/home/aryaman4/anaconda3/envs/bambi/lib/python3.7/site-packages/theano/compat/__init__.py:16
+  /home/aryaman4/anaconda3/envs/bambi/lib/python3.7/site-packages/theano/compat/__init__.py:16: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+    from collections import (OrderedDict, MutableMapping as DictMixin,
+
+bambi/tests/test_built_models.py::test_empty_model
+  /home/aryaman4/anaconda3/envs/bambi/lib/python3.7/site-packages/theano/tensor/var.py:468: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+    isinstance(args_el, collections.Iterable)):
+
+bambi/tests/test_built_models.py: 13 tests with warnings
+  /home/aryaman4/anaconda3/envs/bambi/lib/python3.7/site-packages/arviz/data/base.py:146: UserWarning: More chains (4) than draws (1). Passed array should have shape (chains, draws, *shape)
+    UserWarning,
+
+bambi/tests/test_built_models.py::test_empty_model
+bambi/tests/test_built_models.py::test_intercept_only_model
+bambi/tests/test_built_models.py::test_slope_only_model
+bambi/tests/test_built_models.py::test_cell_means_parameterization
+bambi/tests/test_built_models.py::test_3x4_fixed_anova
+bambi/tests/test_built_models.py::test_3x4_fixed_anova
+bambi/tests/test_built_models.py::test_many_fixed_many_random
+bambi/tests/test_built_models.py::test_logistic_regression
+bambi/tests/test_built_models.py::test_poisson_regression
+  /home/aryaman4/anaconda3/envs/bambi/lib/python3.7/site-packages/pymc3/sampling.py:603: UserWarning: The number of samples is too small to check convergence reliably.
+    warnings.warn("The number of samples is too small to check convergence reliably.")
+
+bambi/tests/test_built_models.py: 16 tests with warnings
+  /home/aryaman4/anaconda3/envs/bambi/lib/python3.7/site-packages/arviz/data/io_pymc3.py:89: PendingDeprecationWarning: Using `from_pymc3` without the model will be deprecated in a future release. Not using the model will return less accurate and less useful results. Make sure you use the model argument or call from_pymc3 within a model context.
+    PendingDeprecationWarning,
+
+bambi/tests/test_built_models.py::test_many_fixed_many_random
+bambi/tests/test_built_models.py::test_many_fixed_many_random
+  /home/aryaman4/bambi/bambi/models.py:156: UserWarning: Automatically removing 3/120 rows from the dataset.
+    warnings.warn(msg)
+
+bambi/tests/test_built_models.py::test_logistic_regression
+bambi/tests/test_built_models.py::test_logistic_regression
+  /home/aryaman4/bambi/bambi/models.py:265: UserWarning: Modeling the probability that threecats=='b'
+    self.y.name, str(self.clean_data[self.y.name].iloc[event])
+
+bambi/tests/test_built_models.py::test_laplace
+  /home/aryaman4/bambi/bambi/models.py:265: UserWarning: Modeling the probability that w=='1'
+    self.y.name, str(self.clean_data[self.y.name].iloc[event])
+
+bambi/tests/test_built_models.py::test_laplace
+  /home/aryaman4/anaconda3/envs/bambi/lib/python3.7/site-packages/theano/tests/breakpoint.py:3: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+    import imp
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+============================ slowest test durations ============================
+31.64s call     bambi/tests/test_built_models.py::test_empty_model
+25.97s call     bambi/tests/test_built_models.py::test_logistic_regression
+25.56s call     bambi/tests/test_built_models.py::test_many_fixed_many_random
+21.14s call     bambi/tests/test_built_models.py::test_intercept_only_model
+20.75s call     bambi/tests/test_built_models.py::test_laplace
+16.18s call     bambi/tests/test_built_models.py::test_poisson_regression
+14.38s call     bambi/tests/test_built_models.py::test_3x4_fixed_anova
+10.61s call     bambi/tests/test_built_models.py::test_cell_means_parameterization
+7.86s call     bambi/tests/test_priors.py::test_update_term_priors_after_init
+4.30s call     bambi/tests/test_built_models.py::test_slope_only_model
+4.27s call     bambi/tests/test_built_models.py::test_cell_means_with_many_random_effects
+2.28s call     bambi/tests/test_model_construction.py::test_add_to_model
+2.00s call     bambi/tests/test_model_construction.py::test_distribute_random_effect_over
+1.21s call     bambi/tests/test_priors.py::test_auto_scale
+1.00s call     bambi/tests/test_model_construction.py::test_add_formula_append
+1.00s call     bambi/tests/test_built_models.py::test_cell_means_with_covariate
+0.98s call     bambi/tests/test_model_construction.py::test_derived_term_search
+0.70s call     bambi/tests/test_model_construction.py::test_model_term_names_property
+0.59s call     bambi/tests/test_model_construction.py::test_one_shot_formula_fit
+0.01s call     bambi/tests/test_model_construction.py::test_invalid_chars_in_random_effect
+0.01s call     bambi/tests/test_model_construction.py::test_model_init_from_filename
+0.01s setup    bambi/tests/test_model_construction.py::test_term_init
+0.01s setup    bambi/tests/test_priors.py::test_update_term_priors_after_init
+
+(0.00 durations hidden.  Use -vv to show these durations.)
+================= 28 passed, 48 warnings in 193.75s (0:03:13) ==================

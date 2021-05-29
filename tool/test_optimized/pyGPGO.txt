@@ -1,0 +1,1 @@
+tests/test_GPGO.py::test_GPGO tests/test_GPGO.py::test_GPGO_mcmc tests/test_GPGO.py::test_GPGO_sk

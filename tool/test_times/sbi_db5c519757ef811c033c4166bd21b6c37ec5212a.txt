@@ -1,0 +1,168 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.3, pytest-5.4.3, py-1.8.2, pluggy-0.13.1
+rootdir: /home/aryaman4/sbi, inifile: setup.cfg
+plugins: pep8-1.0.6
+collected 150 items
+
+tests/inference_with_NaN_simulator_test.py .......                       [  4%]
+tests/linearGaussian_simulator_test.py ....                              [  7%]
+tests/linearGaussian_snle_test.py ..........                             [ 14%]
+tests/linearGaussian_snpe_test.py ....x.x....                            [ 21%]
+tests/linearGaussian_snre_test.py ...........                            [ 28%]
+tests/multiprocessing_test.py ...                                        [ 30%]
+tests/posterior_nn_test.py .                                             [ 31%]
+tests/pyroutils_test.py .                                                [ 32%]
+tests/simulator_utils_test.py .........                                  [ 38%]
+tests/torchutils_test.py ..............                                  [ 47%]
+tests/user_input_checks_test.py ......xxxx.......xx..................... [ 74%]
+.....xxxx....                                                            [ 82%]
+tests/mcmc_slice_pyro/test_slice.py ssss.........sssssssssssss           [100%]
+
+=============================== warnings summary ===============================
+tests/inference_with_NaN_simulator_test.py: 1 test with warning
+tests/linearGaussian_snpe_test.py: 10 tests with warnings
+tests/posterior_nn_test.py: 1 test with warning
+tests/user_input_checks_test.py: 8 tests with warnings
+  /home/aryaman4/anaconda3/envs/sbi_env/lib/python3.8/site-packages/nflows/transforms/standard.py:76: DeprecationWarning: Use PointwiseAffineTransform
+    warnings.warn("Use PointwiseAffineTransform", DeprecationWarning)
+
+tests/inference_with_NaN_simulator_test.py: 12 tests with warnings
+  /home/aryaman4/anaconda3/envs/sbi_env/lib/python3.8/site-packages/sklearn/neural_network/_multilayer_perceptron.py:582: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+    warnings.warn(
+
+tests/inference_with_NaN_simulator_test.py: 2 tests with warnings
+tests/linearGaussian_snle_test.py: 9 tests with warnings
+tests/linearGaussian_snpe_test.py: 1 test with warning
+tests/linearGaussian_snre_test.py: 9 tests with warnings
+  /home/aryaman4/sbi/sbi/inference/posterior.py:504: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+    return torch.tensor(samples, dtype=torch.float32)
+
+tests/linearGaussian_snle_test.py::test_api_snl_on_linearGaussian[1]
+tests/linearGaussian_snle_test.py::test_c2st_snl_on_linearGaussian[uniform-1]
+tests/linearGaussian_snle_test.py::test_c2st_snl_on_linearGaussian[gaussian-1]
+  /home/aryaman4/sbi/sbi/utils/get_nn_models.py:379: UserWarning: In one-dimensional data spaces, MAFs are limited to a Gaussian density. Consider setting `density_estimator="mdn"` instead.
+    warn(
+
+tests/linearGaussian_snle_test.py::test_c2st_snl_on_linearGaussian[uniform-1]
+tests/linearGaussian_snle_test.py::test_c2st_snl_on_linearGaussian[uniform-2]
+  /home/aryaman4/sbi/sbi/inference/posterior.py:245: UserWarning: The log probability from SNL is only correct up to a normalizing constant.
+    warn(
+
+tests/linearGaussian_snpe_test.py::test_c2st_snpe_on_linearGaussian[1-gaussian]
+  /home/aryaman4/sbi/sbi/utils/get_nn_models.py:379: UserWarning: In one-dimensional parameter spaces, MAFs are limited to a Gaussian density. Consider setting `density_estimator="mdn"` instead.
+    warn(
+
+tests/linearGaussian_snre_test.py::test_c2st_sre_on_linearGaussian[2-gaussian-aalr]
+  /home/aryaman4/sbi/sbi/inference/posterior.py:231: UserWarning: The log probability from SRE is only correct up to a normalizing constant.
+    warn(
+
+tests/multiprocessing_test.py::test_benchmarking_sp[1]
+tests/multiprocessing_test.py::test_benchmarking_sp[10]
+  /home/aryaman4/anaconda3/envs/sbi_env/lib/python3.8/site-packages/torch/storage.py:34: FutureWarning: pickle support for Storage will be removed in 1.5. Use `torch.save` instead
+    warnings.warn("pickle support for Storage will be removed in 1.5. Use `torch.save` instead", FutureWarning)
+
+tests/user_input_checks_test.py::test_prior_wrappers[CustomPytorchWrapper-prior0]
+tests/user_input_checks_test.py::test_process_prior[prior7]
+tests/user_input_checks_test.py::test_process_prior[prior8]
+tests/user_input_checks_test.py::test_process_simulator[numpy_linear_gaussian-prior2]
+tests/user_input_checks_test.py::test_prepare_sbi_problem[numpy_linear_gaussian-prior1-x_shape1]
+tests/user_input_checks_test.py::test_prepare_sbi_problem[numpy_linear_gaussian-prior4-x_shape4]
+tests/user_input_checks_test.py::test_inference_with_user_sbi_problems[numpy_linear_gaussian-user_prior2-user_x_shape2]
+tests/user_input_checks_test.py::test_inference_with_user_sbi_problems[numpy_linear_gaussian-user_prior6-user_x_shape6]
+  /home/aryaman4/sbi/sbi/user_input/user_input_checks_utils.py:60: UserWarning: Prior is lacking mean attribute, estimating prior mean from samples...
+    warnings.warn(
+
+tests/user_input_checks_test.py::test_prior_wrappers[CustomPytorchWrapper-prior0]
+tests/user_input_checks_test.py::test_process_prior[prior7]
+tests/user_input_checks_test.py::test_process_prior[prior8]
+tests/user_input_checks_test.py::test_process_simulator[numpy_linear_gaussian-prior2]
+tests/user_input_checks_test.py::test_prepare_sbi_problem[numpy_linear_gaussian-prior1-x_shape1]
+tests/user_input_checks_test.py::test_prepare_sbi_problem[numpy_linear_gaussian-prior4-x_shape4]
+tests/user_input_checks_test.py::test_inference_with_user_sbi_problems[numpy_linear_gaussian-user_prior2-user_x_shape2]
+tests/user_input_checks_test.py::test_inference_with_user_sbi_problems[numpy_linear_gaussian-user_prior6-user_x_shape6]
+  /home/aryaman4/sbi/sbi/user_input/user_input_checks_utils.py:71: UserWarning: Prior is lacking variance attribute, estimating prior variance from samples...
+    warnings.warn(
+
+tests/user_input_checks_test.py::test_process_matrix_observation
+  /home/aryaman4/sbi/sbi/user_input/user_input_checks.py:250: UserWarning: Beware: The observed data (x_o) you passed was interpreted to have
+              matrix shape: [2, 2]. The current implementation of sbi
+              might not provide stable support for this and result in shape mismatches.
+              
+    warnings.warn(
+
+tests/user_input_checks_test.py::test_prepare_sbi_problem[diagonal_linear_gaussian-prior5-x_shape5]
+tests/user_input_checks_test.py::test_inference_with_user_sbi_problems[diagonal_linear_gaussian-user_prior7-user_x_shape7]
+  /home/aryaman4/sbi/sbi/user_input/user_input_checks.py:43: UserWarning: Prior was provided as a sequence of 3 priors. They will be
+              interpreted as independent of each other and matched in order to the
+              components of the parameter.
+    warnings.warn(
+
+tests/mcmc_slice_pyro/test_slice.py::test_logistic_regression[2-JIT=False]
+tests/mcmc_slice_pyro/test_slice.py::test_logistic_regression[2-JIT=True]
+  /home/aryaman4/sbi/sbi/mcmc/mcmc.py:117: UserWarning: num_chains=2 is more than available_cpu=1. Chains will be drawn sequentially.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+============================ slowest test durations ============================
+246.61s call     tests/inference_with_NaN_simulator_test.py::test_inference_with_nan_simulator[SNLE_A-True-0.05]
+241.14s call     tests/linearGaussian_snle_test.py::test_c2st_snl_on_linearGaussian_different_dims
+207.60s call     tests/linearGaussian_snle_test.py::test_c2st_multi_round_snl_on_linearGaussian
+95.90s call     tests/linearGaussian_snpe_test.py::test_multi_round_snpe_deterministic_simulator[1e-07]
+68.77s call     tests/linearGaussian_snle_test.py::test_c2st_snl_on_linearGaussian[gaussian-2]
+62.11s call     tests/linearGaussian_snle_test.py::test_c2st_snl_on_linearGaussian[uniform-2]
+59.65s call     tests/linearGaussian_snpe_test.py::test_c2st_multi_round_snpe_on_linearGaussian[snpe_c]
+57.43s call     tests/inference_with_NaN_simulator_test.py::test_inference_with_nan_simulator[SNRE_B-True-0.05]
+54.13s call     tests/linearGaussian_snpe_test.py::test_c2st_snpe_on_linearGaussian_different_dims
+47.68s call     tests/linearGaussian_snre_test.py::test_c2st_sre_on_linearGaussian_different_dims
+40.12s call     tests/linearGaussian_snpe_test.py::test_c2st_snpe_on_linearGaussian[2-uniform]
+40.00s call     tests/inference_with_NaN_simulator_test.py::test_inference_with_nan_simulator[SNPE_C-True-0.05]
+39.92s call     tests/linearGaussian_snle_test.py::test_c2st_snl_on_linearGaussian[uniform-1]
+39.19s call     tests/linearGaussian_snpe_test.py::test_c2st_snpe_on_linearGaussian[2-gaussian]
+35.48s call     tests/linearGaussian_snle_test.py::test_c2st_snl_on_linearGaussian[gaussian-1]
+28.17s call     tests/linearGaussian_snpe_test.py::test_c2st_snpe_on_linearGaussian[1-gaussian]
+25.18s call     tests/posterior_nn_test.py::test_log_prob_with_different_x
+18.03s call     tests/linearGaussian_snre_test.py::test_c2st_sre_on_linearGaussian[2-gaussian-sre]
+17.68s call     tests/linearGaussian_snre_test.py::test_c2st_sre_on_linearGaussian[2-gaussian-aalr]
+17.31s call     tests/linearGaussian_snpe_test.py::test_api_snpe_c_posterior_correction[True-slice_np-gaussian]
+16.38s call     tests/linearGaussian_snre_test.py::test_c2st_sre_on_linearGaussian[2-uniform-sre]
+13.82s call     tests/mcmc_slice_pyro/test_slice.py::test_logistic_regression[2-JIT=False]
+10.46s call     tests/linearGaussian_snre_test.py::test_c2st_sre_on_linearGaussian[1-gaussian-sre]
+10.05s call     tests/multiprocessing_test.py::test_benchmarking_sp[100]
+9.99s call     tests/linearGaussian_snle_test.py::test_api_snl_on_linearGaussian[3]
+7.59s call     tests/linearGaussian_snpe_test.py::test_api_snpe_c_posterior_correction[True-slice-gaussian]
+7.56s call     tests/mcmc_slice_pyro/test_slice.py::test_logistic_regression[1-JIT=False]
+6.43s call     tests/multiprocessing_test.py::test_benchmarking_sp[1]
+6.26s call     tests/linearGaussian_snpe_test.py::test_multi_round_snpe_deterministic_simulator[0.0]
+6.23s call     tests/linearGaussian_snre_test.py::test_api_sre_on_linearGaussian[3]
+6.07s call     tests/mcmc_slice_pyro/test_slice.py::test_logistic_regression[2-JIT=True]
+5.54s call     tests/multiprocessing_test.py::test_benchmarking_sp[10]
+5.53s call     tests/linearGaussian_snle_test.py::test_api_snl_on_linearGaussian[1]
+5.41s call     tests/linearGaussian_snle_test.py::test_api_snl_sampling_methods[slice-gaussian]
+4.96s call     tests/mcmc_slice_pyro/test_slice.py::test_beta_bernoulli
+4.38s call     tests/linearGaussian_snle_test.py::test_api_snl_sampling_methods[slice-uniform]
+4.01s call     tests/mcmc_slice_pyro/test_slice.py::test_gamma_normal[JIT=False]
+3.50s call     tests/mcmc_slice_pyro/test_slice.py::test_dirichlet_categorical[JIT=False]
+3.34s call     tests/mcmc_slice_pyro/test_slice.py::test_logistic_regression[1-JIT=True]
+3.14s call     tests/linearGaussian_snre_test.py::test_api_sre_sampling_methods[slice_np-gaussian]
+2.84s call     tests/linearGaussian_snre_test.py::test_api_sre_sampling_methods[slice_np-uniform]
+2.57s call     tests/linearGaussian_snre_test.py::test_api_sre_on_linearGaussian[1]
+2.26s call     tests/linearGaussian_snpe_test.py::test_api_snpe_c_posterior_correction[False-rejection-uniform]
+1.89s call     tests/torchutils_test.py::test_dkl_gauss
+1.89s call     tests/linearGaussian_snre_test.py::test_api_sre_sampling_methods[slice-gaussian]
+1.69s call     tests/linearGaussian_snre_test.py::test_api_sre_sampling_methods[slice-uniform]
+1.62s call     tests/mcmc_slice_pyro/test_slice.py::test_gamma_normal[JIT=True]
+1.46s call     tests/mcmc_slice_pyro/test_slice.py::test_dirichlet_categorical[JIT=True]
+1.22s call     tests/user_input_checks_test.py::test_inference_with_user_sbi_problems[diagonal_linear_gaussian-user_prior0-user_x_shape0]
+1.05s call     tests/user_input_checks_test.py::test_inference_with_user_sbi_problems[diagonal_linear_gaussian-user_prior7-user_x_shape7]
+0.74s call     tests/user_input_checks_test.py::test_inference_with_user_sbi_problems[linear_gaussian_no_batch-user_prior1-user_x_shape1]
+0.73s call     tests/user_input_checks_test.py::test_inference_with_user_sbi_problems[numpy_linear_gaussian-user_prior2-user_x_shape2]
+0.71s call     tests/user_input_checks_test.py::test_inference_with_user_sbi_problems[numpy_linear_gaussian-user_prior6-user_x_shape6]
+0.49s call     tests/user_input_checks_test.py::test_inference_with_user_sbi_problems[diagonal_linear_gaussian-user_prior3-user_x_shape3]
+0.44s call     tests/user_input_checks_test.py::test_inference_with_user_sbi_problems[linear_gaussian_no_batch-user_prior4-user_x_shape4]
+0.42s call     tests/user_input_checks_test.py::test_inference_with_user_sbi_problems[list_simulator-user_prior5-user_x_shape5]
+0.02s call     tests/simulator_utils_test.py::test_simulate_in_batches[1-1000]
+0.01s call     tests/linearGaussian_simulator_test.py::test_linearGaussian_simulator[5-100000]
+0.01s call     tests/linearGaussian_simulator_test.py::test_standardlinearGaussian_simulator[5-100000]
+
+(0.00 durations hidden.  Use -vv to show these durations.)
+==== 121 passed, 17 skipped, 12 xfailed, 83 warnings in 1606.22s (0:26:46) =====

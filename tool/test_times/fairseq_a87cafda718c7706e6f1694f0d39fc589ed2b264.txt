@@ -1,0 +1,188 @@
+============================= test session starts ==============================
+platform linux -- Python 3.6.10, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+rootdir: /home/aryaman4/fairseq
+collected 141 items
+
+tests/test_average_checkpoints.py ..                                     [  1%]
+tests/test_backtranslation_dataset.py ...                                [  3%]
+tests/test_binaries.py ......F...........................                [ 27%]
+tests/test_bmuf.py ssss                                                  [ 30%]
+tests/test_character_token_embedder.py .                                 [ 31%]
+tests/test_concat_dataset.py .                                           [ 31%]
+tests/test_convtbc.py .                                                  [ 32%]
+tests/test_dictionary.py ....                                            [ 35%]
+tests/test_export.py .s..                                                [ 38%]
+tests/test_file_io.py ..                                                 [ 39%]
+tests/test_iterators.py ...                                              [ 41%]
+tests/test_label_smoothing.py ....                                       [ 44%]
+tests/test_lstm_jitable.py ..                                            [ 46%]
+tests/test_memory_efficient_fp16.py s                                    [ 46%]
+tests/test_metrics.py .....                                              [ 50%]
+tests/test_multi_corpus_sampled_dataset.py ..                            [ 51%]
+tests/test_multihead_attention.py .                                      [ 52%]
+tests/test_noising.py ..........                                         [ 59%]
+tests/test_reproducibility.py ..ss                                       [ 62%]
+tests/test_resampling_dataset.py ..                                      [ 63%]
+tests/test_sequence_generator.py sss..............                       [ 75%]
+tests/test_sequence_scorer.py .                                          [ 76%]
+tests/test_sparse_multihead_attention.py .                               [ 77%]
+tests/test_token_block_dataset.py ...                                    [ 79%]
+tests/test_train.py ...                                                  [ 81%]
+tests/test_utils.py ....                                                 [ 84%]
+tests/gpu/test_binaries_gpu.py ssssss                                    [ 88%]
+tests/speech_recognition/test_collaters.py .                             [ 89%]
+tests/speech_recognition/test_cross_entropy.py ..                        [ 90%]
+tests/speech_recognition/test_data_utils.py .                            [ 91%]
+tests/speech_recognition/test_vggtransformer.py ssss........             [100%]
+
+=================================== FAILURES ===================================
+__________________ TestTranslation.test_insertion_transformer __________________
+
+self = <tests.test_binaries.TestTranslation testMethod=test_insertion_transformer>
+
+    def test_insertion_transformer(self):
+        with contextlib.redirect_stdout(StringIO()):
+            with tempfile.TemporaryDirectory('test_insertion_transformer') as data_dir:
+                create_dummy_data(data_dir)
+                preprocess_translation_data(data_dir, ['--joined-dictionary'])
+                train_translation_model(data_dir, 'insertion_transformer', [
+                    '--apply-bert-init', '--criterion', 'nat_loss', '--noise',
+                    'random_mask'
+>               ], task='translation_lev')
+
+tests/test_binaries.py:331: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/utils.py:221: in train_translation_model
+    train.main(train_args)
+fairseq_cli/train.py:125: in main
+    valid_losses, should_stop = train(args, trainer, task, epoch_itr)
+../anaconda3/envs/fairseq/lib/python3.6/contextlib.py:52: in inner
+    return func(*args, **kwds)
+fairseq_cli/train.py:216: in train
+    log_output = trainer.train_step(samples)
+../anaconda3/envs/fairseq/lib/python3.6/contextlib.py:52: in inner
+    return func(*args, **kwds)
+fairseq/trainer.py:421: in train_step
+    ignore_grad=is_dummy_batch,
+fairseq/tasks/translation_lev.py:151: in train_step
+    loss, sample_size, logging_output = criterion(model, sample)
+../anaconda3/envs/fairseq/lib/python3.6/site-packages/torch/nn/modules/module.py:550: in __call__
+    result = self.forward(*input, **kwargs)
+fairseq/criterions/nat_loss.py:96: in forward
+    outputs = model(src_tokens, src_lengths, prev_output_tokens, tgt_tokens)
+../anaconda3/envs/fairseq/lib/python3.6/site-packages/torch/nn/modules/module.py:550: in __call__
+    result = self.forward(*input, **kwargs)
+fairseq/models/nat/insertion_transformer.py:159: in forward
+    tau=self.decoder.label_tau,
+fairseq/models/nat/insertion_transformer.py:62: in _get_ins_targets
+    raise e
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+in_tokens = tensor([[ 0,  3,  3, 20,  3,  4,  3, 15, 26,  8, 15, 19, 17,  3,  7, 21, 13,  8,
+          7, 16,  2],
+        [ 0, 28...    1,  1,  1],
+        [ 0,  3, 15,  8, 11,  3,  3,  3,  3,  2,  1,  1,  1,  1,  1,  1,  1,  1,
+          1,  1,  1]])
+out_tokens = tensor([[ 0,  8, 10, 20, 29,  4,  8, 15, 26,  8, 15, 19, 17, 11,  7, 21, 13,  8,
+          7, 16,  2],
+        [ 0, 28...    1,  1,  1],
+        [ 0, 11, 15,  8, 11, 15, 13, 17, 22,  2,  1,  1,  1,  1,  1,  1,  1,  1,
+          1,  1,  1]])
+padding_idx = 1, unk_idx = 3, vocab_size = 32, tau = None
+
+    def _get_ins_targets(in_tokens, out_tokens, padding_idx, unk_idx, vocab_size, tau=None):
+        try:
+>           from fairseq import libnat
+E           ImportError: cannot import name 'libnat'
+
+fairseq/models/nat/insertion_transformer.py:58: ImportError
+----------------------------- Captured stderr call -----------------------------
+ERROR: missing libnat. run `pip install --editable .`
+=============================== warnings summary ===============================
+tests/test_binaries.py::TestMaskedLanguageModel::test_legacy_masked_lm
+tests/test_binaries.py::TestMaskedLanguageModel::test_pretrained_masked_lm_for_translation_encoder_only
+tests/test_binaries.py::TestMaskedLanguageModel::test_pretrained_masked_lm_for_translation_learned_pos_emb
+tests/test_binaries.py::TestMaskedLanguageModel::test_pretrained_masked_lm_for_translation_sinusoidal_pos_emb
+  /home/aryaman4/fairseq/fairseq/tasks/fairseq_task.py:407: UserWarning: Criterions should implement the reduce_metrics API. Falling back to deprecated aggregate_logging_outputs API.
+    criterion.__class__.reduce_metrics(logging_outputs)
+
+tests/test_binaries.py::TestOptimizers::test_optimizers
+  /pytorch/torch/csrc/utils/python_arg_parser.cpp:756: UserWarning: This overload of add_ is deprecated:
+  	add_(Number alpha, Tensor other)
+  Consider using one of the following signatures instead:
+  	add_(Tensor other, *, Number alpha)
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+============================ slowest test durations ============================
+10.64s call     tests/test_binaries.py::TestTranslation::test_iterative_nonautoregressive_transformer
+8.77s call     tests/test_binaries.py::TestTranslation::test_cmlm_transformer
+6.87s call     tests/test_binaries.py::TestMaskedLanguageModel::test_roberta_masked_lm
+6.56s call     tests/test_binaries.py::TestMaskedLanguageModel::test_roberta_regression_multiple
+6.40s call     tests/test_binaries.py::TestTranslation::test_nonautoregressive_transformer
+5.94s call     tests/test_binaries.py::TestMaskedLanguageModel::test_roberta_sentence_prediction
+5.91s call     tests/test_binaries.py::TestTranslation::test_multilingual_transformer
+5.81s call     tests/test_binaries.py::TestMaskedLanguageModel::test_roberta_regression_single
+3.31s call     tests/test_reproducibility.py::TestReproducibility::test_reproducibility
+3.14s call     tests/test_binaries.py::TestLanguageModeling::test_transformer_lm
+3.12s call     tests/test_binaries.py::TestLanguageModeling::test_lightconv_lm
+2.57s call     tests/test_binaries.py::TestTranslation::test_generation
+2.55s call     tests/test_binaries.py::TestLanguageModeling::test_fconv_lm
+2.21s call     tests/test_binaries.py::TestLanguageModeling::test_lstm_lm_residuals
+2.17s call     tests/test_binaries.py::TestLanguageModeling::test_lstm_lm
+1.95s call     tests/test_binaries.py::TestOptimizers::test_optimizers
+1.75s call     tests/speech_recognition/test_vggtransformer.py::VGGTransformerModelTest_big::test_get_normalized_probs
+1.64s call     tests/test_reproducibility.py::TestReproducibility::test_mid_epoch_reproducibility
+1.61s call     tests/speech_recognition/test_vggtransformer.py::VGGTransformerModelTest_big::test_forward
+1.59s call     tests/speech_recognition/test_vggtransformer.py::VGGTransformerModelTest_mid::test_get_normalized_probs
+1.56s call     tests/test_binaries.py::TestStories::test_fconv_self_att_wp
+1.49s call     tests/speech_recognition/test_vggtransformer.py::VGGTransformerModelTest_mid::test_forward
+1.16s call     tests/test_binaries.py::TestTranslation::test_update_freq
+1.12s call     tests/test_binaries.py::TestTranslation::test_insertion_transformer
+1.09s call     tests/test_binaries.py::TestTranslation::test_fconv
+1.06s call     tests/test_binaries.py::TestTranslation::test_lightconv
+1.04s call     tests/test_binaries.py::TestTranslation::test_eval_bleu
+0.99s call     tests/test_binaries.py::TestTranslation::test_dynamicconv
+0.96s call     tests/test_binaries.py::TestTranslation::test_raw
+0.91s call     tests/test_binaries.py::TestTranslation::test_alignment
+0.87s call     tests/speech_recognition/test_vggtransformer.py::VGGTransformerModelTest_base::test_get_normalized_probs
+0.84s call     tests/speech_recognition/test_vggtransformer.py::VGGTransformerModelTest_base::test_forward
+0.82s call     tests/test_binaries.py::TestTranslation::test_lstm_bidirectional
+0.78s call     tests/test_binaries.py::TestTranslation::test_lstm
+0.76s call     tests/test_binaries.py::TestTranslation::test_transformer
+0.69s call     tests/test_lstm_jitable.py::TestJitLSTMModel::test_assert_jit_vs_nonjit_
+0.68s call     tests/test_binaries.py::TestTranslation::test_mixture_of_experts
+0.67s call     tests/test_binaries.py::TestTranslation::test_max_positions
+0.56s call     tests/test_binaries.py::TestTranslation::test_transformer_cross_self_attention
+0.55s call     tests/test_binaries.py::TestMaskedLanguageModel::test_pretrained_masked_lm_for_translation_learned_pos_emb
+0.55s call     tests/test_binaries.py::TestMaskedLanguageModel::test_pretrained_masked_lm_for_translation_sinusoidal_pos_emb
+0.53s call     tests/test_binaries.py::TestMaskedLanguageModel::test_pretrained_masked_lm_for_translation_encoder_only
+0.51s call     tests/speech_recognition/test_vggtransformer.py::VGGTransformerEncoderTest::test_forward
+0.34s call     tests/test_multi_corpus_sampled_dataset.py::TestMultiCorpusSampledDataset::test_multi_corpus_sampled_dataset_uniform_sample
+0.32s call     tests/test_resampling_dataset.py::TestResamplingDataset::test_resampling_dataset_batch_by_size_true
+0.32s call     tests/test_resampling_dataset.py::TestResamplingDataset::test_resampling_dataset_batch_by_size_false
+0.29s call     tests/test_binaries.py::TestMaskedLanguageModel::test_legacy_masked_lm
+0.28s call     tests/test_multi_corpus_sampled_dataset.py::TestMultiCorpusSampledDataset::test_multi_corpus_sampled_dataset_weighted_sample
+0.21s call     tests/test_lstm_jitable.py::TestJitLSTMModel::test_jit_and_export_lstm
+0.13s call     tests/test_export.py::TestExportModels::test_export_multihead_attention
+0.05s call     tests/test_export.py::TestExportModels::test_incremental_state_multihead_attention
+0.04s call     tests/speech_recognition/test_vggtransformer.py::TransformerDecoderTest::test_forward
+0.02s call     tests/test_train.py::TestLoadCheckpoint::test_load_partial_checkpoint
+0.02s call     tests/test_average_checkpoints.py::TestAverageCheckpoints::test_average_checkpoints_with_shared_parameters
+0.02s call     tests/test_export.py::TestExportModels::test_positional_embedding
+0.01s call     tests/test_character_token_embedder.py::TestCharacterTokenEmbedder::test_character_token_embedder
+0.01s call     tests/test_sequence_generator.py::TestExportSearch::test_export_diverse_bs
+0.01s call     tests/test_sequence_generator.py::TestExportSearch::test_export_sampling
+0.01s teardown tests/speech_recognition/test_vggtransformer.py::VGGTransformerModelTest_big::test_get_normalized_probs
+0.01s call     tests/test_backtranslation_dataset.py::TestBacktranslationDataset::test_backtranslation_dataset_no_eos_in_input_src
+0.01s call     tests/test_sequence_generator.py::TestSequeneceGenerator::test_with_lenpen_favoring_short_hypos
+0.01s call     tests/test_sequence_generator.py::TestSequeneceGenerator::test_with_lenpen_favoring_long_hypos
+0.01s call     tests/test_sequence_generator.py::TestSequeneceGenerator::test_with_normalization
+0.01s call     tests/test_sequence_generator.py::TestSequeneceGenerator::test_without_normalization
+0.01s call     tests/test_sequence_generator.py::TestDiverseBeamSearch::test_diverse_beam_search
+0.01s call     tests/test_sequence_generator.py::TestSequeneceGenerator::test_generation_with_additional_input
+0.01s call     tests/test_sequence_generator.py::TestDiverseSiblingsSearch::test_diverse_beam_search
+
+(0.00 durations hidden.  Use -vv to show these durations.)
+=========================== short test summary info ============================
+FAILED tests/test_binaries.py::TestTranslation::test_insertion_transformer - ...
+====== 1 failed, 119 passed, 21 skipped, 5 warnings in 108.01s (0:01:48) =======

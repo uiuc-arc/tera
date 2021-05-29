@@ -1,0 +1,1 @@
+test/test_mcmc.py::test_logistic_regression_x64 test/test_mcmc.py::test_improper_normal test/test_mcmc.py::test_beta_bernoulli_x64 test/test_mcmc.py::test_change_point_x64 test/test_mcmc.py::test_functional_beta_bernoulli_x64 test/test_mcmc.py::test_reuse_mcmc_run test/test_optimizers.py::test_optim_multi_params test/test_infer_util.py::test_predictive_with_improper   

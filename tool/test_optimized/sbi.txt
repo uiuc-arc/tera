@@ -1,0 +1,1 @@
+tests/linearGaussian_snle_test.py::test_c2st_snl_on_linearGaussian_different_dims tests/linearGaussian_snre_test.py::test_c2st_sre_on_linearGaussian_different_dims tests/multiprocessing_test.py::test_benchmarking_sp  tests/linearGaussian_snpe_test.py::test_c2st_snpe_on_linearGaussian_different_dims

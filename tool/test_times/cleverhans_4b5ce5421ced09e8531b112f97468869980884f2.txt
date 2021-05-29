@@ -1,0 +1,258 @@
+test_analyze_one_classification_result (eval_lib.tests.classification_results_test.ClassificationResultsTest) ... ok (0.0002s)
+test_compute_classification_results_from_defense_work (eval_lib.tests.classification_results_test.ClassificationResultsTest) ... ok (0.0002s)
+test_init_from_adv_batches_and_submissions (eval_lib.tests.classification_results_test.ClassificationResultsTest) ... ok (0.0010s)
+test_read_batch_from_datastore (eval_lib.tests.classification_results_test.ClassificationResultsTest) ... ok (0.0006s)
+test_read_classification_results (eval_lib.tests.classification_results_test.ClassificationResultsTest) ... ok (0.0001s)
+test_get_entity (eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTest) ... ok (0.0003s)
+test_make_entity (eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTest) ... ok (0.0001s)
+test_make_key (eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTest) ... ok (0.0001s)
+test_overwrite_values (eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTest) ... ok (0.0004s)
+test_put_entity (eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTest) ... ok (0.0002s)
+test_query_fetch_all (eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTest) ... ok (0.0001s)
+test_query_fetch_ancestor_and_kind_filter (eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTest) ... ok (0.0001s)
+test_query_fetch_ancestor_filter (eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTest) ... ok (0.0003s)
+test_query_fetch_data_filter (eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTest) ... ok (0.0003s)
+test_query_fetch_kind_filter (eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTest) ... ok (0.0002s)
+test_write_batch (eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTest) ... ok (0.0003s)
+test_transaction_read_concurrent (eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTransactionTest) ... ok (0.0006s)
+test_transaction_read_write_concurrent_not_intersecting (eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTransactionTest) ... ok (0.0006s)
+test_transaction_read_write_no_concurrent (eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTransactionTest) ... ok (0.0006s)
+test_transaction_write_concurrent (eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTransactionTest) ... ok (0.0005s)
+test_transaction_write_only_no_concurrent (eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTransactionTest) ... ok (0.0005s)
+test_copy (eval_lib.tests.fake_cloud_client_test.FakeDatastoreEntityTest) ... ok (0.0001s)
+test_deep_copy (eval_lib.tests.fake_cloud_client_test.FakeDatastoreEntityTest) ... ok (0.0002s)
+test_equality_dict (eval_lib.tests.fake_cloud_client_test.FakeDatastoreEntityTest) ... ok (0.0001s)
+test_equality_keys (eval_lib.tests.fake_cloud_client_test.FakeDatastoreEntityTest) ... ok (0.0001s)
+test_key (eval_lib.tests.fake_cloud_client_test.FakeDatastoreEntityTest) ... ok (0.0001s)
+test_equality (eval_lib.tests.fake_cloud_client_test.FakeDatastoreKeyTest) ... ok (0.0001s)
+test_flat_path (eval_lib.tests.fake_cloud_client_test.FakeDatastoreKeyTest) ... ok (0.0001s)
+test_get_blob (eval_lib.tests.fake_cloud_client_test.FakeStorageClientTest) ... ok (0.0001s)
+test_list_blobs (eval_lib.tests.fake_cloud_client_test.FakeStorageClientTest) ... ok (0.0002s)
+test_count_generated_adv_examples (eval_lib.tests.image_batches_test.AdversarialBatchesTest) ... ok (0.0016s)
+test_init_from_dataset_and_submissions (eval_lib.tests.image_batches_test.AdversarialBatchesTest) ... ok (0.0017s)
+test_init_from_datastore (eval_lib.tests.image_batches_test.AdversarialBatchesTest) ... ok (0.0017s)
+test_count_num_images (eval_lib.tests.image_batches_test.DatasetBatchesTest) ... ok (0.0006s)
+test_init_from_datastore (eval_lib.tests.image_batches_test.DatasetBatchesTest) ... ok (0.0007s)
+test_init_from_storage (eval_lib.tests.image_batches_test.DatasetBatchesTest) ... ok (0.0008s)
+test_add_batch (eval_lib.tests.image_batches_test.ImageBatchesBaseTest) ... ok (0.0001s)
+test_add_image (eval_lib.tests.image_batches_test.ImageBatchesBaseTest) ... ok (0.0001s)
+test_write_single_batch_images_to_datastore (eval_lib.tests.image_batches_test.ImageBatchesBaseTest) ... ok (0.0003s)
+test_write_to_datastore (eval_lib.tests.image_batches_test.ImageBatchesBaseTest) ... ok (0.0005s)
+test_baseline_id (eval_lib.tests.submissions_test.ParticipantFromSubmissionPathTest) ... ok (0.0001s)
+test_tar_extension (eval_lib.tests.submissions_test.ParticipantFromSubmissionPathTest) ... ok (0.0001s)
+test_tar_gz_extension (eval_lib.tests.submissions_test.ParticipantFromSubmissionPathTest) ... ok (0.0001s)
+test_team_id (eval_lib.tests.submissions_test.ParticipantFromSubmissionPathTest) ... ok (0.0001s)
+test_find_by_id (eval_lib.tests.submissions_test.SubmissionsTest) ... ok (0.0008s)
+test_get_all_attacks_ids (eval_lib.tests.submissions_test.SubmissionsTest) ... ok (0.0008s)
+test_get_external_id (eval_lib.tests.submissions_test.SubmissionsTest) ... ok (0.0007s)
+test_init_from_datastore (eval_lib.tests.submissions_test.SubmissionsTest) ... ok (0.0011s)
+test_init_from_storage (eval_lib.tests.submissions_test.SubmissionsTest) ... ok (0.0015s)
+test_init_from_adversarial_batches (eval_lib.tests.work_data_test.AttackWorkPiecesTest) ... ok (0.0006s)
+test_init_from_classification_batches (eval_lib.tests.work_data_test.DefenseWorkPiecesTest) ... ok (0.0006s)
+test_compute_work_stats (eval_lib.tests.work_data_test.WorkPiecesBaseTest) ... ok (0.0005s)
+test_is_all_work_completed (eval_lib.tests.work_data_test.WorkPiecesBaseTest) ... ok (0.0001s)
+test_is_unclaimed (eval_lib.tests.work_data_test.WorkPiecesBaseTest) ... ok (0.0001s)
+test_read_from_datastore (eval_lib.tests.work_data_test.WorkPiecesBaseTest) ... ok (0.0004s)
+test_read_undone_from_datastore (eval_lib.tests.work_data_test.WorkPiecesBaseTest) ... ok (0.0004s)
+test_read_undone_from_datastore_different_shards (eval_lib.tests.work_data_test.WorkPiecesBaseTest) ... ok (0.0004s)
+test_read_undone_from_datastore_same_shards (eval_lib.tests.work_data_test.WorkPiecesBaseTest) ... ok (0.0004s)
+test_try_pick_piece_of_work_all_completed (eval_lib.tests.work_data_test.WorkPiecesBaseTest) ... ok (0.0004s)
+test_try_pick_piece_of_work_already_claimed (eval_lib.tests.work_data_test.WorkPiecesBaseTest) ... ok (0.0004s)
+test_try_pick_piece_of_work_claimed_long_ago (eval_lib.tests.work_data_test.WorkPiecesBaseTest) ... ok (0.0006s)
+test_try_pick_piece_of_work_concurrent_update (eval_lib.tests.work_data_test.WorkPiecesBaseTest) ... ok (0.0005s)
+test_try_pick_piece_of_work_concurrent_update_of_other (eval_lib.tests.work_data_test.WorkPiecesBaseTest) ... ok (0.0006s)
+test_try_pick_piece_of_work_simple (eval_lib.tests.work_data_test.WorkPiecesBaseTest) ... ok (0.0006s)
+test_update_work_as_completed (eval_lib.tests.work_data_test.WorkPiecesBaseTest) ... ok (0.0006s)
+test_update_work_as_completed_other_values (eval_lib.tests.work_data_test.WorkPiecesBaseTest) ... ok (0.0006s)
+test_update_work_as_completed_with_error (eval_lib.tests.work_data_test.WorkPiecesBaseTest) ... ok (0.0006s)
+test_update_work_as_completed_wrong_claimed_worker (eval_lib.tests.work_data_test.WorkPiecesBaseTest) ... ok (0.0005s)
+test_write_to_datastore (eval_lib.tests.work_data_test.WorkPiecesBaseTest) ... ok (0.0004s)
+[success] 5.52% eval_lib.tests.image_batches_test.AdversarialBatchesTest.test_init_from_datastore: 0.0017s
+[success] 5.36% eval_lib.tests.image_batches_test.AdversarialBatchesTest.test_init_from_dataset_and_submissions: 0.0017s
+[success] 5.26% eval_lib.tests.image_batches_test.AdversarialBatchesTest.test_count_generated_adv_examples: 0.0016s
+[success] 4.70% eval_lib.tests.submissions_test.SubmissionsTest.test_init_from_storage: 0.0015s
+[success] 3.47% eval_lib.tests.submissions_test.SubmissionsTest.test_init_from_datastore: 0.0011s
+[success] 3.37% eval_lib.tests.classification_results_test.ClassificationResultsTest.test_init_from_adv_batches_and_submissions: 0.0010s
+[success] 2.61% eval_lib.tests.image_batches_test.DatasetBatchesTest.test_init_from_storage: 0.0008s
+[success] 2.51% eval_lib.tests.submissions_test.SubmissionsTest.test_get_all_attacks_ids: 0.0008s
+[success] 2.44% eval_lib.tests.submissions_test.SubmissionsTest.test_find_by_id: 0.0008s
+[success] 2.37% eval_lib.tests.submissions_test.SubmissionsTest.test_get_external_id: 0.0007s
+[success] 2.17% eval_lib.tests.image_batches_test.DatasetBatchesTest.test_init_from_datastore: 0.0007s
+[success] 2.03% eval_lib.tests.image_batches_test.DatasetBatchesTest.test_count_num_images: 0.0006s
+[success] 1.98% eval_lib.tests.work_data_test.AttackWorkPiecesTest.test_init_from_adversarial_batches: 0.0006s
+[success] 1.94% eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTransactionTest.test_transaction_read_write_concurrent_not_intersecting: 0.0006s
+[success] 1.92% eval_lib.tests.work_data_test.WorkPiecesBaseTest.test_try_pick_piece_of_work_simple: 0.0006s
+[success] 1.91% eval_lib.tests.work_data_test.WorkPiecesBaseTest.test_try_pick_piece_of_work_claimed_long_ago: 0.0006s
+[success] 1.89% eval_lib.tests.classification_results_test.ClassificationResultsTest.test_read_batch_from_datastore: 0.0006s
+[success] 1.88% eval_lib.tests.work_data_test.WorkPiecesBaseTest.test_update_work_as_completed: 0.0006s
+[success] 1.87% eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTransactionTest.test_transaction_read_concurrent: 0.0006s
+[success] 1.86% eval_lib.tests.work_data_test.WorkPiecesBaseTest.test_try_pick_piece_of_work_concurrent_update_of_other: 0.0006s
+[success] 1.84% eval_lib.tests.work_data_test.WorkPiecesBaseTest.test_update_work_as_completed_other_values: 0.0006s
+[success] 1.84% eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTransactionTest.test_transaction_read_write_no_concurrent: 0.0006s
+[success] 1.82% eval_lib.tests.work_data_test.WorkPiecesBaseTest.test_update_work_as_completed_with_error: 0.0006s
+[success] 1.79% eval_lib.tests.work_data_test.DefenseWorkPiecesTest.test_init_from_classification_batches: 0.0006s
+[success] 1.73% eval_lib.tests.work_data_test.WorkPiecesBaseTest.test_try_pick_piece_of_work_concurrent_update: 0.0005s
+[success] 1.71% eval_lib.tests.image_batches_test.ImageBatchesBaseTest.test_write_to_datastore: 0.0005s
+[success] 1.65% eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTransactionTest.test_transaction_write_only_no_concurrent: 0.0005s
+[success] 1.61% eval_lib.tests.work_data_test.WorkPiecesBaseTest.test_update_work_as_completed_wrong_claimed_worker: 0.0005s
+[success] 1.59% eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTransactionTest.test_transaction_write_concurrent: 0.0005s
+[success] 1.45% eval_lib.tests.work_data_test.WorkPiecesBaseTest.test_compute_work_stats: 0.0005s
+[success] 1.40% eval_lib.tests.work_data_test.WorkPiecesBaseTest.test_read_undone_from_datastore_same_shards: 0.0004s
+[success] 1.38% eval_lib.tests.work_data_test.WorkPiecesBaseTest.test_write_to_datastore: 0.0004s
+[success] 1.36% eval_lib.tests.work_data_test.WorkPiecesBaseTest.test_read_undone_from_datastore_different_shards: 0.0004s
+[success] 1.32% eval_lib.tests.work_data_test.WorkPiecesBaseTest.test_read_from_datastore: 0.0004s
+[success] 1.30% eval_lib.tests.work_data_test.WorkPiecesBaseTest.test_read_undone_from_datastore: 0.0004s
+[success] 1.28% eval_lib.tests.work_data_test.WorkPiecesBaseTest.test_try_pick_piece_of_work_already_claimed: 0.0004s
+[success] 1.22% eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTest.test_overwrite_values: 0.0004s
+[success] 1.16% eval_lib.tests.work_data_test.WorkPiecesBaseTest.test_try_pick_piece_of_work_all_completed: 0.0004s
+[success] 1.11% eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTest.test_write_batch: 0.0003s
+[success] 1.05% eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTest.test_query_fetch_data_filter: 0.0003s
+[success] 1.01% eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTest.test_query_fetch_ancestor_filter: 0.0003s
+[success] 0.98% eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTest.test_get_entity: 0.0003s
+[success] 0.95% eval_lib.tests.image_batches_test.ImageBatchesBaseTest.test_write_single_batch_images_to_datastore: 0.0003s
+[success] 0.79% eval_lib.tests.classification_results_test.ClassificationResultsTest.test_analyze_one_classification_result: 0.0002s
+[success] 0.75% eval_lib.tests.classification_results_test.ClassificationResultsTest.test_compute_classification_results_from_defense_work: 0.0002s
+[success] 0.70% eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTest.test_put_entity: 0.0002s
+[success] 0.53% eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTest.test_query_fetch_kind_filter: 0.0002s
+[success] 0.51% eval_lib.tests.fake_cloud_client_test.FakeDatastoreEntityTest.test_deep_copy: 0.0002s
+[success] 0.49% eval_lib.tests.fake_cloud_client_test.FakeStorageClientTest.test_list_blobs: 0.0002s
+[success] 0.45% eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTest.test_query_fetch_all: 0.0001s
+[success] 0.42% eval_lib.tests.fake_cloud_client_test.FakeDatastoreEntityTest.test_equality_dict: 0.0001s
+[success] 0.41% eval_lib.tests.fake_cloud_client_test.FakeStorageClientTest.test_get_blob: 0.0001s
+[success] 0.41% eval_lib.tests.classification_results_test.ClassificationResultsTest.test_read_classification_results: 0.0001s
+[success] 0.41% eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTest.test_query_fetch_ancestor_and_kind_filter: 0.0001s
+[success] 0.40% eval_lib.tests.work_data_test.WorkPiecesBaseTest.test_is_all_work_completed: 0.0001s
+[success] 0.38% eval_lib.tests.fake_cloud_client_test.FakeDatastoreEntityTest.test_copy: 0.0001s
+[success] 0.33% eval_lib.tests.image_batches_test.ImageBatchesBaseTest.test_add_batch: 0.0001s
+[success] 0.32% eval_lib.tests.fake_cloud_client_test.FakeDatastoreKeyTest.test_equality: 0.0001s
+[success] 0.32% eval_lib.tests.image_batches_test.ImageBatchesBaseTest.test_add_image: 0.0001s
+[success] 0.31% eval_lib.tests.fake_cloud_client_test.FakeDatastoreEntityTest.test_equality_keys: 0.0001s
+[success] 0.30% eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTest.test_make_entity: 0.0001s
+[success] 0.30% eval_lib.tests.fake_cloud_client_test.FakeDatastoreKeyTest.test_flat_path: 0.0001s
+[success] 0.28% eval_lib.tests.submissions_test.ParticipantFromSubmissionPathTest.test_tar_gz_extension: 0.0001s
+[success] 0.28% eval_lib.tests.work_data_test.WorkPiecesBaseTest.test_is_unclaimed: 0.0001s
+[success] 0.27% eval_lib.tests.fake_cloud_client_test.FakeDatastoreClientTest.test_make_key: 0.0001s
+[success] 0.26% eval_lib.tests.submissions_test.ParticipantFromSubmissionPathTest.test_tar_extension: 0.0001s
+[success] 0.26% eval_lib.tests.submissions_test.ParticipantFromSubmissionPathTest.test_baseline_id: 0.0001s
+[success] 0.25% eval_lib.tests.submissions_test.ParticipantFromSubmissionPathTest.test_team_id: 0.0001s
+[success] 0.25% eval_lib.tests.fake_cloud_client_test.FakeDatastoreEntityTest.test_key: 0.0001s
+----------------------------------------------------------------------
+Ran 69 tests in 0.038s
+OK
+The command "nosetests --with-timer -v --nologcapture -w examples/nips17_adversarial_competition/eval_infra/code/ eval_lib/tests/" exited with 0.
+17.29s$ if [[ "$PYTORCH" == True ]]; then nosetests --with-timer --nologcapture -v --stop cleverhans/future/torch/tests; elif [[ "$PYTORCH" == False ]]; then if [[ "$TENSORFLOW_V" == "1.8.0" ]]; then nosetests -v --with-timer --nologcapture --stop --exclude-dir=cleverhans/experimental/certification cleverhans; else nosetests -v --with-timer --nologcapture --stop cleverhans; fi; for test_path in tests_tf/*.py ; do nosetests --with-timer --nocapture -v --stop $test_path; done fi
+test_adv_example_success_rate_l1 (test_attacks.TestFastGradientMethod) ... ok (0.0042s)
+test_adv_example_success_rate_l2 (test_attacks.TestFastGradientMethod) ... ok (0.0030s)
+test_adv_example_success_rate_linf (test_attacks.TestFastGradientMethod) ... ok (0.0010s)
+test_clips (test_attacks.TestFastGradientMethod) ... ok (0.0024s)
+test_eps (test_attacks.TestFastGradientMethod) ... SKIP
+test_eps_equals_zero (test_attacks.TestFastGradientMethod) ... ok (0.0005s)
+test_invalid_clips (test_attacks.TestFastGradientMethod) ... ok (0.0003s)
+test_invalid_eps (test_attacks.TestFastGradientMethod) ... ok (0.0003s)
+test_invalid_input (test_attacks.TestFastGradientMethod) ... ok (0.0021s)
+test_targeted_adv_example_success_rate_l1 (test_attacks.TestFastGradientMethod) ... ok (0.0013s)
+test_targeted_adv_example_success_rate_l2 (test_attacks.TestFastGradientMethod) ... ok (0.0011s)
+test_targeted_adv_example_success_rate_linf (test_attacks.TestFastGradientMethod) ... ok (0.0010s)
+test_generate_np_targeted_linf (test_attacks.TestHopSkipJumpAttack) ... ok (0.4848s)
+test_generate_np_untargeted_l2 (test_attacks.TestHopSkipJumpAttack) ... ok (0.5272s)
+test_generate_targeted_l2 (test_attacks.TestHopSkipJumpAttack) ... ok (0.8133s)
+test_generate_untargeted_linf (test_attacks.TestHopSkipJumpAttack) ... ok (0.8328s)
+test_adv_example_success_rate_l1 (test_attacks.TestProjectedGradientMethod) ... ok (0.0003s)
+test_adv_example_success_rate_l2 (test_attacks.TestProjectedGradientMethod) ... ok (0.0165s)
+test_adv_example_success_rate_linf (test_attacks.TestProjectedGradientMethod) ... ok (0.0108s)
+test_attack_does_not_cache_graph_computation_for_nb_iter (test_attacks.TestProjectedGradientMethod) ... ok (0.0002s)
+test_attack_strength (test_attacks.TestProjectedGradientMethod) ... ok (0.0030s)
+test_clip_eta (test_attacks.TestProjectedGradientMethod) ... SKIP
+test_clips (test_attacks.TestProjectedGradientMethod) ... ok (0.0141s)
+test_do_not_reach_lp_boundary (test_attacks.TestProjectedGradientMethod) ... ok (0.0126s)
+test_eps (test_attacks.TestProjectedGradientMethod) ... SKIP
+test_eps_equals_zero (test_attacks.TestProjectedGradientMethod) ... ok (0.0004s)
+test_eps_iter_equals_zero (test_attacks.TestProjectedGradientMethod) ... ok (0.0005s)
+test_invalid_clips (test_attacks.TestProjectedGradientMethod) ... ok (0.0003s)
+test_invalid_eps (test_attacks.TestProjectedGradientMethod) ... ok (0.0003s)
+test_invalid_eps_iter (test_attacks.TestProjectedGradientMethod) ... ok (0.0003s)
+test_invalid_input (test_attacks.TestProjectedGradientMethod) ... ok (0.0021s)
+test_multiple_initial_random_step (test_attacks.TestProjectedGradientMethod) ... ok (0.0128s)
+test_targeted_adv_example_success_rate_l1 (test_attacks.TestProjectedGradientMethod) ... ok (0.0003s)
+test_targeted_adv_example_success_rate_l2 (test_attacks.TestProjectedGradientMethod) ... ok (0.0164s)
+test_targeted_adv_example_success_rate_linf (test_attacks.TestProjectedGradientMethod) ... ok (0.0121s)
+test_adv_example_success_rate_l1 (test_attacks.TestSPSA) ... ok (0.0006s)
+test_adv_example_success_rate_l2 (test_attacks.TestSPSA) ... ok (3.1184s)
+test_adv_example_success_rate_linf (test_attacks.TestSPSA) ... ok (2.5827s)
+test_attack_strength (test_attacks.TestSPSA) ... ok (1.1556s)
+test_clips (test_attacks.TestSPSA) ... ok (0.6665s)
+test_eps (test_attacks.TestSPSA) ... ok (0.5892s)
+test_eps_equals_zero (test_attacks.TestSPSA) ... ok (0.0014s)
+test_invalid_clips (test_attacks.TestSPSA) ... ok (0.0004s)
+test_invalid_eps (test_attacks.TestSPSA) ... ok (0.0004s)
+test_invalid_input (test_attacks.TestSPSA) ... ok (0.0012s)
+test_targeted_adv_example_success_rate_l1 (test_attacks.TestSPSA) ... ok (0.0004s)
+test_targeted_adv_example_success_rate_l2 (test_attacks.TestSPSA) ... ok (3.1834s)
+test_targeted_adv_example_success_rate_linf (test_attacks.TestSPSA) ... ok (2.6740s)
+test_clip_eta_l1 (test_utils.TestOptimizeLinear) ... ok (0.0003s)
+test_clip_eta_l2 (test_utils.TestOptimizeLinear) ... ok (0.0004s)
+test_clip_eta_linf (test_utils.TestOptimizeLinear) ... ok (0.0003s)
+test_optimize_linear_l1 (test_utils.TestOptimizeLinear) ... ok (0.0006s)
+test_optimize_linear_l1_satisfies_norm_constraint (test_utils.TestOptimizeLinear) ... ok (0.0011s)
+test_optimize_linear_l1_ties (test_utils.TestOptimizeLinear) ... ok (0.0006s)
+test_optimize_linear_l2 (test_utils.TestOptimizeLinear) ... ok (0.0006s)
+test_optimize_linear_l2_satisfies_norm_constraint (test_utils.TestOptimizeLinear) ... ok (0.0014s)
+test_optimize_linear_linf (test_utils.TestOptimizeLinear) ... ok (0.0005s)
+test_optimize_linear_linf_satisfies_norm_constraint (test_utils.TestOptimizeLinear) ... ok (0.0008s)
+[success] 19.00% test_attacks.TestSPSA.test_targeted_adv_example_success_rate_l2: 3.1834s
+[success] 18.61% test_attacks.TestSPSA.test_adv_example_success_rate_l2: 3.1184s
+[success] 15.96% test_attacks.TestSPSA.test_targeted_adv_example_success_rate_linf: 2.6740s
+[success] 15.41% test_attacks.TestSPSA.test_adv_example_success_rate_linf: 2.5827s
+[success] 6.90% test_attacks.TestSPSA.test_attack_strength: 1.1556s
+[success] 4.97% test_attacks.TestHopSkipJumpAttack.test_generate_untargeted_linf: 0.8328s
+[success] 4.85% test_attacks.TestHopSkipJumpAttack.test_generate_targeted_l2: 0.8133s
+[success] 3.98% test_attacks.TestSPSA.test_clips: 0.6665s
+[success] 3.52% test_attacks.TestSPSA.test_eps: 0.5892s
+[success] 3.15% test_attacks.TestHopSkipJumpAttack.test_generate_np_untargeted_l2: 0.5272s
+[success] 2.89% test_attacks.TestHopSkipJumpAttack.test_generate_np_targeted_linf: 0.4848s
+[success] 0.10% test_attacks.TestProjectedGradientMethod.test_adv_example_success_rate_l2: 0.0165s
+[success] 0.10% test_attacks.TestProjectedGradientMethod.test_targeted_adv_example_success_rate_l2: 0.0164s
+[success] 0.08% test_attacks.TestProjectedGradientMethod.test_clips: 0.0141s
+[success] 0.08% test_attacks.TestProjectedGradientMethod.test_multiple_initial_random_step: 0.0128s
+[success] 0.08% test_attacks.TestProjectedGradientMethod.test_do_not_reach_lp_boundary: 0.0126s
+[success] 0.07% test_attacks.TestProjectedGradientMethod.test_targeted_adv_example_success_rate_linf: 0.0121s
+[success] 0.06% test_attacks.TestProjectedGradientMethod.test_adv_example_success_rate_linf: 0.0108s
+[success] 0.02% test_attacks.TestFastGradientMethod.test_adv_example_success_rate_l1: 0.0042s
+[success] 0.02% test_attacks.TestProjectedGradientMethod.test_attack_strength: 0.0030s
+[success] 0.02% test_attacks.TestFastGradientMethod.test_adv_example_success_rate_l2: 0.0030s
+[success] 0.01% test_attacks.TestFastGradientMethod.test_clips: 0.0024s
+[success] 0.01% test_attacks.TestProjectedGradientMethod.test_invalid_input: 0.0021s
+[success] 0.01% test_attacks.TestFastGradientMethod.test_invalid_input: 0.0021s
+[success] 0.01% test_utils.TestOptimizeLinear.test_optimize_linear_l2_satisfies_norm_constraint: 0.0014s
+[success] 0.01% test_attacks.TestSPSA.test_eps_equals_zero: 0.0014s
+[success] 0.01% test_attacks.TestFastGradientMethod.test_targeted_adv_example_success_rate_l1: 0.0013s
+[success] 0.01% test_attacks.TestSPSA.test_invalid_input: 0.0012s
+[success] 0.01% test_utils.TestOptimizeLinear.test_optimize_linear_l1_satisfies_norm_constraint: 0.0011s
+[success] 0.01% test_attacks.TestFastGradientMethod.test_targeted_adv_example_success_rate_l2: 0.0011s
+[success] 0.01% test_attacks.TestFastGradientMethod.test_adv_example_success_rate_linf: 0.0010s
+[success] 0.01% test_attacks.TestFastGradientMethod.test_targeted_adv_example_success_rate_linf: 0.0010s
+[success] 0.00% test_utils.TestOptimizeLinear.test_optimize_linear_linf_satisfies_norm_constraint: 0.0008s
+[success] 0.00% test_utils.TestOptimizeLinear.test_optimize_linear_l2: 0.0006s
+[success] 0.00% test_utils.TestOptimizeLinear.test_optimize_linear_l1: 0.0006s
+[success] 0.00% test_attacks.TestSPSA.test_adv_example_success_rate_l1: 0.0006s
+[success] 0.00% test_utils.TestOptimizeLinear.test_optimize_linear_l1_ties: 0.0006s
+[success] 0.00% test_utils.TestOptimizeLinear.test_optimize_linear_linf: 0.0005s
+[success] 0.00% test_attacks.TestFastGradientMethod.test_eps_equals_zero: 0.0005s
+[success] 0.00% test_attacks.TestProjectedGradientMethod.test_eps_iter_equals_zero: 0.0005s
+[success] 0.00% test_utils.TestOptimizeLinear.test_clip_eta_l2: 0.0004s
+[success] 0.00% test_attacks.TestProjectedGradientMethod.test_eps_equals_zero: 0.0004s
+[success] 0.00% test_attacks.TestSPSA.test_targeted_adv_example_success_rate_l1: 0.0004s
+[success] 0.00% test_attacks.TestSPSA.test_invalid_eps: 0.0004s
+[success] 0.00% test_attacks.TestSPSA.test_invalid_clips: 0.0004s
+[success] 0.00% test_attacks.TestProjectedGradientMethod.test_adv_example_success_rate_l1: 0.0003s
+[success] 0.00% test_attacks.TestProjectedGradientMethod.test_targeted_adv_example_success_rate_l1: 0.0003s
+[success] 0.00% test_attacks.TestFastGradientMethod.test_invalid_clips: 0.0003s
+[success] 0.00% test_attacks.TestProjectedGradientMethod.test_invalid_clips: 0.0003s
+[success] 0.00% test_attacks.TestProjectedGradientMethod.test_invalid_eps_iter: 0.0003s
+[success] 0.00% test_attacks.TestProjectedGradientMethod.test_invalid_eps: 0.0003s
+[success] 0.00% test_attacks.TestFastGradientMethod.test_invalid_eps: 0.0003s
+[success] 0.00% test_utils.TestOptimizeLinear.test_clip_eta_linf: 0.0003s
+[success] 0.00% test_utils.TestOptimizeLinear.test_clip_eta_l1: 0.0003s
+[success] 0.00% test_attacks.TestProjectedGradientMethod.test_attack_does_not_cache_graph_computation_for_nb_iter: 0.0002s
+----------------------------------------------------------------------
+Ran 58 tests in 17.019s

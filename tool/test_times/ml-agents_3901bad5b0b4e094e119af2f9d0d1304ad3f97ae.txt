@@ -1,0 +1,395 @@
+============================ slowest test durations ============================
+ 
+63.06s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_2d_sac[False]
+ 
+56.21s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_recurrent_sac[False]
+ 
+53.81s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_recurrent_ppo[True]
+ 
+50.09s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_2d_sac[True]
+ 
+48.56s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_recurrent_sac[True]
+ 
+34.42s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_simple_asymm_ghost[False]
+ 
+34.05s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_simple_asymm_ghost[True]
+ 
+26.18s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_recurrent_ppo[False]
+ 
+26.17s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_visual_advanced_ppo[resnet-2]
+ 
+23.46s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_gail_visual_sac[False]
+ 
+22.50s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_gail_visual_sac[True]
+ 
+19.68s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_2d_ppo[True]
+ 
+19.56s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_simple_asymm_ghost_fails[False]
+ 
+18.91s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_simple_asymm_ghost_fails[True]
+ 
+18.91s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_gail[trainer_config1-True]
+ 
+17.93s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_2d_ppo[False]
+ 
+17.58s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_gail[trainer_config1-False]
+ 
+14.37s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_simple_ghost_fails[True]
+ 
+14.33s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_visual_advanced_sac[resnet-2]
+ 
+11.59s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_simple_ghost[False]
+ 
+11.56s call     ml-agents/mlagents/trainers/tests/test_subprocess_env_manager.py::test_subprocess_env_endtoend[1]
+ 
+11.50s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_visual_sac[2-True]
+ 
+11.36s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_simple_ghost_fails[False]
+ 
+11.29s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_simple_ghost[True]
+ 
+11.10s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_visual_sac[2-False]
+ 
+10.99s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_visual_sac[1-True]
+ 
+10.94s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_visual_ppo[2-True]
+ 
+10.32s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_visual_sac[1-False]
+ 
+9.06s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_visual_ppo[2-False]
+ 
+9.05s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_visual_advanced_ppo[resnet-1]
+ 
+9.01s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_visual_advanced_sac[resnet-1]
+ 
+8.70s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_visual_ppo[1-False]
+ 
+8.49s call     ml-agents/mlagents/trainers/tests/test_subprocess_env_manager.py::test_subprocess_env_endtoend[4]
+ 
+8.45s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_visual_ppo[1-True]
+ 
+6.53s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_visual_advanced_ppo[nature_cnn-2]
+ 
+6.33s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_gail_visual_ppo[False]
+ 
+6.25s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_gail_visual_ppo[True]
+ 
+5.82s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_simple_ppo[True]
+ 
+5.53s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_simple_ppo[False]
+ 
+5.13s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_simple_sac[False]
+ 
+5.07s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_simple_sac[True]
+ 
+4.90s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_visual_advanced_sac[nature_cnn-2]
+ 
+4.51s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_visual_advanced_ppo[nature_cnn-1]
+ 
+4.37s call     ml-agents/mlagents/trainers/tests/test_sac.py::test_sac_optimizer_update[rnn-visual-continuous]
+ 
+4.28s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_gail[trainer_config0-False]
+ 
+4.23s call     ml-agents/mlagents/trainers/tests/test_sac.py::test_sac_optimizer_update[rnn-vector-continuous]
+ 
+4.22s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_optimizer_update_curiosity[rnn-visual-discrete]
+ 
+4.21s call     ml-agents/mlagents/trainers/tests/test_reward_signals.py::test_gail_rnn[sac]
+ 
+3.94s call     ml-agents/mlagents/trainers/tests/test_sac.py::test_sac_optimizer_update[rnn-visual-discrete]
+ 
+3.79s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_optimizer_update_curiosity[rnn-vector-discrete]
+ 
+3.76s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_gail[trainer_config0-True]
+ 
+3.64s call     ml-agents/mlagents/trainers/tests/test_sac.py::test_sac_optimizer_update[rnn-vector-discrete]
+ 
+3.64s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_trainer_update_policy[True]
+ 
+3.58s call     ml-agents/mlagents/trainers/tests/test_simple_rl.py::test_visual_advanced_sac[nature_cnn-1]
+ 
+3.44s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_optimizer_update_curiosity[rnn-visual-continuous]
+ 
+3.43s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_optimizer_update_curiosity[no_rnn-visual-discrete]
+ 
+3.41s call     ml-agents/mlagents/trainers/tests/test_reward_signals.py::test_curiosity_rnn[sac]
+ 
+3.33s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_optimizer_update[rnn-visual-discrete]
+ 
+3.30s call     ml-agents/mlagents/trainers/tests/test_reward_signals.py::test_gail_cc[sac]
+ 
+3.28s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_get_value_estimates[rnn-visual-discrete]
+ 
+3.21s call     ml-agents/mlagents/trainers/tests/test_reward_signals.py::test_gail_rnn[ppo]
+ 
+3.15s call     ml-agents-envs/mlagents_envs/tests/test_registry.py::test_basic_in_registry
+ 
+3.08s call     ml-agents/mlagents/trainers/tests/test_reward_signals.py::test_gail_cc[ppo]
+ 
+2.93s call     ml-agents/mlagents/trainers/tests/test_sac.py::test_sac_save_load_buffer
+ 
+2.85s call     ml-agents/mlagents/trainers/tests/test_reward_signals.py::test_gail_dc_visual[sac]
+ 
+2.83s call     ml-agents/mlagents/trainers/tests/test_reward_signals.py::test_gail_dc_visual[ppo]
+ 
+2.81s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_optimizer_update[rnn-vector-discrete]
+ 
+2.79s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_get_value_estimates[rnn-vector-discrete]
+ 
+2.77s call     ml-agents/mlagents/trainers/tests/test_demo_loader.py::test_demo_mismatch
+ 
+2.69s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_optimizer_update_curiosity[rnn-vector-continuous]
+ 
+2.67s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_get_value_estimates[rnn-visual-continuous]
+ 
+2.64s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_trainer_update_policy[False]
+ 
+2.59s call     ml-agents/mlagents/trainers/tests/test_reward_signals.py::test_curiosity_dc[ppo]
+ 
+2.58s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_optimizer_update[rnn-visual-continuous]
+ 
+2.50s call     ml-agents/mlagents/trainers/tests/test_sac.py::test_advance
+ 
+2.49s call     ml-agents/mlagents/trainers/tests/test_reward_signals.py::test_curiosity_rnn[ppo]
+ 
+2.41s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_optimizer_update_curiosity[no_rnn-vector-discrete]
+ 
+2.34s call     ml-agents/mlagents/trainers/tests/test_ghost.py::test_publish_queue
+ 
+2.33s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_optimizer_update_curiosity[no_rnn-visual-continuous]
+ 
+2.22s call     ml-agents/mlagents/trainers/tests/test_reward_signals.py::test_curiosity_dc[sac]
+ 
+2.21s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_get_value_estimates[rnn-vector-continuous]
+ 
+2.20s call     ml-agents/mlagents/trainers/tests/test_sac.py::test_sac_update_reward_signals[discrete]
+ 
+2.18s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_optimizer_update[rnn-vector-continuous]
+ 
+2.17s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_get_value_estimates[no_rnn-visual-discrete]
+ 
+2.17s call     ml-agents/mlagents/trainers/tests/test_ghost.py::test_process_trajectory
+ 
+2.15s call     ml-agents/mlagents/trainers/tests/test_bcmodule.py::test_bcmodule_defaults
+ 
+2.11s call     ml-agents/mlagents/trainers/tests/test_reward_signals.py::test_curiosity_visual[sac]
+ 
+2.11s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_optimizer_update[no_rnn-visual-discrete]
+ 
+2.08s call     ml-agents/mlagents/trainers/tests/test_sac.py::test_sac_optimizer_update[no_rnn-visual-discrete]
+ 
+2.01s call     ml-agents/mlagents/trainers/tests/test_stats.py::test_tensorboard_writer_clear
+ 
+1.83s call     ml-agents/mlagents/trainers/tests/test_reward_signals.py::test_curiosity_visual[ppo]
+ 
+1.72s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_optimizer_update[no_rnn-vector-discrete]
+ 
+1.72s call     ml-agents/mlagents/trainers/tests/test_sac.py::test_sac_optimizer_update[no_rnn-visual-continuous]
+ 
+1.72s call     ml-agents/mlagents/trainers/tests/test_bcmodule.py::test_bcmodule_rnn_update[ppo]
+ 
+1.70s call     ml-agents/mlagents/trainers/tests/test_bcmodule.py::test_bcmodule_rnn_update[sac]
+ 
+1.67s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_optimizer_update_curiosity[no_rnn-vector-continuous]
+ 
+1.67s call     ml-agents/mlagents/trainers/tests/test_bcmodule.py::test_bcmodule_rnn_dc_update[ppo]
+ 
+1.66s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_process_trajectory
+ 
+1.62s call     ml-agents/mlagents/trainers/tests/test_sac.py::test_sac_optimizer_update[no_rnn-vector-discrete]
+ 
+1.60s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_get_value_estimates[no_rnn-vector-discrete]
+ 
+1.56s call     ml-agents/mlagents/trainers/tests/test_barracuda_converter.py::test_policy_conversion[rnn-visual-discrete]
+ 
+1.52s call     ml-agents/mlagents/trainers/tests/test_reward_signals.py::test_curiosity_cc[sac]
+ 
+1.51s call     ml-agents/mlagents/trainers/tests/test_sac.py::test_sac_optimizer_update[no_rnn-vector-continuous]
+ 
+1.51s call     ml-agents/mlagents/trainers/tests/test_sac.py::test_sac_update_reward_signals[continuous]
+ 
+1.50s call     ml-agents/mlagents/trainers/tests/test_bcmodule.py::test_bcmodule_rnn_dc_update[sac]
+ 
+1.48s call     ml-agents/mlagents/trainers/tests/test_reward_signals.py::test_curiosity_cc[ppo]
+ 
+1.47s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_optimizer_update[no_rnn-visual-continuous]
+ 
+1.42s call     ml-agents/mlagents/trainers/tests/test_nn_policy.py::test_load_save
+ 
+1.38s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_get_value_estimates[no_rnn-visual-continuous]
+ 
+1.33s call     ml-agents/mlagents/trainers/tests/test_bcmodule.py::test_bcmodule_constant_lr_update[ppo]
+ 
+1.31s call     ml-agents/mlagents/trainers/tests/test_bcmodule.py::test_bcmodule_update[ppo]
+ 
+1.27s call     ml-agents/mlagents/trainers/tests/test_bcmodule.py::test_bcmodule_constant_lr_update[sac]
+ 
+1.27s call     ml-agents/mlagents/trainers/tests/test_bcmodule.py::test_bcmodule_update[sac]
+ 
+1.17s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_optimizer_update[no_rnn-vector-continuous]
+ 
+1.17s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_optimizer_update_gail
+ 
+1.16s call     ml-agents/mlagents/trainers/tests/test_subprocess_env_manager.py::test_subprocess_env_raises_errors[4]
+ 
+1.10s call     ml-agents/mlagents/trainers/tests/test_ppo.py::test_ppo_get_value_estimates[no_rnn-vector-continuous]
+ 
+1.03s call     ml-agents/mlagents/trainers/tests/test_barracuda_converter.py::test_policy_conversion[rnn-vector-discrete]
+ 
+1.02s call     ml-agents/mlagents/trainers/tests/test_reward_signals.py::test_extrinsic[sac]
+ 
+1.02s call     ml-agents/mlagents/trainers/tests/test_bcmodule.py::test_bcmodule_dc_visual_update[sac]
+ 
+1.01s call     ml-agents/mlagents/trainers/tests/test_bcmodule.py::test_bcmodule_dc_visual_update[ppo]
+ 
+0.91s call     ml-agents/mlagents/trainers/tests/test_reward_signals.py::test_extrinsic[ppo]
+ 
+0.88s call     ml-agents/mlagents/trainers/tests/test_nn_policy.py::test_min_visual_size
+ 
+0.88s call     ml-agents/mlagents/trainers/tests/test_barracuda_converter.py::test_policy_conversion[rnn-visual-continuous]
+ 
+0.82s call     ml-agents/mlagents/trainers/tests/test_ghost.py::test_load_and_set[True]
+ 
+0.73s call     ml-agents/mlagents/trainers/tests/test_barracuda_converter.py::test_policy_conversion[no_rnn-visual-discrete]
+ 
+0.72s call     ml-agents/mlagents/trainers/tests/test_demo_loader.py::test_load_demo
+ 
+0.64s call     ml-agents/mlagents/trainers/tests/test_subprocess_env_manager.py::test_subprocess_env_raises_errors[1]
+ 
+0.63s call     ml-agents/mlagents/trainers/tests/test_barracuda_converter.py::test_policy_conversion[rnn-vector-continuous]
+ 
+0.56s call     ml-agents/mlagents/trainers/tests/test_nn_policy.py::test_policy_evaluate[rnn-visual-discrete]
+ 
+0.54s call     ml-agents/mlagents/trainers/tests/test_barracuda_converter.py::test_policy_conversion[no_rnn-vector-discrete]
+ 
+0.47s call     ml-agents/mlagents/trainers/tests/test_nn_policy.py::test_policy_evaluate[rnn-vector-discrete]
+ 
+0.44s call     ml-agents/mlagents/trainers/tests/test_barracuda_converter.py::test_policy_conversion[no_rnn-visual-continuous]
+ 
+0.42s call     ml-agents/mlagents/trainers/tests/test_nn_policy.py::test_policy_evaluate[no_rnn-visual-discrete]
+ 
+0.38s call     ml-agents/mlagents/trainers/tests/test_nn_policy.py::ModelVersionTest::test_version_compare
+ 
+0.35s call     ml-agents/mlagents/trainers/tests/test_distributions.py::test_multicategorical_distribution
+ 
+0.34s call     ml-agents/mlagents/trainers/tests/test_nn_policy.py::test_policy_evaluate[no_rnn-vector-discrete]
+ 
+0.34s call     ml-agents/mlagents/trainers/tests/test_ghost.py::test_load_and_set[False]
+ 
+0.33s call     ml-agents/mlagents/trainers/tests/test_nn_policy.py::test_policy_evaluate[rnn-visual-continuous]
+ 
+0.25s call     ml-agents/mlagents/trainers/tests/test_nn_policy.py::test_policy_evaluate[rnn-vector-continuous]
+ 
+0.25s call     ml-agents/mlagents/trainers/tests/test_barracuda_converter.py::test_policy_conversion[no_rnn-vector-continuous]
+ 
+0.22s call     ml-agents/mlagents/trainers/tests/test_nn_policy.py::test_policy_evaluate[no_rnn-visual-continuous]
+ 
+0.19s call     ml-agents/mlagents/trainers/tests/test_trainer_controller.py::test_advance_adds_experiences_to_trainer_and_trains
+ 
+0.17s call     ml-agents/mlagents/trainers/tests/test_nn_policy.py::test_normalization
+ 
+0.14s call     ml-agents/mlagents/trainers/tests/test_nn_policy.py::test_policy_evaluate[no_rnn-vector-continuous]
+ 
+0.09s call     ml-agents/mlagents/trainers/tests/test_distributions.py::test_tanh_distribution
+ 
+0.09s call     ml-agents/mlagents/trainers/tests/test_distributions.py::test_gaussian_distribution
+ 
+0.08s call     ml-agents/mlagents/trainers/tests/test_stats.py::test_csv_writer
+ 
+0.06s call     ml-agents/mlagents/trainers/tests/test_barracuda_converter.py::test_barracuda_converter
+ 
+0.05s call     ml-agents/mlagents/trainers/tests/test_settings.py::test_exportable_settings[False]
+ 
+0.03s call     ml-agents/mlagents/trainers/tests/test_demo_loader.py::test_load_demo_dir
+ 
+0.02s call     ml-agents/mlagents/trainers/tests/test_rl_trainer.py::test_advance
+ 
+0.02s call     ml-agents/mlagents/trainers/tests/test_config_conversion.py::test_convert
+ 
+0.02s call     ml-agents/mlagents/trainers/tests/test_subprocess_env_manager.py::SubprocessEnvManagerTest::test_advance
+ 
+0.02s call     ml-agents/mlagents/trainers/tests/test_learn.py::test_commandline_args
+ 
+0.01s call     ml-agents-envs/mlagents_envs/tests/test_rpc_utils.py::test_process_visual_observation
+ 
+0.01s call     gym-unity/gym_unity/tests/test_gym.py::test_gym_wrapper_multi_visual_and_vector[float]
+ 
+0.01s call     gym-unity/gym_unity/tests/test_gym.py::test_gym_wrapper_single_visual_and_vector[float]
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_stats.py::test_tensorboard_writer
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_learn.py::test_run_training
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_config_conversion.py::test_convert_behaviors[TrainerType.SAC-True]
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_learn.py::test_yaml_args
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_config_conversion.py::test_convert_behaviors[TrainerType.SAC-False]
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_config_conversion.py::test_convert_behaviors[TrainerType.PPO-True]
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_config_conversion.py::test_convert_behaviors[TrainerType.PPO-False]
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_agent_processor.py::test_agent_manager_queue
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_tf_policy.py::test_checkpoint_writes_tf_and_nn_checkpoints
+ 
+0.01s call     gym-unity/gym_unity/tests/test_gym.py::test_gym_wrapper_multi_visual_and_vector[uint8]
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_rl_trainer.py::test_summary_checkpoint
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_env_param_manager.py::test_create_manager
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_tf_policy.py::test_take_action_returns_empty_with_no_agents
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_trainer_controller.py::test_start_learning_trains_forever_if_no_train_model
+ 
+0.01s call     gym-unity/gym_unity/tests/test_gym.py::test_gym_wrapper_single_visual_and_vector[uint8]
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_tf_policy.py::test_take_action_returns_nones_on_missing_values
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_learn.py::test_bad_env_path
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_trainer_controller.py::test_start_learning_trains_until_max_steps_then_saves
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_env_param_manager.py::test_curriculum_conversion
+ 
+0.01s call     ml-agents-envs/mlagents_envs/tests/test_rpc_communicator.py::test_rpc_communicator_close
+ 
+0.01s call     ml-agents-envs/mlagents_envs/tests/test_envs.py::test_reset
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_agent_processor.py::test_agentprocessor[vec]
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_tf_policy.py::test_take_action_returns_action_info_when_available
+ 
+0.01s call     ml-agents-envs/mlagents_envs/tests/test_envs.py::test_step
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_learn.py::test_env_args
+ 
+0.01s call     gym-unity/gym_unity/tests/test_gym.py::test_gym_wrapper
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_demo_loader.py::test_unsupported_version_raises_error
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_agent_processor.py::test_agent_deletion
+ 
+0.01s call     gym-unity/gym_unity/tests/test_gym.py::test_branched_flatten
+ 
+0.01s call     gym-unity/gym_unity/tests/test_gym.py::test_gym_wrapper_visual[float]
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_agent_processor.py::test_end_episode
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_subprocess_env_manager.py::SubprocessEnvManagerTest::test_reset_collects_results_from_all_envs
+ 
+0.01s call     ml-agents-envs/mlagents_envs/tests/test_envs.py::test_close
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_env_param_manager.py::test_curriculum_raises_no_completion_criteria_conversion
+ 
+0.01s call     ml-agents-envs/mlagents_envs/tests/test_envs.py::test_initialization
+ 
+0.01s call     ml-agents/mlagents/trainers/tests/test_subprocess_env_manager.py::SubprocessEnvManagerTest::test_step_takes_steps_for_all_non_waiting_envs
+ 
+
+ 
+(0.00 durations hidden.  Use -vv to show these durations.)
+ 
+================== 299 passed, 1 warning in 627.94s (0:10:27) ==================

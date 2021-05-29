@@ -1,0 +1,1 @@
+gensim/test/test_sklearn_api.py::TestLdaWrapper::testSetGetParams gensim/test/test_sklearn_api.py::TestLdaWrapper::testTransform gensim/test/test_sklearn_api.py::TestLdaSeqWrapper::testTransform gensim/test/test_sklearn_api.py::TestLdaSeqWrapper::testSetGetParams gensim/test/test_word2vec.py::TestWord2VecModel::testParallel

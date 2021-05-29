@@ -1,0 +1,284 @@
+============================= test session starts ==============================
+platform linux -- Python 3.7.7, pytest-5.4.3, py-1.9.0, pluggy-0.13.1 -- /home/aryaman4/anaconda3/envs/autokeras/bin/python
+cachedir: .pytest_cache
+rootdir: /home/aryaman4/autokeras, inifile: setup.cfg
+plugins: cov-2.10.0, forked-1.2.0, xdist-1.32.0, typeguard-2.9.1
+collecting ... collected 152 items
+
+tests/autokeras/auto_model_test.py::test_evaluate PASSED                 [  0%]
+tests/autokeras/auto_model_test.py::test_auto_model_predict PASSED       [  1%]
+tests/autokeras/auto_model_test.py::test_final_fit_concat PASSED         [  1%]
+tests/autokeras/auto_model_test.py::test_final_fit_not_concat PASSED     [  2%]
+tests/autokeras/auto_model_test.py::test_overwrite PASSED                [  3%]
+tests/autokeras/auto_model_test.py::test_export_model PASSED             [  3%]
+tests/autokeras/auto_model_test.py::test_multi_io_with_tf_dataset PASSED [  4%]
+tests/autokeras/auto_model_test.py::test_single_nested_dataset PASSED    [  5%]
+tests/autokeras/auto_model_test.py::test_data_io_consistency_input PASSED [  5%]
+tests/autokeras/auto_model_test.py::test_data_io_consistency_output PASSED [  6%]
+tests/autokeras/auto_model_test.py::test_data_io_consistency_validation PASSED [  7%]
+tests/autokeras/auto_model_test.py::test_dataset_and_y PASSED            [  7%]
+tests/autokeras/auto_model_test.py::test_multi_input_predict PASSED      [  8%]
+tests/autokeras/auto_model_test.py::test_multi_input_predict2 PASSED     [  9%]
+tests/autokeras/auto_model_test.py::test_single_input_predict PASSED     [  9%]
+tests/autokeras/graph_test.py::test_set_hp PASSED                        [ 10%]
+tests/autokeras/graph_test.py::test_input_output_disconnect PASSED       [ 11%]
+tests/autokeras/graph_test.py::test_hyper_graph_cycle PASSED             [ 11%]
+tests/autokeras/graph_test.py::test_input_missing PASSED                 [ 12%]
+tests/autokeras/graph_test.py::test_graph_basics PASSED                  [ 13%]
+tests/autokeras/graph_test.py::test_graph_save_load PASSED               [ 13%]
+tests/autokeras/graph_test.py::test_merge PASSED                         [ 14%]
+tests/autokeras/graph_test.py::test_save_custom_metrics_loss PASSED      [ 15%]
+tests/autokeras/keras_layers_test.py::test_multi_column_categorical_encoding PASSED [ 15%]
+tests/autokeras/keras_layers_test.py::test_model_save PASSED             [ 16%]
+tests/autokeras/keras_layers_test.py::test_weight_save PASSED            [ 17%]
+tests/autokeras/typed_api_test.py::test_api_surface_is_typed PASSED      [ 17%]
+tests/autokeras/adapters/input_adapter_test.py::test_structured_data_input_col_type_without_name PASSED [ 18%]
+tests/autokeras/adapters/input_adapter_test.py::test_structured_data_input_less_col_name PASSED [ 19%]
+tests/autokeras/adapters/input_adapter_test.py::test_structured_data_input_name_type_mismatch PASSED [ 19%]
+tests/autokeras/adapters/input_adapter_test.py::test_structured_data_input_unsupported_type PASSED [ 20%]
+tests/autokeras/adapters/input_adapter_test.py::test_structured_data_input_transform PASSED [ 21%]
+tests/autokeras/adapters/input_adapter_test.py::test_structured_data_input_dataset PASSED [ 21%]
+tests/autokeras/adapters/input_adapter_test.py::test_partial_column_types PASSED [ 22%]
+tests/autokeras/adapters/input_adapter_test.py::test_image_input PASSED  [ 23%]
+tests/autokeras/adapters/input_adapter_test.py::test_image_input_with_three_dim PASSED [ 23%]
+tests/autokeras/adapters/input_adapter_test.py::test_image_input_with_illegal_dim PASSED [ 24%]
+tests/autokeras/adapters/input_adapter_test.py::test_image_input_unsupported_type PASSED [ 25%]
+tests/autokeras/adapters/input_adapter_test.py::test_image_input_numerical PASSED [ 25%]
+tests/autokeras/adapters/input_adapter_test.py::test_input_type_error PASSED [ 26%]
+tests/autokeras/adapters/input_adapter_test.py::test_input_numerical PASSED [ 26%]
+tests/autokeras/adapters/input_adapter_test.py::test_text_dataset PASSED [ 27%]
+tests/autokeras/adapters/input_adapter_test.py::test_text_dataset_batch PASSED [ 28%]
+tests/autokeras/adapters/input_adapter_test.py::test_text_np PASSED      [ 28%]
+tests/autokeras/adapters/input_adapter_test.py::test_text_input_type_error PASSED [ 29%]
+tests/autokeras/adapters/input_adapter_test.py::test_text_input_with_illegal_dim PASSED [ 30%]
+tests/autokeras/adapters/input_adapter_test.py::test_text_string PASSED  [ 30%]
+tests/autokeras/adapters/input_adapter_test.py::test_time_series_input_type_error PASSED [ 31%]
+tests/autokeras/adapters/input_adapter_test.py::test_time_series_input_with_illegal_dim PASSED [ 32%]
+tests/autokeras/adapters/input_adapter_test.py::test_time_series_input_col_type_without_name PASSED [ 32%]
+tests/autokeras/adapters/input_adapter_test.py::test_time_series_input_less_col_name PASSED [ 33%]
+tests/autokeras/adapters/input_adapter_test.py::test_time_series_input_name_type_mismatch PASSED [ 34%]
+tests/autokeras/adapters/input_adapter_test.py::test_time_series_input_transform PASSED [ 34%]
+tests/autokeras/adapters/output_adapter_test.py::test_y_is_pd_series PASSED [ 35%]
+tests/autokeras/adapters/output_adapter_test.py::test_unsupported_types PASSED [ 36%]
+tests/autokeras/adapters/output_adapter_test.py::test_one_class PASSED   [ 36%]
+tests/autokeras/adapters/output_adapter_test.py::test_infer_num_classes PASSED [ 37%]
+tests/autokeras/adapters/output_adapter_test.py::test_infer_two_classes PASSED [ 38%]
+tests/autokeras/adapters/output_adapter_test.py::test_check_data_shape PASSED [ 38%]
+tests/autokeras/adapters/output_adapter_test.py::test_check_data_shape_two_classes PASSED [ 39%]
+tests/autokeras/adapters/output_adapter_test.py::test_check_data_shape_error PASSED [ 40%]
+tests/autokeras/adapters/output_adapter_test.py::test_multi_label_two_classes PASSED [ 40%]
+tests/autokeras/adapters/output_adapter_test.py::test_multi_label_postprocessing PASSED [ 41%]
+tests/autokeras/blocks/basic_test.py::test_resnet_build_return_tensor PASSED [ 42%]
+tests/autokeras/blocks/basic_test.py::test_resnet_deserialize_to_resnet PASSED [ 42%]
+tests/autokeras/blocks/basic_test.py::test_resnet_get_config_has_all_attributes PASSED [ 43%]
+tests/autokeras/blocks/basic_test.py::test_resnet_init_error_with_include_top PASSED [ 44%]
+tests/autokeras/blocks/basic_test.py::test_resnet_init_error_with_input_shape PASSED [ 44%]
+tests/autokeras/blocks/basic_test.py::test_xception_build_return_tensor PASSED [ 45%]
+tests/autokeras/blocks/basic_test.py::test_xception_deserialize_to_xception PASSED [ 46%]
+tests/autokeras/blocks/basic_test.py::test_xception_get_config_has_all_attributes PASSED [ 46%]
+tests/autokeras/blocks/basic_test.py::test_xception_init_error_with_include_top PASSED [ 47%]
+tests/autokeras/blocks/basic_test.py::test_xception_init_error_with_input_shape PASSED [ 48%]
+tests/autokeras/blocks/basic_test.py::test_conv_build_return_tensor PASSED [ 48%]
+tests/autokeras/blocks/basic_test.py::test_conv_deserialize_to_conv PASSED [ 49%]
+tests/autokeras/blocks/basic_test.py::test_conv_get_config_has_all_attributes PASSED [ 50%]
+tests/autokeras/blocks/basic_test.py::test_rnn_build_return_tensor PASSED [ 50%]
+tests/autokeras/blocks/basic_test.py::test_rnn_deserialize_to_rnn PASSED [ 51%]
+tests/autokeras/blocks/basic_test.py::test_rnn_get_config_has_all_attributes PASSED [ 51%]
+tests/autokeras/blocks/basic_test.py::test_dense_build_return_tensor PASSED [ 52%]
+tests/autokeras/blocks/basic_test.py::test_dense_deserialize_to_dense PASSED [ 53%]
+tests/autokeras/blocks/basic_test.py::test_dense_get_config_has_all_attributes PASSED [ 53%]
+tests/autokeras/blocks/basic_test.py::test_embed_build_return_tensor PASSED [ 54%]
+tests/autokeras/blocks/basic_test.py::test_embed_deserialize_to_embed PASSED [ 55%]
+tests/autokeras/blocks/basic_test.py::test_embed_get_config_has_all_attributes PASSED [ 55%]
+tests/autokeras/blocks/heads_test.py::test_two_classes PASSED            [ 56%]
+tests/autokeras/blocks/heads_test.py::test_three_classes PASSED          [ 57%]
+tests/autokeras/blocks/heads_test.py::test_multi_label_loss PASSED       [ 57%]
+tests/autokeras/blocks/heads_test.py::test_segmentation PASSED           [ 58%]
+tests/autokeras/blocks/preprocessing_test.py::test_augment_build_return_tensor PASSED [ 59%]
+tests/autokeras/blocks/preprocessing_test.py::test_augment_deserialize_to_augment PASSED [ 59%]
+tests/autokeras/blocks/preprocessing_test.py::test_augment_get_config_has_all_attributes PASSED [ 60%]
+tests/autokeras/blocks/preprocessing_test.py::test_ngram_build_return_tensor PASSED [ 61%]
+tests/autokeras/blocks/preprocessing_test.py::test_ngram_deserialize_to_ngram PASSED [ 61%]
+tests/autokeras/blocks/preprocessing_test.py::test_ngram_get_config_has_all_attributes PASSED [ 62%]
+tests/autokeras/blocks/preprocessing_test.py::test_int_seq_build_return_tensor PASSED [ 63%]
+tests/autokeras/blocks/preprocessing_test.py::test_int_seq_deserialize_to_int_seq PASSED [ 63%]
+tests/autokeras/blocks/preprocessing_test.py::test_int_seq_get_config_has_all_attributes PASSED [ 64%]
+tests/autokeras/blocks/preprocessing_test.py::test_cat_to_num_build_return_tensor PASSED [ 65%]
+tests/autokeras/blocks/preprocessing_test.py::test_cat_to_num_deserialize_to_cat_to_num PASSED [ 65%]
+tests/autokeras/blocks/preprocessing_test.py::test_cat_to_num_get_config_has_all_attributes PASSED [ 66%]
+tests/autokeras/blocks/reduction_test.py::test_merge_build_return_tensor PASSED [ 67%]
+tests/autokeras/blocks/reduction_test.py::test_merge_deserialize_to_merge PASSED [ 67%]
+tests/autokeras/blocks/reduction_test.py::test_merge_get_config_has_all_attributes PASSED [ 68%]
+tests/autokeras/blocks/reduction_test.py::test_temporal_build_return_tensor PASSED [ 69%]
+tests/autokeras/blocks/reduction_test.py::test_temporal_deserialize_to_temporal PASSED [ 69%]
+tests/autokeras/blocks/reduction_test.py::test_temporal_get_config_has_all_attributes PASSED [ 70%]
+tests/autokeras/blocks/reduction_test.py::test_spatial_build_return_tensor PASSED [ 71%]
+tests/autokeras/blocks/reduction_test.py::test_spatial_deserialize_to_spatial PASSED [ 71%]
+tests/autokeras/blocks/reduction_test.py::test_spatial_get_config_has_all_attributes PASSED [ 72%]
+tests/autokeras/blocks/wrapper_test.py::test_image_build_return_tensor PASSED [ 73%]
+tests/autokeras/blocks/wrapper_test.py::test_image_deserialize_to_image PASSED [ 73%]
+tests/autokeras/blocks/wrapper_test.py::test_image_get_config_has_all_attributes PASSED [ 74%]
+tests/autokeras/blocks/wrapper_test.py::test_text_build_return_tensor PASSED [ 75%]
+tests/autokeras/blocks/wrapper_test.py::test_text_deserialize_to_text PASSED [ 75%]
+tests/autokeras/blocks/wrapper_test.py::test_text_get_config_has_all_attributes PASSED [ 76%]
+tests/autokeras/blocks/wrapper_test.py::test_structured_build_return_tensor PASSED [ 76%]
+tests/autokeras/blocks/wrapper_test.py::test_structured_deserialize_to_structured PASSED [ 77%]
+tests/autokeras/blocks/wrapper_test.py::test_structured_get_config_has_all_attributes PASSED [ 78%]
+tests/autokeras/blocks/wrapper_test.py::test_timeseries_build_return_tensor PASSED [ 78%]
+tests/autokeras/blocks/wrapper_test.py::test_timeseries_deserialize_to_timeseries PASSED [ 79%]
+tests/autokeras/blocks/wrapper_test.py::test_timeseries_get_config_has_all_attributes PASSED [ 80%]
+tests/autokeras/engine/block_test.py::test_block_call_raise_inputs_type_error PASSED [ 80%]
+tests/autokeras/engine/node_test.py::test_time_series_input_node PASSED  [ 81%]
+tests/autokeras/engine/tuner_test.py::test_add_early_stopping PASSED     [ 82%]
+tests/autokeras/engine/tuner_test.py::test_overwrite_search PASSED       [ 82%]
+tests/autokeras/engine/tuner_test.py::test_no_epochs PASSED              [ 83%]
+tests/autokeras/engine/tuner_test.py::test_preprocessing_adapt PASSED    [ 84%]
+tests/autokeras/tasks/image_test.py::test_img_clf_fit_call_auto_model_fit PASSED [ 84%]
+tests/autokeras/tasks/image_test.py::test_img_reg_fit_call_auto_model_fit PASSED [ 85%]
+tests/autokeras/tasks/image_test.py::test_img_seg_fit_call_auto_model_fit PASSED [ 86%]
+tests/autokeras/tasks/structure_data_test.py::test_raise_error_unknown_str_in_col_type PASSED [ 86%]
+tests/autokeras/tasks/structure_data_test.py::test_structured_clf_fit_call_auto_model_fit PASSED [ 87%]
+tests/autokeras/tasks/structure_data_test.py::test_structured_reg_fit_call_auto_model_fit PASSED [ 88%]
+tests/autokeras/tasks/structure_data_test.py::test_structured_data_clf_convert_csv_to_df_and_np PASSED [ 88%]
+tests/autokeras/tasks/text_test.py::test_txt_clf_fit_call_auto_model_fit PASSED [ 89%]
+tests/autokeras/tasks/text_test.py::test_txt_reg_fit_call_auto_model_fit PASSED [ 90%]
+tests/autokeras/tuners/greedy_test.py::test_random_oracle_state PASSED   [ 90%]
+tests/autokeras/tuners/greedy_test.py::test_random_oracle PASSED         [ 91%]
+tests/autokeras/tuners/task_specific_test.py::test_image_classifier_tuner0 PASSED [ 92%]
+tests/autokeras/tuners/task_specific_test.py::test_image_classifier_tuner1 PASSED [ 92%]
+tests/autokeras/tuners/task_specific_test.py::test_text_classifier_tuner0 PASSED [ 93%]
+tests/autokeras/tuners/task_specific_test.py::test_image_classifier_oracle PASSED [ 94%]
+tests/integration_tests/functional_api_test.py::test_functional_api PASSED [ 94%]
+tests/integration_tests/io_api_test.py::test_io_api PASSED               [ 95%]
+tests/integration_tests/task_api_test.py::test_image_classifier PASSED   [ 96%]
+tests/integration_tests/task_api_test.py::test_image_regressor PASSED    [ 96%]
+tests/integration_tests/task_api_test.py::test_text_classifier PASSED    [ 97%]
+tests/integration_tests/task_api_test.py::test_text_regressor PASSED     [ 98%]
+tests/integration_tests/task_api_test.py::test_structured_data_from_numpy_regressor PASSED [ 98%]
+tests/integration_tests/task_api_test.py::test_structured_data_from_numpy_classifier PASSED [ 99%]
+tests/integration_tests/task_api_test.py::test_timeseries_forecaster PASSED [100%]
+
+----------- coverage: platform linux, python 3.7.7-final-0 -----------
+Name                                        Stmts   Miss  Cover
+---------------------------------------------------------------
+autokeras/__init__.py                          46      0   100%
+autokeras/adapters/__init__.py                 10      0   100%
+autokeras/adapters/input_adapter.py           170     13    92%
+autokeras/adapters/output_adapter.py           88     14    84%
+autokeras/auto_model.py                       178     11    94%
+autokeras/blocks/__init__.py                   27      0   100%
+autokeras/blocks/basic.py                     200      5    98%
+autokeras/blocks/heads.py                      87      3    97%
+autokeras/blocks/preprocessing.py             121      4    97%
+autokeras/blocks/reduction.py                  89      9    90%
+autokeras/blocks/wrapper.py                   110      2    98%
+autokeras/encoders.py                          67     17    75%
+autokeras/engine/__init__.py                    0      0   100%
+autokeras/engine/adapter.py                    31      2    94%
+autokeras/engine/block.py                      35      1    97%
+autokeras/engine/encoder.py                    15      4    73%
+autokeras/engine/head.py                       44      1    98%
+autokeras/engine/io_hypermodel.py               3      0   100%
+autokeras/engine/node.py                       14      0   100%
+autokeras/engine/preprocessor.py                4      0   100%
+autokeras/engine/serializable.py                4      0   100%
+autokeras/engine/tuner.py                      86      4    95%
+autokeras/graph.py                            164      7    96%
+autokeras/keras_layers.py                      50      3    94%
+autokeras/nodes.py                             61      0   100%
+autokeras/tasks/__init__.py                     7      0   100%
+autokeras/tasks/image.py                       38      0   100%
+autokeras/tasks/structured_data.py             54      3    94%
+autokeras/tasks/structured_data_mixin.py       17      6    65%
+autokeras/tasks/text.py                        28      0   100%
+autokeras/tasks/time_series_forecaster.py      64     10    84%
+autokeras/tuners/__init__.py                    5      0   100%
+autokeras/tuners/bayesian_optimization.py       4      0   100%
+autokeras/tuners/greedy.py                     97      4    96%
+autokeras/tuners/hyperband.py                   6      0   100%
+autokeras/tuners/random_search.py               4      0   100%
+autokeras/tuners/task_specific.py               9      0   100%
+autokeras/utils/__init__.py                     0      0   100%
+autokeras/utils/data_utils.py                  23      2    91%
+autokeras/utils/layer_utils.py                 13      1    92%
+autokeras/utils/types.py                       12      0   100%
+autokeras/utils/utils.py                       38      8    79%
+---------------------------------------------------------------
+TOTAL                                        2123    134    94%
+
+
+============================ slowest test durations ============================
+183.53s call     tests/integration_tests/functional_api_test.py::test_functional_api
+59.95s call     tests/integration_tests/task_api_test.py::test_image_classifier
+45.42s call     tests/integration_tests/task_api_test.py::test_image_regressor
+27.81s call     tests/integration_tests/io_api_test.py::test_io_api
+19.35s call     tests/integration_tests/task_api_test.py::test_timeseries_forecaster
+14.26s call     tests/integration_tests/task_api_test.py::test_text_classifier
+10.21s call     tests/integration_tests/task_api_test.py::test_text_regressor
+6.71s call     tests/integration_tests/task_api_test.py::test_structured_data_from_numpy_regressor
+5.60s call     tests/autokeras/engine/tuner_test.py::test_preprocessing_adapt
+5.23s call     tests/autokeras/tuners/task_specific_test.py::test_image_classifier_oracle
+5.05s call     tests/autokeras/tuners/task_specific_test.py::test_image_classifier_tuner1
+4.85s call     tests/integration_tests/task_api_test.py::test_structured_data_from_numpy_classifier
+2.16s call     tests/autokeras/blocks/basic_test.py::test_resnet_build_return_tensor
+1.30s call     tests/autokeras/keras_layers_test.py::test_multi_column_categorical_encoding
+1.26s call     tests/autokeras/keras_layers_test.py::test_model_save
+0.96s call     tests/autokeras/blocks/wrapper_test.py::test_timeseries_build_return_tensor
+0.95s call     tests/autokeras/blocks/basic_test.py::test_rnn_build_return_tensor
+0.72s call     tests/autokeras/tuners/greedy_test.py::test_random_oracle
+0.61s call     tests/autokeras/blocks/basic_test.py::test_xception_build_return_tensor
+0.50s call     tests/autokeras/auto_model_test.py::test_evaluate
+0.46s call     tests/autokeras/keras_layers_test.py::test_weight_save
+0.38s call     tests/autokeras/tuners/task_specific_test.py::test_text_classifier_tuner0
+0.36s call     tests/autokeras/engine/tuner_test.py::test_add_early_stopping
+0.22s call     tests/autokeras/tuners/task_specific_test.py::test_image_classifier_tuner0
+0.20s call     tests/autokeras/auto_model_test.py::test_multi_io_with_tf_dataset
+0.19s call     tests/autokeras/auto_model_test.py::test_multi_input_predict
+0.19s call     tests/autokeras/engine/tuner_test.py::test_no_epochs
+0.19s call     tests/autokeras/engine/tuner_test.py::test_overwrite_search
+0.18s call     tests/autokeras/adapters/input_adapter_test.py::test_time_series_input_transform
+0.17s call     tests/autokeras/blocks/preprocessing_test.py::test_augment_build_return_tensor
+0.14s call     tests/autokeras/blocks/wrapper_test.py::test_text_build_return_tensor
+0.09s call     tests/autokeras/blocks/preprocessing_test.py::test_ngram_build_return_tensor
+0.08s call     tests/autokeras/auto_model_test.py::test_auto_model_predict
+0.07s call     tests/autokeras/auto_model_test.py::test_single_input_predict
+0.07s call     tests/autokeras/auto_model_test.py::test_multi_input_predict2
+0.06s call     tests/autokeras/graph_test.py::test_merge
+0.04s call     tests/autokeras/adapters/input_adapter_test.py::test_text_dataset
+0.04s call     tests/autokeras/blocks/preprocessing_test.py::test_int_seq_build_return_tensor
+0.04s call     tests/autokeras/blocks/basic_test.py::test_conv_build_return_tensor
+0.04s call     tests/autokeras/blocks/wrapper_test.py::test_image_build_return_tensor
+0.04s call     tests/autokeras/graph_test.py::test_set_hp
+0.03s call     tests/autokeras/auto_model_test.py::test_single_nested_dataset
+0.03s call     tests/autokeras/adapters/input_adapter_test.py::test_structured_data_input_less_col_name
+0.03s call     tests/autokeras/graph_test.py::test_graph_basics
+0.03s call     tests/autokeras/blocks/wrapper_test.py::test_structured_build_return_tensor
+0.03s call     tests/autokeras/adapters/input_adapter_test.py::test_structured_data_input_transform
+0.03s call     tests/autokeras/adapters/input_adapter_test.py::test_structured_data_input_dataset
+0.03s call     tests/autokeras/auto_model_test.py::test_data_io_consistency_validation
+0.02s call     tests/autokeras/blocks/basic_test.py::test_embed_build_return_tensor
+0.02s call     tests/autokeras/blocks/basic_test.py::test_dense_build_return_tensor
+0.02s setup    tests/autokeras/auto_model_test.py::test_evaluate
+0.01s call     tests/autokeras/auto_model_test.py::test_final_fit_concat
+0.01s setup    tests/integration_tests/task_api_test.py::test_image_classifier
+0.01s call     tests/autokeras/blocks/heads_test.py::test_multi_label_loss
+0.01s call     tests/autokeras/blocks/heads_test.py::test_two_classes
+0.01s call     tests/autokeras/adapters/input_adapter_test.py::test_partial_column_types
+0.01s call     tests/autokeras/blocks/reduction_test.py::test_merge_build_return_tensor
+0.01s call     tests/autokeras/tasks/structure_data_test.py::test_structured_data_clf_convert_csv_to_df_and_np
+0.01s call     tests/autokeras/adapters/output_adapter_test.py::test_y_is_pd_series
+0.01s call     tests/autokeras/blocks/preprocessing_test.py::test_cat_to_num_build_return_tensor
+0.01s call     tests/autokeras/auto_model_test.py::test_overwrite
+0.01s call     tests/autokeras/auto_model_test.py::test_export_model
+0.01s call     tests/autokeras/auto_model_test.py::test_dataset_and_y
+0.01s call     tests/autokeras/auto_model_test.py::test_final_fit_not_concat
+0.01s call     tests/autokeras/adapters/input_adapter_test.py::test_structured_data_input_name_type_mismatch
+0.01s call     tests/autokeras/adapters/input_adapter_test.py::test_time_series_input_name_type_mismatch
+0.01s call     tests/autokeras/adapters/input_adapter_test.py::test_time_series_input_less_col_name
+0.01s call     tests/autokeras/tasks/image_test.py::test_img_clf_fit_call_auto_model_fit
+0.01s call     tests/autokeras/tasks/image_test.py::test_img_seg_fit_call_auto_model_fit
+0.01s call     tests/autokeras/auto_model_test.py::test_data_io_consistency_input
+0.01s call     tests/autokeras/auto_model_test.py::test_data_io_consistency_output
+
+(0.00 durations hidden.  Use -vv to show these durations.)
+======================= 152 passed in 403.04s (0:06:43) ========================

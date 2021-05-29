@@ -1,0 +1,1332 @@
+============================= test session starts ==============================
+platform linux -- Python 3.6.10, pytest-5.4.3, py-1.8.2, pluggy-0.13.1
+rootdir: /home/aryaman4/gpytorch
+collected 3017 items
+
+test/constraints/test_constraints.py ...................                 [  0%]
+test/distributions/test_delta.py ....                                    [  0%]
+test/distributions/test_multitask_multivariate_normal.py ............... [  1%]
+.                                                                        [  1%]
+test/distributions/test_multivariate_normal.py .................         [  1%]
+test/examples/test_batch_decoupled_ppgpr_regression.py .                 [  1%]
+test/examples/test_batch_gp_regression.py ...                            [  1%]
+test/examples/test_batch_multitask_gp_regression.py ...                  [  2%]
+test/examples/test_batch_svgp_gp_regression.py ...                       [  2%]
+test/examples/test_decoupled_svgp_regression.py ..                       [  2%]
+test/examples/test_fixed_noise_fanatasy_updates.py ....                  [  2%]
+test/examples/test_grid_gp_regression.py ....                            [  2%]
+test/examples/test_hadamard_multitask_gp_regression.py .                 [  2%]
+test/examples/test_independent_multitask_gp_regression.py .              [  2%]
+test/examples/test_kissgp_additive_classification.py .                   [  2%]
+test/examples/test_kissgp_additive_regression.py .                       [  2%]
+test/examples/test_kissgp_dkl_regression.py ..                           [  2%]
+test/examples/test_kissgp_gp_classification.py .                         [  2%]
+test/examples/test_kissgp_gp_regression.py ...                           [  2%]
+test/examples/test_kissgp_kronecker_product_classification.py .          [  2%]
+test/examples/test_kissgp_kronecker_product_regression.py .              [  2%]
+test/examples/test_kissgp_multiplicative_regression.py .                 [  2%]
+test/examples/test_kissgp_variational_regression.py .                    [  2%]
+test/examples/test_kissgp_white_noise_regression.py ...                  [  3%]
+test/examples/test_kronecker_multitask_gp_regression.py .                [  3%]
+test/examples/test_kronecker_multitask_ski_gp_regression.py ..           [  3%]
+test/examples/test_lcm_kernel_regression.py .                            [  3%]
+test/examples/test_model_list_gp_regression.py ..                        [  3%]
+test/examples/test_sgpr_regression.py ...                                [  3%]
+test/examples/test_simple_gp_classification.py .                         [  3%]
+test/examples/test_simple_gp_regression.py ....................          [  4%]
+test/examples/test_spectral_mixture_gp_regression.py ..                  [  4%]
+test/examples/test_svgp_gp_classification.py ..                          [  4%]
+test/examples/test_svgp_gp_regression.py ......                          [  4%]
+test/examples/test_unwhitened_svgp_regression.py .                       [  4%]
+test/examples/test_white_noise_regression.py ......                      [  4%]
+test/functions/test_dsmm.py .........                                    [  4%]
+test/functions/test_inv_matmul.py ....                                   [  5%]
+test/functions/test_inv_quad.py ....                                     [  5%]
+test/functions/test_inv_quad_log_det.py ..............................   [  6%]
+test/functions/test_log_normal_cdf.py ..                                 [  6%]
+test/functions/test_matern_covariance.py ......                          [  6%]
+test/functions/test_matmul.py ....                                       [  6%]
+test/functions/test_rbf_covariance.py ..                                 [  6%]
+test/functions/test_root_decomposition.py ......                         [  6%]
+test/kernels/test_additive_kernel.py ...........                         [  7%]
+test/kernels/test_arc_kernel.py ..........                               [  7%]
+test/kernels/test_cosine_kernel.py ...                                   [  7%]
+test/kernels/test_cylindrical_kernel.py ..........                       [  7%]
+test/kernels/test_grid_interpolation_kernel.py ..                        [  8%]
+test/kernels/test_grid_kernel.py .......                                 [  8%]
+test/kernels/test_linear_kernel.py .............                         [  8%]
+test/kernels/test_matern_kernel.py ....................................  [  9%]
+test/kernels/test_newton_girard_additive_kernel.py ................      [ 10%]
+test/kernels/test_periodic_kernel.py ...                                 [ 10%]
+test/kernels/test_polynomial_kernel.py ..............                    [ 11%]
+test/kernels/test_polynomial_kernel_grad.py ..........                   [ 11%]
+test/kernels/test_rbf_kernel.py ...................                      [ 11%]
+test/kernels/test_rbf_kernel_grad.py ...............                     [ 12%]
+test/kernels/test_rff_kernel.py ..........                               [ 12%]
+test/kernels/test_rq_kernel.py ....................                      [ 13%]
+test/kernels/test_scale_kernel.py .................                      [ 14%]
+test/kernels/test_spectral_mixture_kernel.py ..                          [ 14%]
+test/lazy/test_added_diag_lazy_tensor.py ............................... [ 15%]
+.........................................................                [ 17%]
+test/lazy/test_batch_repeat_lazy_tensor.py ............................. [ 17%]
+......................................................................   [ 20%]
+test/lazy/test_block_diag_lazy_tensor.py ............................... [ 21%]
+........................................................                 [ 23%]
+test/lazy/test_block_interleaved_lazy_tensor.py ........................ [ 23%]
+...............................................................          [ 26%]
+test/lazy/test_cached_cg_lazy_tensor.py ................................ [ 27%]
+........................................................................ [ 29%]
+.........................................                                [ 30%]
+test/lazy/test_cat_lazy_tensor.py ...................................... [ 32%]
+........................................................................ [ 34%]
+...................................                                      [ 35%]
+test/lazy/test_chol_lazy_tensor.py ..................................... [ 36%]
+..................................................                       [ 38%]
+test/lazy/test_constant_mul_lazy_tensor.py ............................. [ 39%]
+........................................................................ [ 41%]
+...............                                                          [ 42%]
+test/lazy/test_diag_lazy_tensor.py ..................................... [ 43%]
+..................................................                       [ 45%]
+test/lazy/test_interpolated_lazy_tensor.py ............................. [ 46%]
+........................................................................ [ 48%]
+...............                                                          [ 49%]
+test/lazy/test_kronecker_product_lazy_tensor.py ........................ [ 49%]
+..........................................................               [ 51%]
+test/lazy/test_lazy_evaluated_kernel_tensor.py ......................... [ 52%]
+....................................................................     [ 54%]
+test/lazy/test_matmul_lazy_tensor.py ................................... [ 56%]
+...............................................                          [ 57%]
+test/lazy/test_mul_lazy_tensor.py ...................................... [ 58%]
+.................................................                        [ 60%]
+test/lazy/test_non_lazy_tensor.py ...................................... [ 61%]
+...................................................                      [ 63%]
+test/lazy/test_psd_sum_lazy_tensor.py .................................. [ 64%]
+.....................................................                    [ 66%]
+test/lazy/test_root_lazy_tensor.py ..................................... [ 67%]
+..................................................                       [ 69%]
+test/lazy/test_sum_batch_lazy_tensor.py ................................ [ 70%]
+.......................................................                  [ 72%]
+test/lazy/test_sum_lazy_tensor.py ...................................... [ 73%]
+....................................................                     [ 75%]
+test/lazy/test_toeplitz_lazy_tensor.py ................................. [ 76%]
+......................................................                   [ 77%]
+test/lazy/test_zero_lazy_tensor.py .......                               [ 78%]
+test/likelihoods/test_bernoulli_likelihood.py ...                        [ 78%]
+test/likelihoods/test_gaussian_likelihood.py ...................         [ 78%]
+test/likelihoods/test_general_multitask_gaussian_likelihood.py .         [ 78%]
+test/likelihoods/test_multitask_gaussian_likelihood.py ......            [ 79%]
+test/likelihoods/test_softmax_likelihood.py ......                       [ 79%]
+test/means/test_constant_mean.py ............                            [ 79%]
+test/means/test_constant_mean_grad.py ............                       [ 80%]
+test/means/test_linear_mean.py ....                                      [ 80%]
+test/means/test_multitask_mean.py ............                           [ 80%]
+test/means/test_zero_mean.py ....                                        [ 80%]
+test/models/test_exact_gp.py ....................................        [ 82%]
+test/models/test_model_list.py ................                          [ 82%]
+test/models/test_variational_gp.py .....................                 [ 83%]
+test/priors/test_gamma_prior.py ........                                 [ 83%]
+test/priors/test_horseshoe_prior.py ........                             [ 83%]
+test/priors/test_lkj_prior.py ....................                       [ 84%]
+test/priors/test_multivariate_normal_prior.py ........                   [ 84%]
+test/priors/test_normal_prior.py ........                                [ 84%]
+test/priors/test_smoothed_box_prior.py ........                          [ 85%]
+test/utils/test_cholesky.py .....                                        [ 85%]
+test/utils/test_fft.py .......                                           [ 85%]
+test/utils/test_getitem.py ..                                            [ 85%]
+test/utils/test_grid.py ..                                               [ 85%]
+test/utils/test_interpolation.py ............                            [ 86%]
+test/utils/test_lanczos.py .                                             [ 86%]
+test/utils/test_linear_cg.py ....                                        [ 86%]
+test/utils/test_pivoted_cholesky.py .......                              [ 86%]
+test/utils/test_quadrature.py ........                                   [ 86%]
+test/utils/test_sparse.py .......                                        [ 87%]
+test/utils/test_toeplitz.py ....                                         [ 87%]
+test/variational/test_batch_decoupled_variational_strategy.py .......... [ 87%]
+..............................................................           [ 89%]
+test/variational/test_grid_interpolation_variational_strategy.py ....... [ 89%]
+.........................................                                [ 91%]
+test/variational/test_multitask_variational_strategy.py ................ [ 91%]
+........................................................                 [ 93%]
+test/variational/test_orthogonally_decoupled_variational_strategy.py ... [ 93%]
+.....................                                                    [ 94%]
+test/variational/test_unwhitened_variational_strategy.py ............... [ 94%]
+........................................................................ [ 97%]
+.........                                                                [ 97%]
+test/variational/test_variational_strategy.py .......................... [ 98%]
+..............................................                           [ 99%]
+test/variational/test_whitened_variational_strategy.py ..                [100%]
+
+=============================== warnings summary ===============================
+test/examples/test_spectral_mixture_gp_regression.py::TestSpectralMixtureGPRegression::test_spectral_mixture_gp_mean_abs_error
+test/examples/test_spectral_mixture_gp_regression.py::TestSpectralMixtureGPRegression::test_spectral_mixture_gp_mean_abs_error
+test/examples/test_spectral_mixture_gp_regression.py::TestSpectralMixtureGPRegression::test_spectral_mixture_gp_mean_abs_error
+test/examples/test_spectral_mixture_gp_regression.py::TestSpectralMixtureGPRegression::test_spectral_mixture_gp_mean_abs_error
+test/examples/test_spectral_mixture_gp_regression.py::TestSpectralMixtureGPRegression::test_spectral_mixture_gp_mean_abs_error
+test/examples/test_spectral_mixture_gp_regression.py::TestSpectralMixtureGPRegression::test_spectral_mixture_gp_mean_abs_error
+  /home/aryaman4/anaconda3/envs/gpytorch/lib/python3.6/importlib/_bootstrap.py:219: RuntimeWarning: numpy.ufunc size changed, may indicate binary incompatibility. Expected 192 from C header, got 216 from PyObject
+    return f(*args, **kwds)
+
+test/models/test_exact_gp.py: 21 tests with warnings
+test/models/test_model_list.py: 7 tests with warnings
+  /home/aryaman4/gpytorch/gpytorch/models/exact_gp.py:284: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+    GPInputWarning,
+
+test/utils/test_linear_cg.py::TestLinearCG::test_batch_cg_with_tridiag
+  /home/aryaman4/gpytorch/gpytorch/utils/linear_cg.py:317: NumericalWarning: CG terminated in 10 iterations with average residual norm 7.186693477123907e-16 which is larger than the tolerance of 0 specified by gpytorch.settings.cg_tolerance. If performance is affected, consider raising the maximum number of CG iterations by running code in a gpytorch.settings.max_cg_iterations(value) context.
+    NumericalWarning,
+
+test/utils/test_linear_cg.py::TestLinearCG::test_cg_with_tridiag
+  /home/aryaman4/gpytorch/gpytorch/utils/linear_cg.py:317: NumericalWarning: CG terminated in 10 iterations with average residual norm 2.259721746655274e-15 which is larger than the tolerance of 0 specified by gpytorch.settings.cg_tolerance. If performance is affected, consider raising the maximum number of CG iterations by running code in a gpytorch.settings.max_cg_iterations(value) context.
+    NumericalWarning,
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+============================ slowest test durations ============================
+7.23s call     test/examples/test_kissgp_additive_classification.py::TestKISSGPAdditiveClassification::test_kissgp_classification_error
+3.78s call     test/examples/test_svgp_gp_classification.py::TestSVGPClassification::test_classification_error
+3.58s call     test/examples/test_svgp_gp_classification.py::TestSVGPClassification::test_predictive_ll_classification_error
+2.43s call     test/examples/test_batch_svgp_gp_regression.py::TestSVGPRegression::test_regression_error_shared_inducing_locations
+2.07s call     test/examples/test_batch_svgp_gp_regression.py::TestSVGPRegression::test_regression_error
+1.69s call     test/examples/test_kissgp_multiplicative_regression.py::TestKISSGPMultiplicativeRegression::test_kissgp_gp_mean_abs_error
+1.56s call     test/examples/test_spectral_mixture_gp_regression.py::TestSpectralMixtureGPRegression::test_spectral_mixture_gp_mean_abs_error
+1.51s call     test/examples/test_unwhitened_svgp_regression.py::TestSVGPRegression::test_regression_error
+1.51s call     test/examples/test_kissgp_gp_classification.py::TestKISSGPClassification::test_kissgp_classification_error
+1.41s call     test/examples/test_kissgp_variational_regression.py::TestKISSGPVariationalRegression::test_kissgp_gp_mean_abs_error
+1.36s call     test/examples/test_svgp_gp_regression.py::TestSVGPRegression::test_robust_regression_error
+1.33s call     test/examples/test_grid_gp_regression.py::TestGridGPRegression::test_grid_gp_mean_abs_error_2d
+1.31s call     test/examples/test_svgp_gp_regression.py::TestSVGPRegression::test_regression_error
+1.28s call     test/examples/test_kissgp_kronecker_product_regression.py::TestKISSGPKroneckerProductRegression::test_kissgp_gp_mean_abs_error
+1.28s call     test/examples/test_svgp_gp_regression.py::TestSVGPRegression::test_predictive_ll_regression_error
+1.23s call     test/examples/test_simple_gp_regression.py::TestSimpleGPRegression::test_gp_with_checkpointing
+1.18s call     test/examples/test_decoupled_svgp_regression.py::TestSVGPRegression::test_predictive_ll_regression_error
+1.16s call     test/examples/test_decoupled_svgp_regression.py::TestSVGPRegression::test_regression_error
+1.12s call     test/examples/test_spectral_mixture_gp_regression.py::TestSpectralMixtureGPRegression::test_spectral_mixture_gp_mean_abs_error_empspect_init
+1.08s call     test/examples/test_svgp_gp_regression.py::TestSVGPRegression::test_predictive_ll_regression_error_delta
+1.07s call     test/examples/test_hadamard_multitask_gp_regression.py::TestHadamardMultitaskGPRegression::test_multitask_gp_mean_abs_error
+0.77s call     test/examples/test_batch_decoupled_ppgpr_regression.py::TestPPGPRRegression::test_model
+0.77s call     test/examples/test_lcm_kernel_regression.py::TestLCMKernelRegression::test_lcm_icm_equivalence
+0.76s call     test/examples/test_kronecker_multitask_ski_gp_regression.py::TestKroneckerMultiTaskKISSGPRegression::test_multitask_gp_mean_abs_error
+0.73s call     test/examples/test_kissgp_kronecker_product_classification.py::TestKISSGPKroneckerProductClassification::test_kissgp_classification_error
+0.53s call     test/examples/test_sgpr_regression.py::TestSGPRRegression::test_sgpr_fast_pred_var
+0.50s call     test/examples/test_batch_multitask_gp_regression.py::TestBatchMultitaskGPRegression::test_train_on_batch_test_on_batch
+0.46s call     test/examples/test_batch_multitask_gp_regression.py::TestBatchMultitaskGPRegression::test_train_on_batch_test_on_batch_shared_hypers_over_batch
+0.44s call     test/examples/test_independent_multitask_gp_regression.py::TestIndependentMultitaskGPRegression::test_train_and_eval
+0.43s call     test/likelihoods/test_general_multitask_gaussian_likelihood.py::TestMultiTaskGPRegression::test_multitask_low_rank_noise_covar
+0.41s call     test/examples/test_kronecker_multitask_gp_regression.py::TestKroneckerMultiTaskGPRegression::test_multitask_gp_mean_abs_error
+0.38s call     test/examples/test_kissgp_dkl_regression.py::TestDKLRegression::test_dkl_gp_fast_pred_var
+0.35s call     test/examples/test_kissgp_dkl_regression.py::TestDKLRegression::test_dkl_gp_mean_abs_error
+0.32s call     test/examples/test_sgpr_regression.py::TestSGPRRegression::test_sgpr_mean_abs_error
+0.32s call     test/examples/test_kissgp_additive_regression.py::TestKISSGPAdditiveRegression::test_kissgp_gp_mean_abs_error
+0.31s call     test/examples/test_simple_gp_classification.py::TestSimpleGPClassification::test_classification_error
+0.30s call     test/examples/test_batch_multitask_gp_regression.py::TestBatchMultitaskGPRegression::test_train_on_single_set_test_on_batch
+0.29s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorMultiBatch::test_inv_matmul_matrix_broadcast
+0.29s call     test/examples/test_batch_gp_regression.py::TestBatchGPRegression::test_train_on_single_set_test_on_batch
+0.26s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorMultiBatch::test_matmul_matrix_broadcast
+0.25s call     test/examples/test_fixed_noise_fanatasy_updates.py::TestFixedNoiseFantasies::test_fixed_noise_fantasy_updates
+0.25s call     test/examples/test_kissgp_white_noise_regression.py::TestKISSGPWhiteNoiseRegression::test_kissgp_gp_fast_pred_var
+0.25s call     test/examples/test_batch_gp_regression.py::TestBatchGPRegression::test_train_on_batch_test_on_batch
+0.25s call     test/examples/test_batch_gp_regression.py::TestBatchGPRegression::test_train_on_batch_test_on_batch_shared_hypers_over_batch
+0.24s call     test/examples/test_fixed_noise_fanatasy_updates.py::TestFixedNoiseFantasies::test_fixed_noise_fantasy_updates_batch
+0.24s call     test/examples/test_kissgp_white_noise_regression.py::TestKISSGPWhiteNoiseRegression::test_kissgp_gp_mean_abs_error
+0.24s call     test/examples/test_kissgp_gp_regression.py::TestKISSGPRegression::test_kissgp_gp_fast_pred_var
+0.24s call     test/examples/test_white_noise_regression.py::TestWhiteNoiseGPRegression::test_posterior_latent_gp_and_likelihood_with_optimization
+0.23s call     test/examples/test_kissgp_gp_regression.py::TestKISSGPRegression::test_kissgp_gp_mean_abs_error
+0.21s call     test/examples/test_simple_gp_regression.py::TestSimpleGPRegression::test_posterior_latent_gp_and_likelihood_fast_pred_var
+0.20s call     test/examples/test_white_noise_regression.py::TestWhiteNoiseGPRegression::test_posterior_latent_gp_and_likelihood_fast_pred_var
+0.17s call     test/functions/test_matern_covariance.py::TestMaternCovariance::test_3_2_backward
+0.17s call     test/functions/test_matern_covariance.py::TestMaternCovariance::test_5_2_backward
+0.17s call     test/functions/test_matern_covariance.py::TestMaternCovariance::test_1_2_backward
+0.17s call     test/functions/test_rbf_covariance.py::TestRBFCovariance::test_backward
+0.16s call     test/examples/test_simple_gp_regression.py::TestSimpleGPRegression::test_posterior_latent_gp_and_likelihood_with_optimization
+0.15s call     test/examples/test_simple_gp_regression.py::TestSimpleGPRegression::test_fantasy_updates_batch
+0.14s call     test/examples/test_simple_gp_regression.py::TestSimpleGPRegression::test_posterior_with_exact_computations
+0.14s call     test/examples/test_grid_gp_regression.py::TestGridGPRegression::test_grid_gp_mean_abs_error
+0.13s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorMultiBatch::test_inv_matmul_matrix_broadcast
+0.13s call     test/examples/test_simple_gp_regression.py::TestSimpleGPRegression::test_fantasy_updates
+0.13s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensorPrecondOverride::test_precond_solve
+0.13s call     test/functions/test_inv_quad_log_det.py::TestInvQuadLogDetMultiBatch::test_precond_inv_quad_logdet_many_vectors
+0.13s call     test/functions/test_inv_quad_log_det.py::TestInvQuadLogDetMultiBatch::test_inv_quad_logdet_many_vectors
+0.12s call     test/functions/test_inv_quad_log_det.py::TestInvQuadLogDetBatch::test_inv_quad_logdet_many_vectors
+0.12s call     test/functions/test_inv_quad_log_det.py::TestInvQuadLogDetBatch::test_precond_inv_quad_logdet_many_vectors
+0.12s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorMultiBatch::test_inv_matmul_matrix_broadcast
+0.11s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorBatch::test_inv_matmul_matrix_broadcast
+0.10s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensorBatch::test_inv_matmul_matrix_broadcast
+0.10s call     test/utils/test_getitem.py::TestGetitem::test_convert_indices_to_tensors
+0.10s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorMultiBatch::test_inv_matmul_matrix
+0.09s call     test/functions/test_inv_quad_log_det.py::TestInvQuadLogDetNonBatch::test_inv_quad_logdet_many_vectors
+0.09s call     test/functions/test_inv_quad_log_det.py::TestInvQuadLogDetNonBatch::test_precond_inv_quad_logdet_vector
+0.09s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorMultiBatch::test_inv_matmul_matrix_with_left
+0.09s call     test/functions/test_inv_quad_log_det.py::TestInvQuadLogDetNonBatch::test_inv_quad_logdet_vector
+0.09s call     test/functions/test_inv_quad_log_det.py::TestInvQuadLogDetNonBatch::test_precond_inv_quad_logdet_many_vectors
+0.09s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorMultitaskBatch::test_inv_matmul_matrix_broadcast
+0.09s call     test/likelihoods/test_multitask_gaussian_likelihood.py::TestMultitaskGaussianLikelihoodBatch::test_multi_batch
+0.09s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorMultiBatch::test_inv_matmul_vector_with_left_cholesky
+0.08s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorMultiBatch::test_inv_matmul_matrix_cholesky
+0.08s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorMultiBatch::test_matmul_matrix
+0.08s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensor::test_inv_matmul_matrix_broadcast
+0.08s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorBatch::test_inv_matmul_matrix_broadcast
+0.08s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorMultiBatch::test_inv_matmul_matrix_broadcast
+0.07s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorMultiBatchBroadcastConstant::test_inv_matmul_matrix_broadcast
+0.07s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensorMultiBatch::test_inv_matmul_matrix_broadcast
+0.07s call     test/examples/test_model_list_gp_regression.py::TestModelListGPRegression::test_simple_model_list_gp_regression
+0.07s call     test/likelihoods/test_multitask_gaussian_likelihood.py::TestMultitaskGaussianLikelihood::test_multi_batch
+0.07s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridRobustVGP::test_training_all_batch_zero_mean
+0.07s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridVariationalGP::test_training_all_batch_zero_mean
+0.07s call     test/kernels/test_grid_interpolation_kernel.py::TestGridInterpolationKernel::test_batch_base_kernel
+0.07s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorMultiBatch::test_inv_matmul_matrix_broadcast
+0.07s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorMultiBatch::test_getitem
+0.07s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridPredictiveGP::test_training_all_batch_zero_mean
+0.07s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorBatch::test_inv_matmul_matrix_broadcast
+0.07s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorBatch::test_inv_matmul_matrix_broadcast
+0.07s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG::test_eval_smaller_pred_batch
+0.07s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensorBatch::test_inv_matmul_matrix_broadcast
+0.06s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensorMultiBatch::test_inv_matmul_matrix_broadcast
+0.06s call     test/lazy/test_diag_lazy_tensor.py::TestDiagLazyTensorMultiBatch::test_sample
+0.06s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldRobustVGP::test_training_all_batch_zero_mean
+0.06s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensorBatch::test_inv_matmul_matrix_broadcast
+0.06s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldVariationalGP::test_training_all_batch_zero_mean
+0.06s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG::test_eval_larger_pred_batch
+0.06s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldPredictiveGP::test_training_all_batch_zero_mean
+0.06s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorBatch::test_sample
+0.05s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG::test_training_all_batch_zero_mean
+0.05s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensorBatch::test_sample
+0.05s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledRobustVGP::test_training_all_batch_zero_mean
+0.05s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorBatch::test_inv_matmul_matrix_broadcast
+0.05s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorMultiBatch::test_getitem
+0.05s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorBatch::test_matmul_matrix_broadcast
+0.05s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledVariationalGP::test_training_all_batch_zero_mean
+0.05s call     test/lazy/test_sum_batch_lazy_tensor.py::TestSumBatchLazyTensorBatch::test_root_decomposition
+0.05s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridRobustVGP::test_training_iteration_batch_inducing
+0.05s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridPredictiveGP::test_training_iteration_batch_model
+0.05s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridPredictiveGP::test_training_iteration_batch_inducing
+0.05s call     test/likelihoods/test_multitask_gaussian_likelihood.py::TestMultitaskGaussianLikelihood::test_batch
+0.05s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorBatch::test_inv_quad_logdet
+0.05s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledVariationalGP::test_training_iteration_batch_data
+0.05s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorBatch::test_inv_quad_logdet_no_reduce
+0.05s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridVariationalGP::test_training_iteration_batch_model
+0.05s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridVariationalGP::test_training_iteration_batch_inducing
+0.05s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledPredictiveGP::test_training_iteration_batch_data
+0.05s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorBatchCat::test_inv_matmul_matrix_broadcast
+0.05s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledVariationalGP::test_training_iteration_batch_inducing
+0.04s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldRobustVGP::test_training_iteration_batch_inducing
+0.04s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldRobustVGP::test_training_iteration_batch_model
+0.04s call     test/likelihoods/test_multitask_gaussian_likelihood.py::TestMultitaskGaussianLikelihoodBatch::test_batch
+0.04s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledPredictiveGP::test_training_all_batch_zero_mean
+0.04s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensorBatch::test_inv_quad_logdet
+0.04s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensor::test_sample
+0.04s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledRobustVGP::test_training_iteration_batch_inducing
+0.04s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldPredictiveGP::test_training_iteration_batch_model
+0.04s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledRobustVGP::test_training_iteration_batch_data
+0.04s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldPredictiveGP::test_training_iteration_batch_inducing
+0.04s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledPredictiveGP::test_training_iteration_batch_inducing
+0.04s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensorBatch::test_inv_quad_logdet_no_reduce
+0.04s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldVariationalGP::test_training_iteration_batch_model
+0.04s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldVariationalGP::test_training_iteration_batch_inducing
+0.04s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensorMultiBatch::test_inv_matmul_matrix_broadcast
+0.04s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensor::test_inv_matmul_matrix_cholesky
+0.04s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledVariationalGP::test_eval_smaller_pred_batch
+0.04s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorMultiBatch::test_getitem_tensor_index
+0.04s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorMultiBatch::test_inv_quad_logdet_no_reduce
+0.04s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorMultiBatch::test_inv_quad_logdet
+0.04s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensor::test_sample
+0.04s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensorBatch::test_inv_quad_logdet_no_reduce
+0.04s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridRobustVGP::test_training_iteration_batch_model
+0.04s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledPredictiveGP::test_eval_larger_pred_batch
+0.04s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledRobustVGP::test_eval_smaller_pred_batch
+0.04s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridRobustVGP::test_eval_smaller_pred_batch
+0.04s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridVariationalGP::test_eval_smaller_pred_batch
+0.04s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledPredictiveGP::test_eval_smaller_pred_batch
+0.04s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridPredictiveGP::test_eval_smaller_pred_batch
+0.04s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG_NoPosteriorVariance::test_training_all_batch_zero_mean
+0.04s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensorBatch::test_inv_quad_logdet
+0.04s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG::test_training_iteration_batch_data
+0.04s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledRobustVGP::test_eval_larger_pred_batch
+0.04s call     test/lazy/test_cached_cg_lazy_tensor.py::TestCachedCGLazyTensorMultiBatch::test_inv_quad_logdet
+0.04s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorMultiBatch::test_inv_matmul_matrix_broadcast
+0.04s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensorBatch::test_inv_matmul_matrix_broadcast
+0.04s call     test/utils/test_cholesky.py::TestPSDSafeCholesky::test_psd_safe_cholesky_psd
+0.04s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledVariationalGP::test_training_iteration_batch_model
+0.04s call     test/models/test_exact_gp.py::TestInterpolatedExactGP::test_batch_forward_then_different_batch_forward_eval
+0.04s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridPredictiveGP::test_training_iteration_batch_data
+0.04s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorMultiBatch::test_inv_matmul_matrix
+0.04s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledPredictiveGP::test_training_iteration_batch_model
+0.04s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensor::test_inv_matmul_matrix_broadcast
+0.04s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorBatch::test_inv_matmul_matrix
+0.04s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridRobustVGP::test_training_iteration_batch_data
+0.04s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledRobustVGP::test_training_iteration
+0.04s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorMultitaskBatch::test_inv_quad_logdet
+0.04s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorMultitaskBatch::test_inv_quad_logdet_no_reduce
+0.04s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensor::test_inv_matmul_matrix
+0.04s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledRobustVGP::test_training_iteration_batch_model
+0.04s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridVariationalGP::test_training_iteration_batch_data
+0.04s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorBatch::test_inv_matmul_matrix_broadcast
+0.03s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledVariationalGP::test_eval_larger_pred_batch
+0.03s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorMultiBatch::test_getitem
+0.03s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensor::test_inv_quad_logdet
+0.03s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensor::test_inv_quad_logdet_no_reduce
+0.03s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldRobustVGP::test_eval_smaller_pred_batch
+0.03s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridRobustVGP::test_training_iteration
+0.03s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledVariationalGP::test_training_iteration
+0.03s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldPredictiveGP::test_eval_smaller_pred_batch
+0.03s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensorMultiBatch::test_getitem
+0.03s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridPredictiveGP::test_training_iteration
+0.03s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorBatch::test_getitem
+0.03s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldRobustVGP::test_training_iteration_batch_data
+0.03s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensor::test_inv_quad_logdet
+0.03s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridVariationalGP::test_training_iteration
+0.03s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensorBatch::test_inv_quad_logdet
+0.03s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensor::test_inv_quad_logdet_no_reduce
+0.03s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridRobustVGP::test_eval_larger_pred_batch
+0.03s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldRobustVGP::test_training_iteration
+0.03s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledRobustVGP::test_eval_iteration
+0.03s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldPredictiveGP::test_training_iteration_batch_data
+0.03s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG_NoLogDet::test_eval_smaller_pred_batch
+0.03s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG_NoPosteriorVariance::test_training_iteration_batch_data
+0.03s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensorBatch::test_inv_quad_logdet_no_reduce
+0.03s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridPredictiveGP::test_eval_larger_pred_batch
+0.03s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldVariationalGP::test_training_iteration_batch_data
+0.03s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorBatch::test_inv_quad_logdet
+0.03s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldPredictiveGP::test_training_iteration
+0.03s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldRobustVGP::test_eval_larger_pred_batch
+0.03s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorBatch::test_inv_quad_logdet
+0.03s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridVariationalGP::test_eval_larger_pred_batch
+0.03s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensorMultiBatch::test_inv_matmul_matrix_broadcast
+0.03s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorMultiBatch::test_inv_matmul_matrix
+0.03s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG_NoLogDet::test_eval_larger_pred_batch
+0.03s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorBatch::test_inv_quad_logdet_no_reduce
+0.03s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensor::test_inv_quad_logdet
+0.03s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldVariationalGP::test_training_iteration
+0.03s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG::test_training_iteration_batch_inducing
+0.03s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorBatch::test_inv_quad_logdet_no_reduce
+0.03s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensor::test_inv_quad_logdet
+0.03s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledPredictiveGP::test_eval_iteration
+0.03s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG::test_training_iteration_batch_model
+0.03s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledPredictiveGP::test_training_iteration
+0.03s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG_NoPosteriorVariance::test_training_iteration_batch_inducing
+0.03s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensor::test_inv_quad_logdet_no_reduce
+0.03s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensor::test_inv_quad_logdet_no_reduce
+0.03s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldPredictiveGP::test_eval_larger_pred_batch
+0.03s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldVariationalGP::test_eval_smaller_pred_batch
+0.03s call     test/lazy/test_cached_cg_lazy_tensor.py::TestCachedCGLazyTensorMultiBatch::test_inv_quad_logdet_no_reduce
+0.03s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG_NoPosteriorVariance::test_training_iteration_batch_model
+0.03s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensorBatch::test_inv_matmul_matrix
+0.03s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorMultitaskBatch::test_matmul_matrix_broadcast
+0.03s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGPOtherBatchDim::test_training_all_batch_zero_mean
+0.03s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG_NoLogDet::test_training_all_batch_zero_mean
+0.03s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensorBatch::test_inv_matmul_matrix_broadcast
+0.03s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorMultitaskBatch::test_inv_matmul_matrix
+0.03s call     test/lazy/test_sum_batch_lazy_tensor.py::TestSumBatchLazyTensorMultiBatch::test_inv_matmul_matrix_broadcast
+0.03s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensor::test_inv_matmul_matrix_broadcast
+0.03s call     test/utils/test_getitem.py::TestGetitem::test_compute_getitem_size
+0.03s call     test/lazy/test_root_lazy_tensor.py::TestRootLazyTensorMultiBatch::test_inv_matmul_matrix_broadcast
+0.03s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensorBatch::test_matmul_matrix_broadcast
+0.03s call     test/models/test_exact_gp.py::TestInterpolatedExactGP::test_batch_forward_eval_fast
+0.03s call     test/likelihoods/test_multitask_gaussian_likelihood.py::TestMultitaskGaussianLikelihood::test_nonbatch
+0.03s call     test/functions/test_inv_quad_log_det.py::TestInvQuadLogDetBatch::test_precond_inv_quad_logdet_many_vectors_improper
+0.03s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskRobustVGP::test_training_all_batch_zero_mean
+0.03s call     test/models/test_exact_gp.py::TestInterpolatedExactGP::test_batch_forward_eval
+0.03s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorBatch::test_matmul_matrix_broadcast
+0.03s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGPOtherBatchDim::test_training_iteration_batch_model
+0.03s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGP::test_training_all_batch_zero_mean
+0.03s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensor::test_inv_quad_logdet
+0.03s call     test/functions/test_inv_quad_log_det.py::TestInvQuadLogDetBatch::test_inv_quad_logdet_many_vectors_improper
+0.03s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskPredictiveGP::test_training_all_batch_zero_mean
+0.03s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensor::test_inv_matmul_matrix
+0.03s call     test/lazy/test_cached_cg_lazy_tensor.py::TestCachedCGLazyTensorBatch::test_inv_quad_logdet
+0.03s call     test/functions/test_inv_quad_log_det.py::TestInvQuadLogDetMultiBatch::test_precond_inv_quad_logdet_many_vectors_improper
+0.03s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGPOtherBatchDim::test_training_iteration_batch_data
+0.03s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensorBatch::test_inv_quad_logdet
+0.03s call     test/lazy/test_cached_cg_lazy_tensor.py::TestCachedCGLazyTensorBatch::test_inv_quad_logdet_no_reduce
+0.03s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledPredictiveGP::test_training_all_batch_zero_mean
+0.03s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG_NoPosteriorVariance::test_eval_smaller_pred_batch
+0.03s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensor::test_inv_quad_logdet_no_reduce
+0.03s call     test/functions/test_inv_quad_log_det.py::TestInvQuadLogDetMultiBatch::test_inv_quad_logdet_many_vectors_improper
+0.03s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG::test_eval_iteration
+0.03s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensor::test_inv_matmul_vector
+0.03s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorBatch::test_inv_quad_logdet
+0.03s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensorBatch::test_inv_quad_logdet_no_reduce
+0.03s call     test/lazy/test_sum_batch_lazy_tensor.py::TestSumBatchLazyTensorBatch::test_inv_matmul_matrix_broadcast
+0.03s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskVariationalGP::test_training_all_batch_zero_mean
+0.03s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledRobustVGP::test_training_all_batch_zero_mean
+0.03s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorBatch::test_inv_quad_logdet_no_reduce
+0.03s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGPOtherBatchDim::test_eval_smaller_pred_batch
+0.03s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensor::test_getitem
+0.03s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensorBatch::test_inv_matmul_matrix_broadcast
+0.03s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGPBatchDim::test_training_iteration_batch_model
+0.03s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorMultiBatch::test_matmul_matrix_broadcast
+0.03s call     test/lazy/test_sum_batch_lazy_tensor.py::TestSumBatchLazyTensor::test_sample
+0.03s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorMultiBatch::test_getitem_tensor_index
+0.03s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGPBatchDim::test_training_all_batch_zero_mean
+0.03s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensor::test_inv_matmul_vector
+0.02s call     test/models/test_variational_gp.py::TestSVGPVariationalGP::test_multi_batch_backward_train
+0.02s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensorMultiBatch::test_inv_matmul_matrix_broadcast
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGPOtherBatchDim::test_training_iteration_batch_inducing
+0.02s call     test/lazy/test_sum_batch_lazy_tensor.py::TestSumBatchLazyTensorBatch::test_sample
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskVariationalGP::test_training_iteration_batch_data
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskRobustVGP::test_training_all_batch_zero_mean
+0.02s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensorBatch::test_inv_quad_logdet
+0.02s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensorBatch::test_getitem
+0.02s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensorBatch::test_inv_matmul_matrix_with_left
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskRobustVGP::test_training_iteration_batch_data
+0.02s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorBatch::test_inv_quad_logdet
+0.02s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensorRectangularMultiBatch::test_matmul_matrix_broadcast
+0.02s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensorMultiBatch::test_matmul_matrix_broadcast
+0.02s call     test/models/test_variational_gp.py::TestSVGPVariationalGP::test_multi_batch_backward_train_nochol
+0.02s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorBatch::test_inv_matmul_matrix_with_left
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskRobustVGP::test_training_iteration_batch_inducing
+0.02s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorBatch::test_inv_matmul_matrix
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskPredictiveGP::test_training_all_batch_zero_mean
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskRobustVGP::test_eval_larger_pred_batch
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledPredictiveGP::test_training_all_batch_zero_mean
+0.02s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensorBatch::test_inv_quad_logdet_no_reduce
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG::test_training_iteration
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledVariationalGPBatchDim::test_training_all_batch_zero_mean
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskRobustVGP::test_eval_smaller_pred_batch
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskPredictiveGP::test_training_iteration_batch_data
+0.02s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorBatch::test_inv_quad_logdet_no_reduce
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskPredictiveGP::test_training_iteration_batch_inducing
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledRobustVGP::test_training_iteration_batch_model
+0.02s call     test/lazy/test_root_lazy_tensor.py::TestRootLazyTensorBatch::test_inv_quad_logdet_no_reduce
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskPredictiveGP::test_eval_smaller_pred_batch
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskRobustVGP::test_training_iteration_batch_model
+0.02s call     test/lazy/test_root_lazy_tensor.py::TestRootLazyTensorBatch::test_inv_quad_logdet
+0.02s call     test/models/test_exact_gp.py::TestInterpolatedExactGP::test_batch_forward_then_nonbatch_forward_eval
+0.02s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensor::test_inv_quad_logdet
+0.02s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorMultiBatch::test_matmul_matrix_broadcast
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledRobustVGP::test_training_all_batch_zero_mean
+0.02s call     test/variational/test_orthogonally_decoupled_variational_strategy.py::TestOrthogonallyDecoupledVariationalGP::test_eval_iteration
+0.02s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorBatch::test_inv_quad_logdet
+0.02s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorBatch::test_inv_quad_logdet_no_reduce
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP::test_training_iteration_batch_data
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskVariationalGP::test_training_all_batch_zero_mean
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskVariationalGP::test_eval_smaller_pred_batch
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG_NoPosteriorVariance::test_training_iteration
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGP::test_training_iteration_batch_inducing
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskPredictiveGP::test_training_iteration_batch_model
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP::test_training_all_batch_zero_mean
+0.02s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorMultiBatch::test_inv_matmul_matrix_with_left
+0.02s call     test/lazy/test_non_lazy_tensor.py::TestNonLazyTensorBatch::test_inv_quad_logdet_no_reduce
+0.02s call     test/lazy/test_non_lazy_tensor.py::TestNonLazyTensorBatch::test_inv_quad_logdet
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledRobustVGP::test_training_iteration_batch_inducing
+0.02s call     test/lazy/test_root_lazy_tensor.py::TestRootLazyTensorBatch::test_inv_matmul_matrix_broadcast
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskVariationalGP::test_training_iteration_batch_inducing
+0.02s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorBatch::test_inv_matmul_matrix_broadcast
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGPOtherBatchDim::test_eval_larger_pred_batch
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGP::test_training_iteration_batch_data
+0.02s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldVariationalGP::test_eval_larger_pred_batch
+0.02s call     test/lazy/test_matmul_lazy_tensor.py::TestMatmulLazyTensorBatch::test_inv_quad_logdet
+0.02s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensor::test_inv_matmul_matrix
+0.02s call     test/lazy/test_matmul_lazy_tensor.py::TestMatmulLazyTensorBatch::test_inv_quad_logdet_no_reduce
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledRobustVGP::test_training_iteration_batch_data
+0.02s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensorBatch::test_sample
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGPOtherBatchDim::test_training_iteration
+0.02s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorBatch::test_inv_matmul_matrix
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskVariationalGP::test_training_iteration_batch_model
+0.02s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorMultiBatch::test_getitem
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskVariationalGP::test_training_iteration_batch_data
+0.02s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensor::test_inv_quad_logdet_no_reduce
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledRobustVGP::test_eval_smaller_pred_batch
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskRobustVGP::test_training_iteration
+0.02s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorBatch::test_inv_matmul_matrix
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGPBatchDim::test_training_iteration_batch_data
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG_NoLogDet::test_training_iteration_batch_data
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGP::test_eval_smaller_pred_batch
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledPredictiveGP::test_training_iteration_batch_inducing
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledVariationalGP::test_training_all_batch_zero_mean
+0.02s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensor::test_inv_quad_logdet
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskPredictiveGP::test_eval_larger_pred_batch
+0.02s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensor::test_inv_quad_logdet
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskRobustVGP::test_training_all_batch_zero_mean
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledPredictiveGP::test_eval_smaller_pred_batch
+0.02s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorMultiBatchBroadcastConstant::test_getitem
+0.02s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorMultiBatch::test_getitem_tensor_index
+0.02s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensorRectangularMultiBatch::test_getitem
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledPredictiveGP::test_training_iteration_batch_data
+0.02s call     test/lazy/test_matmul_lazy_tensor.py::TestMatmulLazyTensorBatch::test_inv_matmul_matrix_broadcast
+0.02s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensor::test_inv_matmul_vector_with_left
+0.02s call     test/models/test_variational_gp.py::TestSVGPVariationalGP::test_batch_backward_train
+0.02s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensor::test_inv_matmul_matrix_with_left
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG_NoLogDet::test_training_iteration_batch_inducing
+0.02s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorMultiBatch::test_inv_matmul_matrix_with_left
+0.02s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorMultitaskBatch::test_getitem
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskPredictiveGP::test_training_iteration
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskRobustVGP::test_training_iteration_batch_data
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskRobustVGP::test_training_iteration_batch_inducing
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGPBatchDim::test_training_iteration_batch_inducing
+0.02s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensor::test_inv_quad_logdet_no_reduce
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGPBatchDim::test_eval_smaller_pred_batch
+0.02s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensor::test_inv_quad_logdet_no_reduce
+0.02s call     test/models/test_variational_gp.py::TestVariationalGP::test_multi_batch_backward_train
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskPredictiveGP::test_training_all_batch_zero_mean
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG_NoPosteriorVariance::test_eval_larger_pred_batch
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskVariationalGP::test_eval_larger_pred_batch
+0.02s call     test/models/test_variational_gp.py::TestSVGPVariationalGP::test_batch_backward_train_nochol
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskRobustVGP::test_eval_larger_pred_batch
+0.02s call     test/lazy/test_sum_batch_lazy_tensor.py::TestSumBatchLazyTensorBatch::test_inv_quad_logdet
+0.02s call     test/utils/test_lanczos.py::TestLanczos::test_lanczos
+0.02s call     test/models/test_model_list.py::TestModelListGP::test_get_fantasy_model_fixed_noise
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskRobustVGP::test_eval_smaller_pred_batch
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledPredictiveGP::test_training_iteration_batch_model
+0.02s call     test/kernels/test_grid_interpolation_kernel.py::TestGridInterpolationKernel::test_standard
+0.02s call     test/models/test_variational_gp.py::TestVariationalGP::test_batch_backward_train
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskPredictiveGP::test_training_iteration_batch_inducing
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledRobustVGP::test_training_iteration_batch_model
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskPredictiveGP::test_training_iteration_batch_data
+0.02s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorMultiBatch::test_matmul_matrix_broadcast
+0.02s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensorBatch::test_inv_quad_logdet_no_reduce
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskRobustVGP::test_training_iteration_batch_model
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskPredictiveGP::test_eval_smaller_pred_batch
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP::test_eval_smaller_pred_batch
+0.02s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensorBatch::test_getitem
+0.02s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorMultiBatch::test_getitem
+0.02s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensor::test_matmul_matrix_broadcast
+0.02s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorMultiBatchBroadcastConstant::test_inv_matmul_matrix
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledVariationalGPBatchDim::test_training_iteration_batch_model
+0.02s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridRobustVGP::test_eval_iteration
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG_NoLogDet::test_training_iteration_batch_model
+0.02s call     test/models/test_variational_gp.py::TestVariationalGP::test_backward_train
+0.02s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorBatch::test_inv_matmul_matrix
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledRobustVGP::test_eval_larger_pred_batch
+0.02s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorBatch::test_inv_matmul_matrix_with_left
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskPredictiveGP::test_training_iteration_batch_model
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskVariationalGP::test_training_iteration
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP::test_training_iteration_batch_inducing
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskVariationalGP::test_training_all_batch_zero_mean
+0.02s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensorBatch::test_inv_quad_logdet
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledRobustVGP::test_training_iteration_batch_inducing
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskVariationalGP::test_eval_smaller_pred_batch
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGPBatchDim::test_eval_larger_pred_batch
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledPredictiveGP::test_eval_larger_pred_batch
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP::test_eval_larger_pred_batch
+0.02s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridPredictiveGP::test_eval_iteration
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledRobustVGP::test_training_iteration_batch_data
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGP::test_training_iteration
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGP::test_training_iteration_batch_model
+0.02s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensorMultiBatch::test_inv_matmul_matrix
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskVariationalGP::test_training_iteration_batch_inducing
+0.02s call     test/lazy/test_sum_batch_lazy_tensor.py::TestSumBatchLazyTensorBatch::test_inv_quad_logdet_no_reduce
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledRobustVGP::test_training_iteration
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledRobustVGP::test_eval_smaller_pred_batch
+0.02s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridVariationalGP::test_eval_iteration
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskRobustVGP::test_training_iteration
+0.02s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensorMultiBatch::test_getitem
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledVariationalGPBatchDim::test_training_iteration_batch_data
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledPredictiveGP::test_training_iteration_batch_inducing
+0.02s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensor::test_inv_matmul_matrix_broadcast
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskRobustVGP::test_eval_larger_pred_batch
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskVariationalGP::test_training_iteration_batch_data
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledPredictiveGP::test_eval_smaller_pred_batch
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskVariationalGP::test_training_iteration_batch_model
+0.02s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldRobustVGP::test_eval_iteration
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledPredictiveGP::test_training_iteration_batch_data
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskPredictiveGP::test_eval_larger_pred_batch
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedRobustVGP::test_training_all_batch_zero_mean
+0.02s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorBatch::test_matmul_matrix_broadcast
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledPredictiveGP::test_training_iteration
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledVariationalGP::test_eval_smaller_pred_batch
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskRobustVGP::test_training_iteration_batch_data
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledVariationalGPBatchDim::test_training_iteration_batch_inducing
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldRobustVGP::test_training_all_batch_zero_mean
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGP::test_eval_iteration
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskRobustVGP::test_eval_smaller_pred_batch
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskRobustVGP::test_training_iteration_batch_inducing
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskPredictiveGP::test_training_iteration
+0.02s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensor::test_getitem
+0.02s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorMultiBatch::test_getitem_tensor_index
+0.02s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldPredictiveGP::test_eval_iteration
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGPBatchDim::test_training_iteration
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledVariationalGPBatchDim::test_eval_smaller_pred_batch
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskPredictiveGP::test_eval_smaller_pred_batch
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledVariationalGP::test_training_iteration_batch_inducing
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskRobustVGP::test_eval_iteration
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskVariationalGP::test_eval_larger_pred_batch
+0.02s call     test/likelihoods/test_bernoulli_likelihood.py::TestBernoulliLikelihood::test_multi_batch
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskPredictiveGP::test_training_iteration_batch_data
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledVariationalGP::test_training_iteration_batch_data
+0.02s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorMultiBatch::test_add_diag
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP::test_training_iteration_batch_model
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskPredictiveGP::test_eval_iteration
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskRobustVGP::test_training_iteration_batch_model
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskPredictiveGP::test_training_iteration_batch_inducing
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledPredictiveGP::test_training_iteration_batch_model
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldVariationalGP::test_training_iteration_batch_data
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedPredictiveGP::test_training_all_batch_zero_mean
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledRobustVGP::test_training_iteration
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskVariationalGP::test_eval_smaller_pred_batch
+0.02s call     test/variational/test_variational_strategy.py::TestRobustVGP::test_training_all_batch_zero_mean
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledRobustVGP::test_eval_larger_pred_batch
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldPredictiveGP::test_training_all_batch_zero_mean
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedRobustVGP::test_training_iteration_batch_data
+0.02s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensor::test_inv_matmul_matrix
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskVariationalGP::test_training_iteration
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMultitaskVariationalGP::test_eval_iteration
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledPredictiveGP::test_eval_larger_pred_batch
+0.02s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensorBatch::test_inv_matmul_matrix
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledVariationalGPBatchDim::test_eval_larger_pred_batch
+0.02s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorBatch::test_getitem
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskVariationalGP::test_training_iteration_batch_inducing
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldRobustVGP::test_training_iteration_batch_data
+0.02s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorMultiBatch::test_inv_matmul_matrix
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskPredictiveGP::test_training_iteration_batch_model
+0.02s call     test/lazy/test_non_lazy_tensor.py::TestNonLazyTensorBatch::test_inv_matmul_matrix_broadcast
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledVariationalGP::test_training_iteration_batch_model
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledPredictiveGP::test_training_iteration
+0.02s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensor::test_inv_matmul_matrix_broadcast
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedRobustVGP::test_training_iteration_batch_inducing
+0.02s call     test/likelihoods/test_gaussian_likelihood.py::TestGaussianLikelihood::test_multi_batch
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGPOtherBatchDim::test_eval_iteration
+0.02s call     test/variational/test_variational_strategy.py::TestPredictiveGP::test_training_all_batch_zero_mean
+0.02s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorBatch::test_inv_matmul_vector_with_left_cholesky
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledVariationalGP::test_eval_larger_pred_batch
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskPredictiveGP::test_eval_larger_pred_batch
+0.02s call     test/models/test_model_list.py::TestModelListGP::test_get_fantasy_model
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldRobustVGP::test_training_iteration_batch_inducing
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldVariationalGP::test_training_all_batch_zero_mean
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaRobustVGP::test_training_all_batch_zero_mean
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledVariationalGPBatchDim::test_training_iteration
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskRobustVGP::test_training_iteration
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedPredictiveGP::test_training_iteration_batch_data
+0.02s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorBatch::test_inv_matmul_matrix_cholesky
+0.02s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorMultitaskBatch::test_inv_matmul_matrix_with_left
+0.02s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorBatch::test_inv_quad_logdet_no_reduce
+0.02s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensorBatch::test_inv_matmul_matrix
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskVariationalGP::test_eval_larger_pred_batch
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedRobustVGP::test_eval_larger_pred_batch
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGP::test_eval_larger_pred_batch
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldPredictiveGP::test_training_iteration_batch_data
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskVariationalGP::test_training_iteration_batch_model
+0.02s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorColumn::test_inv_quad_logdet_no_reduce
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledVariationalGP::test_training_iteration
+0.02s call     test/variational/test_variational_strategy.py::TestMeanFieldRobustVGP::test_training_all_batch_zero_mean
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG_NoLogDet::test_eval_iteration
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledRobustVGP::test_eval_iteration
+0.02s call     test/variational/test_variational_strategy.py::TestVariationalGP::test_training_iteration_batch_data
+0.02s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorBatch::test_inv_quad_logdet
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskPredictiveGP::test_training_iteration
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedPredictiveGP::test_training_iteration_batch_inducing
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldRobustVGP::test_eval_larger_pred_batch
+0.02s call     test/variational/test_variational_strategy.py::TestVariationalGP::test_training_all_batch_zero_mean
+0.02s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensorBatch::test_matmul_matrix_broadcast
+0.02s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorBatch::test_getitem
+0.02s call     test/models/test_exact_gp.py::TestInterpolatedExactGP::test_multi_batch_forward_eval_fast
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldPredictiveGP::test_training_iteration_batch_inducing
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaPredictiveGP::test_training_all_batch_zero_mean
+0.02s call     test/variational/test_variational_strategy.py::TestRobustVGP::test_training_iteration_batch_inducing
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskRobustVGP::test_eval_iteration
+0.02s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorMultiBatch::test_prod
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaVariationalGP::test_training_iteration_batch_data
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledPredictiveGP::test_eval_iteration
+0.02s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensor::test_inv_matmul_matrix
+0.02s call     test/lazy/test_sum_batch_lazy_tensor.py::TestSumBatchLazyTensor::test_inv_quad_logdet
+0.02s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorMultiBatch::test_inv_matmul_matrix
+0.02s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensor::test_inv_matmul_matrix_with_left
+0.02s call     test/models/test_variational_gp.py::TestSVGPVariationalGP::test_backward_train
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskPredictiveGP::test_eval_iteration
+0.02s call     test/variational/test_variational_strategy.py::TestRobustVGP::test_training_iteration_batch_data
+0.02s call     test/lazy/test_non_lazy_tensor.py::TestNonLazyTensorMultiBatch::test_inv_matmul_matrix_broadcast
+0.02s call     test/lazy/test_diag_lazy_tensor.py::TestDiagLazyTensorMultiBatch::test_getitem
+0.02s call     test/lazy/test_sum_batch_lazy_tensor.py::TestSumBatchLazyTensor::test_inv_quad_logdet_no_reduce
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedRobustVGP::test_training_iteration_batch_model
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaRobustVGP::test_training_iteration_batch_inducing
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG_NoLogDet::test_training_iteration
+0.02s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensor::test_inv_quad_logdet_no_reduce
+0.02s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorBatch::test_inv_matmul_matrix_with_left
+0.02s call     test/variational/test_variational_strategy.py::TestMeanFieldPredictiveGP::test_training_all_batch_zero_mean
+0.02s call     test/models/test_variational_gp.py::TestSVGPVariationalGP::test_backward_train_nochol
+0.02s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensor::test_inv_matmul_matrix_with_left
+0.02s call     test/variational/test_variational_strategy.py::TestRobustVGP::test_eval_larger_pred_batch
+0.02s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensor::test_inv_matmul_vector_with_left
+0.02s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorMultiBatch::test_matmul_matrix_broadcast
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedRobustVGP::test_eval_smaller_pred_batch
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaRobustVGP::test_training_iteration_batch_data
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldVariationalGP::test_training_iteration_batch_inducing
+0.02s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensor::test_inv_quad_logdet
+0.02s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorBatch::test_matmul_matrix
+0.02s call     test/variational/test_variational_strategy.py::TestPredictiveGP::test_training_iteration_batch_inducing
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestBatchDecoupledVariationalGPBatchDim::test_eval_iteration
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestMeanFieldMultitaskVariationalGP::test_eval_iteration
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldRobustVGP::test_training_iteration_batch_model
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskVariationalGP::test_training_iteration
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaVariationalGP::test_training_all_batch_zero_mean
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldRobustVGP::test_eval_smaller_pred_batch
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP::test_training_iteration
+0.02s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensor::test_inv_matmul_matrix_broadcast
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaRobustVGP::test_eval_larger_pred_batch
+0.02s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorMultiBatch::test_add
+0.02s call     test/variational/test_variational_strategy.py::TestMeanFieldVariationalGP::test_training_iteration_batch_data
+0.02s call     test/variational/test_variational_strategy.py::TestPredictiveGP::test_training_iteration_batch_data
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedPredictiveGP::test_eval_smaller_pred_batch
+0.02s call     test/variational/test_variational_strategy.py::TestMeanFieldRobustVGP::test_training_iteration_batch_inducing
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP_CG_NoPosteriorVariance::test_eval_iteration
+0.02s call     test/likelihoods/test_gaussian_likelihood.py::TestGaussianLikelihoodBatch::test_multi_batch
+0.02s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorMultiBatch::test_sum
+0.02s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensor::test_inv_matmul_matrix_broadcast
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledRobustVGP::test_eval_iteration
+0.02s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorBatch::test_getitem
+0.02s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorColumn::test_inv_quad_logdet
+0.02s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensorMultiBatch::test_getitem
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedPredictiveGP::test_training_iteration_batch_model
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldPredictiveGP::test_eval_smaller_pred_batch
+0.02s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensor::test_inv_quad_logdet
+0.02s call     test/variational/test_variational_strategy.py::TestMeanFieldRobustVGP::test_training_iteration_batch_data
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaPredictiveGP::test_training_iteration_batch_inducing
+0.02s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensor::test_inv_quad_logdet_no_reduce
+0.02s call     test/likelihoods/test_gaussian_likelihood.py::TestGaussianLikelihoodMultiBatch::test_multi_batch
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaPredictiveGP::test_training_iteration_batch_data
+0.02s call     test/variational/test_variational_strategy.py::TestMeanFieldVariationalGP::test_training_all_batch_zero_mean
+0.02s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorMultiBatch::test_inv_matmul_matrix_with_left
+0.02s call     test/variational/test_variational_strategy.py::TestVariationalGP::test_training_iteration_batch_inducing
+0.02s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorMultiBatch::test_inv_matmul_matrix_with_left
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledPredictiveGP::test_eval_iteration
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldPredictiveGP::test_training_iteration_batch_model
+0.02s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorMultiBatchBroadcastConstant::test_matmul_matrix_broadcast
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskRobustVGP::test_eval_iteration
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldVariationalGP::test_eval_smaller_pred_batch
+0.02s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensorMultiBatch::test_getitem_tensor_index
+0.02s call     test/variational/test_variational_strategy.py::TestRobustVGP::test_training_iteration_batch_model
+0.02s call     test/variational/test_variational_strategy.py::TestRobustVGP::test_eval_smaller_pred_batch
+0.02s call     test/variational/test_variational_strategy.py::TestMeanFieldRobustVGP::test_eval_larger_pred_batch
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskPredictiveGP::test_eval_iteration
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledVariationalGP::test_eval_iteration
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaRobustVGP::test_training_iteration_batch_model
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedRobustVGP::test_training_iteration
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaVariationalGP::test_training_iteration_batch_inducing
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedPredictiveGP::test_eval_larger_pred_batch
+0.02s call     test/variational/test_variational_strategy.py::TestMeanFieldPredictiveGP::test_training_iteration_batch_inducing
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaRobustVGP::test_eval_smaller_pred_batch
+0.02s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorBatch::test_matmul_matrix_broadcast
+0.02s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensor::test_inv_quad_logdet_no_reduce
+0.02s call     test/variational/test_variational_strategy.py::TestMeanFieldPredictiveGP::test_training_iteration_batch_data
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldVariationalGP::test_training_iteration_batch_model
+0.02s call     test/variational/test_batch_decoupled_variational_strategy.py::TestMeanFieldBatchDecoupledVariationalGPBatchDim::test_eval_iteration
+0.02s call     test/variational/test_variational_strategy.py::TestPredictiveGP::test_eval_smaller_pred_batch
+0.02s call     test/variational/test_variational_strategy.py::TestDeltaRobustVGP::test_training_all_batch_zero_mean
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldRobustVGP::test_training_iteration
+0.02s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorAdditive::test_inv_quad_logdet_no_reduce
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldPredictiveGP::test_eval_larger_pred_batch
+0.02s call     test/variational/test_multitask_variational_strategy.py::TestDeltaMultitaskVariationalGP::test_eval_iteration
+0.02s call     test/likelihoods/test_softmax_likelihood.py::TestSoftmaxLikelihood::test_multi_batch
+0.02s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorAdditive::test_inv_quad_logdet
+0.02s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorBatch::test_getitem
+0.02s call     test/models/test_exact_gp.py::TestInterpolatedExactGP::test_multi_batch_forward_eval
+0.02s call     test/variational/test_grid_interpolation_variational_strategy.py::TestGridMeanFieldVariationalGP::test_eval_iteration
+0.02s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensorMultiBatch::test_inv_matmul_matrix_with_left
+0.02s call     test/variational/test_variational_strategy.py::TestPredictiveGP::test_training_iteration_batch_model
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedVariationalGP::test_eval_iteration
+0.02s call     test/variational/test_variational_strategy.py::TestVariationalGP::test_eval_smaller_pred_batch
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaPredictiveGP::test_eval_smaller_pred_batch
+0.02s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensor::test_inv_matmul_matrix
+0.02s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensor::test_inv_quad_logdet
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldVariationalGP::test_eval_larger_pred_batch
+0.02s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorMultiBatch::test_permute
+0.02s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorMultiBatch::test_constant_mul
+0.02s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensorMultiBatch::test_inv_matmul_matrix
+0.02s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensor::test_getitem
+0.02s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorMultiBatch::test_transpose_batch
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedPredictiveGP::test_training_iteration
+0.02s call     test/variational/test_variational_strategy.py::TestDeltaPredictiveGP::test_training_all_batch_zero_mean
+0.02s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensorMultiBatch::test_getitem
+0.02s call     test/priors/test_multivariate_normal_prior.py::TestMultivariateNormalPrior::test_multivariate_normal_prior_batch_log_prob
+0.02s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorMultiBatch::test_evaluate
+0.02s call     test/variational/test_variational_strategy.py::TestMeanFieldRobustVGP::test_training_iteration_batch_model
+0.02s call     test/variational/test_variational_strategy.py::TestMeanFieldVariationalGP::test_training_iteration_batch_inducing
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaPredictiveGP::test_training_iteration_batch_model
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaVariationalGP::test_eval_smaller_pred_batch
+0.02s call     test/variational/test_variational_strategy.py::TestPredictiveGP::test_eval_larger_pred_batch
+0.02s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensor::test_inv_quad_logdet
+0.02s call     test/models/test_exact_gp.py::TestSumExactGP::test_batch_forward_then_different_batch_forward_eval
+0.02s call     test/variational/test_variational_strategy.py::TestMeanFieldRobustVGP::test_eval_smaller_pred_batch
+0.02s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorMultiBatchBroadcastConstant::test_inv_matmul_matrix_with_left
+0.02s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensorBatch::test_matmul_matrix_broadcast
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldPredictiveGP::test_training_iteration
+0.02s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensor::test_inv_matmul_vector
+0.02s call     test/likelihoods/test_gaussian_likelihood.py::TestFixedNoiseGaussianLikelihood::test_multi_batch
+0.02s call     test/variational/test_variational_strategy.py::TestDeltaVariationalGP::test_training_iteration_batch_data
+0.02s call     test/variational/test_variational_strategy.py::TestRobustVGP::test_training_iteration
+0.02s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensor::test_inv_quad_logdet_no_reduce
+0.02s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorMultiBatch::test_diag
+0.02s call     test/lazy/test_non_lazy_tensor.py::TestNonLazyTensor::test_inv_quad_logdet
+0.02s call     test/lazy/test_non_lazy_tensor.py::TestNonLazyTensor::test_inv_quad_logdet_no_reduce
+0.02s call     test/variational/test_variational_strategy.py::TestVariationalGP::test_training_iteration_batch_model
+0.02s call     test/variational/test_variational_strategy.py::TestVariationalGP::test_eval_larger_pred_batch
+0.02s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaPredictiveGP::test_eval_larger_pred_batch
+0.01s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorBatch::test_matmul_matrix_broadcast
+0.01s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaRobustVGP::test_training_iteration
+0.01s call     test/lazy/test_matmul_lazy_tensor.py::TestMatmulLazyTensor::test_inv_quad_logdet
+0.01s call     test/kernels/test_newton_girard_additive_kernel.py::TestNewtonGirardAdditiveKernel::test_optimizing
+0.01s call     test/variational/test_variational_strategy.py::TestDeltaRobustVGP::test_training_iteration_batch_inducing
+0.01s call     test/variational/test_variational_strategy.py::TestMeanFieldPredictiveGP::test_eval_smaller_pred_batch
+0.01s call     test/variational/test_variational_strategy.py::TestDeltaRobustVGP::test_eval_larger_pred_batch
+0.01s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaVariationalGP::test_training_iteration_batch_model
+0.01s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensor::test_getitem_tensor_index
+0.01s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorBatch::test_getitem_tensor_index
+0.01s call     test/variational/test_variational_strategy.py::TestDeltaRobustVGP::test_training_iteration_batch_data
+0.01s call     test/lazy/test_matmul_lazy_tensor.py::TestMatmulLazyTensor::test_inv_quad_logdet_no_reduce
+0.01s call     test/variational/test_variational_strategy.py::TestMeanFieldPredictiveGP::test_training_iteration_batch_model
+0.01s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaVariationalGP::test_eval_larger_pred_batch
+0.01s call     test/likelihoods/test_gaussian_likelihood.py::TestFixedNoiseGaussianLikelihoodBatch::test_multi_batch
+0.01s call     test/variational/test_variational_strategy.py::TestDeltaVariationalGP::test_training_all_batch_zero_mean
+0.01s call     test/variational/test_whitened_variational_strategy.py::TestVariationalGP::test_training_iteration
+0.01s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldVariationalGP::test_training_iteration
+0.01s call     test/variational/test_variational_strategy.py::TestMeanFieldRobustVGP::test_training_iteration
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensorRectangularMultiBatch::test_getitem_tensor_index
+0.01s call     test/likelihoods/test_gaussian_likelihood.py::TestFixedNoiseGaussianLikelihoodMultiBatch::test_multi_batch
+0.01s call     test/likelihoods/test_bernoulli_likelihood.py::TestBernoulliLikelihood::test_batch
+0.01s call     test/variational/test_variational_strategy.py::TestMeanFieldVariationalGP::test_eval_smaller_pred_batch
+0.01s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensor::test_inv_matmul_vector
+0.01s call     test/variational/test_variational_strategy.py::TestPredictiveGP::test_training_iteration
+0.01s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorMultitaskBatch::test_root_decomposition
+0.01s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensor::test_inv_matmul_vector_with_left
+0.01s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaPredictiveGP::test_training_iteration
+0.01s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensorBatch::test_sample
+0.01s call     test/variational/test_variational_strategy.py::TestMeanFieldPredictiveGP::test_eval_larger_pred_batch
+0.01s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensor::test_getitem
+0.01s call     test/likelihoods/test_gaussian_likelihood.py::TestGaussianLikelihood::test_batch
+0.01s call     test/variational/test_variational_strategy.py::TestDeltaPredictiveGP::test_training_iteration_batch_inducing
+0.01s call     test/variational/test_variational_strategy.py::TestDeltaPredictiveGP::test_training_iteration_batch_data
+0.01s call     test/likelihoods/test_softmax_likelihood.py::TestSoftmaxLikelihoodNoMixing::test_multi_batch
+0.01s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensor::test_inv_matmul_matrix_with_left
+0.01s call     test/variational/test_variational_strategy.py::TestMeanFieldVariationalGP::test_training_iteration_batch_model
+0.01s call     test/lazy/test_root_lazy_tensor.py::TestRootLazyTensor::test_inv_quad_logdet
+0.01s call     test/variational/test_variational_strategy.py::TestMeanFieldPredictiveGP::test_training_iteration
+0.01s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorBatch::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_root_lazy_tensor.py::TestRootLazyTensor::test_inv_quad_logdet_no_reduce
+0.01s call     test/models/test_exact_gp.py::TestInterpolatedExactGP::test_forward_eval_fast
+0.01s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensorMultiBatch::test_inv_matmul_matrix
+0.01s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensor::test_inv_matmul_vector
+0.01s call     test/variational/test_variational_strategy.py::TestMeanFieldVariationalGP::test_eval_larger_pred_batch
+0.01s call     test/variational/test_variational_strategy.py::TestVariationalGP::test_training_iteration
+0.01s call     test/variational/test_variational_strategy.py::TestDeltaRobustVGP::test_eval_smaller_pred_batch
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensorBatch::test_getitem
+0.01s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedRobustVGP::test_eval_iteration
+0.01s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaVariationalGP::test_training_iteration
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorMultiBatch::test_inv_matmul_matrix
+0.01s call     test/variational/test_variational_strategy.py::TestDeltaVariationalGP::test_training_iteration_batch_inducing
+0.01s call     test/variational/test_variational_strategy.py::TestDeltaPredictiveGP::test_eval_smaller_pred_batch
+0.01s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldRobustVGP::test_eval_iteration
+0.01s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensor::test_getitem
+0.01s call     test/variational/test_variational_strategy.py::TestMeanFieldVariationalGP::test_training_iteration
+0.01s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedPredictiveGP::test_eval_iteration
+0.01s call     test/kernels/test_rbf_kernel_grad.py::TestRBFKernelGrad::test_no_batch_kernel_double_batch_x_ard
+0.01s call     test/variational/test_variational_strategy.py::TestDeltaRobustVGP::test_training_iteration_batch_model
+0.01s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensor::test_getitem
+0.01s call     test/variational/test_variational_strategy.py::TestDeltaVariationalGP::test_eval_smaller_pred_batch
+0.01s call     test/likelihoods/test_gaussian_likelihood.py::TestGaussianLikelihood::test_nonbatch
+0.01s call     test/utils/test_linear_cg.py::TestLinearCG::test_batch_cg
+0.01s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldPredictiveGP::test_eval_iteration
+0.01s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensorMultiBatch::test_matmul_matrix_broadcast
+0.01s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorMultitaskBatch::test_inv_matmul_matrix_cholesky
+0.01s call     test/variational/test_variational_strategy.py::TestDeltaPredictiveGP::test_eval_larger_pred_batch
+0.01s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensorMultiBatch::test_matmul_matrix_broadcast
+0.01s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensorBatch::test_inv_matmul_matrix
+0.01s call     test/variational/test_whitened_variational_strategy.py::TestVariationalGP::test_eval_iteration
+0.01s call     test/priors/test_gamma_prior.py::TestGammaPrior::test_gamma_prior_batch_log_prob
+0.01s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensorBatch::test_getitem
+0.01s call     test/distributions/test_multitask_multivariate_normal.py::TestMultiTaskMultivariateNormal::test_multitask_multivariate_normal
+0.01s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedMeanFieldVariationalGP::test_eval_iteration
+0.01s call     test/priors/test_normal_prior.py::TestNormalPrior::test_normal_prior_batch_log_prob
+0.01s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensorMultiBatch::test_getitem_tensor_index
+0.01s call     test/variational/test_variational_strategy.py::TestRobustVGP::test_eval_iteration
+0.01s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaRobustVGP::test_eval_iteration
+0.01s call     test/variational/test_variational_strategy.py::TestDeltaVariationalGP::test_eval_larger_pred_batch
+0.01s call     test/kernels/test_rbf_kernel_grad.py::TestRBFKernelGrad::test_no_batch_kernel_double_batch_x_no_ard
+0.01s call     test/variational/test_variational_strategy.py::TestDeltaPredictiveGP::test_training_iteration_batch_model
+0.01s call     test/variational/test_variational_strategy.py::TestDeltaRobustVGP::test_training_iteration
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensor::test_inv_matmul_matrix
+0.01s call     test/lazy/test_root_lazy_tensor.py::TestRootLazyTensorBatch::test_sample
+0.01s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensorBatch::test_matmul_matrix_broadcast
+0.01s call     test/priors/test_horseshoe_prior.py::TestHorseshoePrior::test_horseshoe_prior_batch_log_prob
+0.01s call     test/likelihoods/test_gaussian_likelihood.py::TestGaussianLikelihoodBatch::test_batch
+0.01s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensorBatch::test_sample
+0.01s call     test/variational/test_variational_strategy.py::TestPredictiveGP::test_eval_iteration
+0.01s call     test/models/test_exact_gp.py::TestInterpolatedExactGP::test_forward_eval
+0.01s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaPredictiveGP::test_eval_iteration
+0.01s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensor::test_inv_matmul_matrix_broadcast
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensorBatch::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensor::test_inv_matmul_vector
+0.01s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensorMultiBatch::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorBatchCat::test_inv_matmul_matrix
+0.01s call     test/variational/test_variational_strategy.py::TestVariationalGP::test_eval_iteration
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorMultiBatch::test_matmul_matrix_broadcast
+0.01s call     test/variational/test_variational_strategy.py::TestMeanFieldRobustVGP::test_eval_iteration
+0.01s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensor::test_inv_matmul_vector_with_left
+0.01s call     test/variational/test_unwhitened_variational_strategy.py::TestUnwhitenedDeltaVariationalGP::test_eval_iteration
+0.01s call     test/variational/test_variational_strategy.py::TestDeltaPredictiveGP::test_training_iteration
+0.01s call     test/variational/test_variational_strategy.py::TestDeltaVariationalGP::test_training_iteration_batch_model
+0.01s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensor::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensor::test_inv_matmul_matrix_cholesky
+0.01s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensor::test_matmul_matrix
+0.01s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensor::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/kernels/test_polynomial_kernel_grad.py::TestPolynomialKernel::test_no_batch_kernel_double_batch_x_no_ard
+0.01s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorMultiBatchBroadcastConstant::test_getitem_tensor_index
+0.01s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensor::test_getitem
+0.01s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorMultiBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorBatch::test_inv_matmul_matrix_cholesky
+0.01s call     test/variational/test_variational_strategy.py::TestMeanFieldPredictiveGP::test_eval_iteration
+0.01s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensorBatch::test_inv_matmul_matrix_cholesky
+0.01s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorMultiBatch::test_inv_matmul_matrix_cholesky
+0.01s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensor::test_inv_matmul_vector_with_left
+0.01s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorMultitaskBatch::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensor::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensor::test_getitem_tensor_index
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorMultiBatch::test_getitem
+0.01s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorMultiBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorBatch::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/lazy/test_cached_cg_lazy_tensor.py::TestCachedCGLazyTensorMultiBatch::test_matmul_matrix_broadcast
+0.01s call     test/variational/test_variational_strategy.py::TestMeanFieldVariationalGP::test_eval_iteration
+0.01s call     test/variational/test_variational_strategy.py::TestDeltaVariationalGP::test_training_iteration
+0.01s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensor::test_matmul_vec
+0.01s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensorBatch::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensor::test_matmul_matrix_broadcast
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorBatchCat::test_getitem_tensor_index
+0.01s call     test/models/test_model_list.py::TestExactGP::test_batch_forward_then_different_batch_forward_eval
+0.01s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensorBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorBatch::test_matmul_matrix_broadcast
+0.01s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensorBatch::test_inv_matmul_matrix
+0.01s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensor::test_inv_matmul_matrix_broadcast
+0.01s call     test/lazy/test_diag_lazy_tensor.py::TestDiagLazyTensorBatch::test_getitem
+0.01s call     test/models/test_exact_gp.py::TestSumExactGP::test_batch_forward_then_nonbatch_forward_eval
+0.01s call     test/functions/test_inv_quad_log_det.py::TestInvQuadLogDetNonBatch::test_inv_quad_logdet_many_vectors_improper
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorColumn::test_inv_matmul_matrix_broadcast
+0.01s call     test/kernels/test_cylindrical_kernel.py::TestCylindricalKernel::test_no_batch_kernel_double_batch_x_no_ard
+0.01s call     test/variational/test_variational_strategy.py::TestDeltaRobustVGP::test_eval_iteration
+0.01s call     test/functions/test_inv_quad_log_det.py::TestInvQuadLogDetNonBatch::test_precond_inv_quad_logdet_many_vectors_improper
+0.01s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensor::test_inv_matmul_matrix_cholesky
+0.01s call     test/models/test_exact_gp.py::TestExactGP::test_batch_forward_then_different_batch_forward_eval
+0.01s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensorBatch::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensorBatch::test_getitem
+0.01s call     test/likelihoods/test_bernoulli_likelihood.py::TestBernoulliLikelihood::test_nonbatch
+0.01s call     test/variational/test_variational_strategy.py::TestDeltaPredictiveGP::test_eval_iteration
+0.01s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorBatch::test_inv_matmul_matrix_with_left
+0.01s call     test/kernels/test_periodic_kernel.py::TestPeriodicKernel::test_batch
+0.01s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorMultiBatch::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensor::test_inv_matmul_matrix_broadcast
+0.01s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensorBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_chol_lazy_tensor.py::TestCholLazyTensorMultiBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensorBatch::test_root_decomposition
+0.01s call     test/variational/test_variational_strategy.py::TestDeltaVariationalGP::test_eval_iteration
+0.01s call     test/lazy/test_diag_lazy_tensor.py::TestDiagLazyTensorBatch::test_sample
+0.01s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorMultiBatch::test_add_diag
+0.01s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensorMultiBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensorBatch::test_matmul_matrix_broadcast
+0.01s call     test/lazy/test_root_lazy_tensor.py::TestRootLazyTensorMultiBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensorMultiBatch::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/utils/test_pivoted_cholesky.py::TestPivotedCholesky::test_solve_qr
+0.01s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorMultitaskBatch::test_matmul_matrix
+0.01s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensorMultiBatch::test_inv_matmul_matrix
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorBatch::test_inv_matmul_matrix
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensorRectangular::test_getitem
+0.01s call     test/lazy/test_chol_lazy_tensor.py::TestCholLazyTensorBatch::test_sample
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorMultiBatch::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensor::test_inv_matmul_matrix
+0.01s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensorBatch::test_getitem
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorColumn::test_inv_matmul_matrix
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensor::test_getitem
+0.01s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensor::test_inv_matmul_vector
+0.01s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensorMultiBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensorMultiBatch::test_inv_matmul_matrix
+0.01s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensor::test_getitem_tensor_index
+0.01s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorBatch::test_matmul_matrix_broadcast
+0.01s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorBatch::test_matmul_matrix
+0.01s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorMultiBatch::test_inv_matmul_matrix_cholesky
+0.01s call     test/likelihoods/test_gaussian_likelihood.py::TestFixedNoiseGaussianLikelihood::test_batch
+0.01s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensorBatch::test_matmul_matrix_broadcast
+0.01s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensor::test_sample
+0.01s call     test/likelihoods/test_gaussian_likelihood.py::TestFixedNoiseGaussianLikelihoodBatch::test_batch
+0.01s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensor::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/lazy/test_chol_lazy_tensor.py::TestCholLazyTensorBatch::test_inv_matmul_matrix_broadcast
+0.01s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensor::test_matmul_matrix_broadcast
+0.01s call     test/lazy/test_sum_batch_lazy_tensor.py::TestSumBatchLazyTensorBatch::test_inv_matmul_matrix
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensor::test_inv_matmul_vector_with_left
+0.01s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensorMultiBatch::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensorBatch::test_matmul_matrix
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorBatchCat::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_root_lazy_tensor.py::TestRootLazyTensorMultiBatch::test_inv_matmul_matrix
+0.01s call     test/utils/test_pivoted_cholesky.py::TestPivotedCholesky::test_solve_qr_float32
+0.01s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensor::test_matmul_matrix
+0.01s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_sum_batch_lazy_tensor.py::TestSumBatchLazyTensorMultiBatch::test_inv_matmul_matrix
+0.01s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensorMultiBatch::test_inv_matmul_matrix_cholesky
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensor::test_inv_matmul_matrix_with_left
+0.01s call     test/utils/test_pivoted_cholesky.py::TestPivotedCholesky::test_solve_qr_constant_noise_float32
+0.01s call     test/utils/test_pivoted_cholesky.py::TestPivotedCholesky::test_solve_qr_constant_noise
+0.01s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorMultiBatch::test_inv_matmul_matrix_cholesky
+0.01s call     test/lazy/test_diag_lazy_tensor.py::TestDiagLazyTensor::test_getitem
+0.01s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensor::test_sample
+0.01s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensor::test_inv_matmul_matrix_cholesky
+0.01s call     test/kernels/test_newton_girard_additive_kernel.py::TestNewtonGirardAdditiveKernel::test_no_batch_kernel_double_batch_x_ard
+0.01s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensorBatch::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensor::test_inv_matmul_matrix
+0.01s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorNonSquare::test_matmul_matrix_broadcast
+0.01s call     test/kernels/test_newton_girard_additive_kernel.py::TestNewtonGirardAdditiveKernel::test_no_batch_kernel_double_batch_x_no_ard
+0.01s call     test/kernels/test_arc_kernel.py::TestArcKernel::test_no_batch_kernel_double_batch_x_ard
+0.01s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorMultiBatch::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensor::test_matmul_matrix
+0.01s call     test/lazy/test_chol_lazy_tensor.py::TestCholLazyTensor::test_sample
+0.01s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorMultiBatch::test_matmul_matrix
+0.01s call     test/utils/test_pivoted_cholesky.py::TestPivotedCholeskyMultiBatch::test_pivoted_cholesky
+0.01s call     test/utils/test_linear_cg.py::TestLinearCG::test_batch_cg_with_tridiag
+0.01s call     test/kernels/test_arc_kernel.py::TestArcKernel::test_no_batch_kernel_double_batch_x_no_ard
+0.01s call     test/lazy/test_diag_lazy_tensor.py::TestDiagLazyTensorMultiBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorMultiBatch::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/lazy/test_root_lazy_tensor.py::TestRootLazyTensorBatch::test_inv_matmul_matrix
+0.01s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensor::test_getitem
+0.01s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensorMultiBatch::test_matmul_matrix
+0.01s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensor::test_inv_matmul_vector
+0.01s call     test/distributions/test_multivariate_normal.py::TestMultivariateNormal::test_multivariate_normal_batch_non_lazy
+0.01s call     test/utils/test_quadrature.py::TestQuadrature::test_gauss_hermite_quadrature_1D_mvn_batch
+0.01s call     test/lazy/test_chol_lazy_tensor.py::TestCholLazyTensorMultiBatch::test_inv_matmul_matrix_broadcast
+0.01s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensorBatch::test_inv_matmul_matrix
+0.01s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensorBatch::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensor::test_getitem
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorColumn::test_inv_matmul_vector
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensorRectangularMultiBatch::test_matmul_matrix
+0.01s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensor::test_getitem_tensor_index
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensorBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensor::test_root_decomposition
+0.01s call     test/lazy/test_sum_batch_lazy_tensor.py::TestSumBatchLazyTensor::test_inv_matmul_matrix_broadcast
+0.01s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorMultiBatch::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensorMultiBatch::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensor::test_inv_matmul_matrix_broadcast
+0.01s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorBatch::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensor::test_getitem_tensor_index
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensorBatch::test_inv_matmul_matrix_cholesky
+0.01s call     test/models/test_exact_gp.py::TestExactGP::test_batch_forward_then_nonbatch_forward_eval
+0.01s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorMultiBatch::test_inv_matmul_matrix_cholesky
+0.01s call     test/utils/test_quadrature.py::TestQuadrature::test_gauss_hermite_quadrature_1D_normal_batch
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorBatchCat::test_matmul_matrix_broadcast
+0.01s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensor::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorMultiBatch::test_quad_form_derivative
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorBatch::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensor::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorAdditive::test_inv_matmul_matrix_broadcast
+0.01s call     test/models/test_model_list.py::TestExactGP::test_batch_forward_then_nonbatch_forward_eval
+0.01s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensor::test_inv_matmul_matrix_cholesky
+0.01s call     test/examples/test_simple_gp_regression.py::TestSimpleGPRegression::test_posterior_latent_gp_and_likelihood_without_optimization
+0.01s call     test/lazy/test_cached_cg_lazy_tensor.py::TestCachedCGLazyTensor::test_inv_quad_logdet
+0.01s call     test/lazy/test_cached_cg_lazy_tensor.py::TestCachedCGLazyTensor::test_inv_quad_logdet_no_reduce
+0.01s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensorBatch::test_root_decomposition
+0.01s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorBatch::test_inv_matmul_matrix_cholesky
+0.01s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorMultiBatch::test_root_decomposition
+0.01s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensor::test_getitem_tensor_index
+0.01s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorBatch::test_inv_matmul_matrix
+0.01s call     test/models/test_exact_gp.py::TestInterpolatedExactGP::test_prior_mode
+0.01s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorBatch::test_root_decomposition
+0.01s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensor::test_getitem
+0.01s call     test/lazy/test_cached_cg_lazy_tensor.py::TestCachedCGLazyTensorMultiBatch::test_inv_matmul_matrix
+0.01s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensor::test_inv_matmul_vector
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorMultiBatch::test_matmul_matrix
+0.01s call     test/distributions/test_multitask_multivariate_normal.py::TestMultiTaskMultivariateNormal::test_multitask_multivariate_normal_batch
+0.01s call     test/lazy/test_chol_lazy_tensor.py::TestCholLazyTensorMultiBatch::test_getitem
+0.01s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensor::test_sample
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensorBatch::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorMultiBatchBroadcastConstant::test_inv_matmul_matrix_cholesky
+0.01s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorMultiBatch::test_matmul_matrix
+0.01s call     test/lazy/test_root_lazy_tensor.py::TestRootLazyTensorMultiBatch::test_getitem
+0.01s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensor::test_inv_matmul_matrix
+0.01s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensor::test_inv_matmul_vector_with_left
+0.01s call     test/models/test_exact_gp.py::TestSumExactGP::test_multi_batch_forward_eval
+0.01s call     test/lazy/test_matmul_lazy_tensor.py::TestMatmulLazyTensorRectangularMultiBatch::test_getitem_tensor_index
+0.01s call     test/examples/test_white_noise_regression.py::TestWhiteNoiseGPRegression::test_posterior_latent_gp_and_likelihood_without_optimization
+0.01s call     test/lazy/test_sum_batch_lazy_tensor.py::TestSumBatchLazyTensor::test_inv_matmul_matrix
+0.01s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensorMultiBatch::test_inv_matmul_matrix_cholesky
+0.01s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensorBatch::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorMultiBatch::test_transpose_batch
+0.01s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorBatch::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorAdditive::test_inv_matmul_matrix
+0.01s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensor::test_matmul_matrix_broadcast
+0.01s call     test/lazy/test_sum_batch_lazy_tensor.py::TestSumBatchLazyTensor::test_inv_matmul_vector
+0.01s call     test/kernels/test_newton_girard_additive_kernel.py::TestNewtonGirardAdditiveKernel::test_degree3
+0.01s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensor::test_matmul_vec
+0.01s call     test/lazy/test_matmul_lazy_tensor.py::TestMatmulLazyTensorBatch::test_inv_matmul_matrix
+0.01s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensorMultiBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorMultiBatchBroadcastConstant::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/lazy/test_cached_cg_lazy_tensor.py::TestCachedCGLazyTensorBatch::test_inv_matmul_matrix
+0.01s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorBatch::test_getitem
+0.01s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorMultiBatch::test_sum
+0.01s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensorBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_cached_cg_lazy_tensor.py::TestCachedCGLazyTensorNoLogdetBatch::test_inv_matmul_matrix
+0.01s call     test/kernels/test_scale_kernel.py::TestScaleKernel::test_ard
+0.01s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensorBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensorRectangular::test_getitem_tensor_index
+0.01s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensor::test_matmul_vec
+0.01s call     test/lazy/test_diag_lazy_tensor.py::TestDiagLazyTensorMultiBatch::test_inv_matmul_matrix_broadcast
+0.01s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensor::test_getitem_tensor_index
+0.01s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorMultitaskBatch::test_sum
+0.01s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorAdditive::test_inv_matmul_vector
+0.01s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorBatch::test_inv_matmul_matrix_cholesky
+0.01s call     test/distributions/test_multivariate_normal.py::TestMultivariateNormal::test_multivariate_normal_non_lazy
+0.01s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensorMultiBatch::test_add_diag
+0.01s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensorBatch::test_quad_form_derivative
+0.01s call     test/models/test_exact_gp.py::TestSumExactGP::test_batch_forward_eval
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensor::test_inv_matmul_matrix_cholesky
+0.01s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensor::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_sum_batch_lazy_tensor.py::TestSumBatchLazyTensorBatch::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorBatch::test_matmul_matrix
+0.01s call     test/models/test_exact_gp.py::TestSumExactGP::test_batch_forward_eval_fast
+0.01s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensorMultiBatch::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/kernels/test_matern_kernel.py::TestMaternKernel::test_ard
+0.01s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensorMultiBatch::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensor::test_getitem_tensor_index
+0.01s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorBatch::test_add_diag
+0.01s call     test/models/test_variational_gp.py::TestSVGPVariationalGP::test_multi_batch_forward_train
+0.01s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensorMultiBatch::test_inv_matmul_matrix_cholesky
+0.01s call     test/lazy/test_root_lazy_tensor.py::TestRootLazyTensorMultiBatch::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_non_lazy_tensor.py::TestNonLazyTensorBatch::test_inv_matmul_matrix
+0.01s call     test/lazy/test_matmul_lazy_tensor.py::TestMatmulLazyTensor::test_inv_matmul_matrix_broadcast
+0.01s call     test/examples/test_svgp_gp_regression.py::TestSVGPRegression::test_loading_old_model
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensorRectangular::test_matmul_matrix_broadcast
+0.01s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorNonSquare::test_quad_form_derivative
+0.01s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorBatch::test_inv_matmul_matrix_with_checkpointing
+0.01s call     test/lazy/test_diag_lazy_tensor.py::TestDiagLazyTensor::test_sample
+0.01s call     test/lazy/test_sum_batch_lazy_tensor.py::TestSumBatchLazyTensorMultiBatch::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorColumn::test_getitem_tensor_index
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensorBatch::test_matmul_matrix
+0.01s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorAdditive::test_getitem
+0.01s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensorBatch::test_inv_matmul_matrix_cholesky
+0.01s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorBatch::test_quad_form_derivative
+0.01s call     test/models/test_variational_gp.py::TestSVGPVariationalGP::test_multi_batch_forward_eval
+0.01s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensor::test_inv_matmul_matrix_with_left
+0.01s call     test/utils/test_grid.py::TestGrid::test_choose_grid_size
+0.01s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorBatch::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensorBatch::test_inv_matmul_matrix_cholesky
+0.01s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensorBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorMultitaskBatch::test_add
+0.01s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorAdditive::test_inv_matmul_vector_with_left
+0.01s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorMultitaskBatch::test_add_diag
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorColumn::test_getitem
+0.01s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensor::test_inv_matmul_vector_with_left
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorBatchCat::test_getitem
+0.01s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensorMultiBatch::test_root_decomposition
+0.01s call     test/kernels/test_newton_girard_additive_kernel.py::TestNewtonGirardAdditiveKernel::test_degree2
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorBatch::test_inv_matmul_matrix_cholesky
+0.01s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensor::test_inv_matmul_matrix_broadcast
+0.01s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorMultiBatch::test_quad_form_derivative
+0.01s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensor::test_quad_form_derivative
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensorRectangular::test_matmul_matrix
+0.01s call     test/lazy/test_sum_batch_lazy_tensor.py::TestSumBatchLazyTensorMultiBatch::test_getitem_tensor_index
+0.01s call     test/models/test_variational_gp.py::TestSVGPVariationalGP::test_batch_forward_train
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorMultiBatch::test_inv_matmul_matrix_cholesky
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensor::test_inv_matmul_matrix
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensor::test_inv_matmul_vector
+0.01s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensorMultiBatch::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensorRectangular::test_matmul_vec
+0.01s call     test/likelihoods/test_softmax_likelihood.py::TestSoftmaxLikelihood::test_batch
+0.01s call     test/lazy/test_root_lazy_tensor.py::TestRootLazyTensor::test_inv_matmul_matrix_broadcast
+0.01s call     test/models/test_variational_gp.py::TestVariationalGP::test_multi_batch_forward_train
+0.01s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensorMultiBatch::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/models/test_variational_gp.py::TestVariationalGP::test_multi_batch_forward_eval
+0.01s call     test/examples/test_simple_gp_regression.py::TestSimpleGPRegression::test_gp_posterior_single_training_point_smoke_test
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorMultiBatch::test_root_decomposition
+0.01s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensor::test_matmul_matrix
+0.01s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensorRectangular::test_getitem
+0.01s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorBatch::test_quad_form_derivative
+0.01s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorAdditive::test_inv_matmul_matrix_with_left
+0.01s call     test/models/test_exact_gp.py::TestSumExactGP::test_multi_batch_forward_eval_fast
+0.01s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensor::test_root_decomposition
+0.01s call     test/kernels/test_cosine_kernel.py::TestCosineKernel::test_batch
+0.01s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensor::test_getitem_tensor_index
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorBatch::test_getitem
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensor::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/lazy/test_cached_cg_lazy_tensor.py::TestCachedCGLazyTensorMultiBatch::test_inv_matmul_matrix_with_left
+0.01s call     test/distributions/test_multivariate_normal.py::TestMultivariateNormal::test_multivariate_normal_batch_lazy
+0.01s call     test/kernels/test_spectral_mixture_kernel.py::TestSpectralMixtureKernel::test_batch_separate
+0.01s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensor::test_matmul_matrix_broadcast
+0.01s call     test/lazy/test_block_diag_lazy_tensor.py::TestBlockDiagLazyTensorBatch::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/models/test_variational_gp.py::TestSVGPVariationalGP::test_batch_forward_eval
+0.01s call     test/kernels/test_rbf_kernel_grad.py::TestRBFKernelGrad::test_no_batch_kernel_single_batch_x_no_ard
+0.01s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensor::test_matmul_matrix
+0.01s call     test/lazy/test_cached_cg_lazy_tensor.py::TestCachedCGLazyTensorMultiBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorBatch::test_matmul_matrix
+0.01s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensorBatch::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorColumn::test_inv_matmul_matrix_cholesky
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorBatch::test_root_decomposition
+0.01s call     test/likelihoods/test_gaussian_likelihood.py::TestFixedNoiseGaussianLikelihood::test_nonbatch
+0.01s call     test/kernels/test_rbf_kernel_grad.py::TestRBFKernelGrad::test_single_batch_kernel_single_batch_x_no_ard
+0.01s call     test/lazy/test_mul_lazy_tensor.py::TestMulLazyTensor::test_inv_matmul_matrix_cholesky
+0.01s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorMultiBatchBroadcastConstant::test_matmul_matrix
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensor::test_inv_matmul_matrix_cholesky
+0.01s call     test/kernels/test_polynomial_kernel_grad.py::TestPolynomialKernel::test_single_batch_kernel_single_batch_x_no_ard
+0.01s call     test/priors/test_multivariate_normal_prior.py::TestMultivariateNormalPrior::test_multivariate_normal_prior_log_prob_log_transform
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorBatchCat::test_inv_matmul_matrix_cholesky
+0.01s call     test/utils/test_pivoted_cholesky.py::TestPivotedCholeskyBatch::test_pivoted_cholesky
+0.01s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensorMultiBatch::test_matmul_matrix_broadcast
+0.01s call     test/models/test_exact_gp.py::TestSumExactGP::test_forward_eval
+0.01s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensorMultiBatch::test_getitem
+0.01s call     test/lazy/test_diag_lazy_tensor.py::TestDiagLazyTensorMultiBatch::test_matmul_matrix_broadcast
+0.01s call     test/lazy/test_non_lazy_tensor.py::TestNonLazyTensorMultiBatch::test_inv_matmul_matrix
+0.01s call     test/lazy/test_chol_lazy_tensor.py::TestCholLazyTensorBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensor::test_root_decomposition
+0.01s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorMultiBatch::test_root_decomposition
+0.01s call     test/lazy/test_chol_lazy_tensor.py::TestCholLazyTensorMultiBatch::test_matmul_matrix_broadcast
+0.01s call     test/lazy/test_diag_lazy_tensor.py::TestDiagLazyTensor::test_getitem_tensor_index
+0.01s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorBatch::test_matmul_matrix
+0.01s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorBatch::test_inv_matmul_matrix_cholesky
+0.01s call     test/lazy/test_lazy_evaluated_kernel_tensor.py::TestLazyEvaluatedKernelTensorMultitaskBatch::test_inv_quad_logdet_no_reduce_cholesky
+0.01s call     test/models/test_variational_gp.py::TestVariationalGP::test_batch_forward_eval
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorColumn::test_inv_matmul_vector_with_left
+0.01s call     test/kernels/test_spectral_mixture_kernel.py::TestSpectralMixtureKernel::test_standard
+0.01s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensorBatch::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensor::test_inv_matmul_vector_with_left
+0.01s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensor::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_root_lazy_tensor.py::TestRootLazyTensorBatch::test_inv_matmul_matrix_with_left
+0.01s call     test/models/test_variational_gp.py::TestVariationalGP::test_batch_forward_train
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorColumn::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensorMultiBatch::test_matmul_matrix_broadcast
+0.01s call     test/lazy/test_cached_cg_lazy_tensor.py::TestCachedCGLazyTensorNoLogdetBatch::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_interpolated_lazy_tensor.py::TestInterpolatedLazyTensor::test_getitem_tensor_index
+0.01s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensorBatch::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorMultiBatch::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/lazy/test_root_lazy_tensor.py::TestRootLazyTensorBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_cached_cg_lazy_tensor.py::TestCachedCGLazyTensorBatch::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensor::test_inv_matmul_matrix_cholesky
+0.01s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorMultiBatch::test_add_diag
+0.01s call     test/kernels/test_polynomial_kernel_grad.py::TestPolynomialKernel::test_no_batch_kernel_single_batch_x_no_ard
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorBatchCat::test_root_decomposition
+0.01s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorMultiBatch::test_sum
+0.01s call     test/lazy/test_sum_lazy_tensor.py::TestSumLazyTensorBatch::test_sum
+0.01s call     test/lazy/test_batch_repeat_lazy_tensor.py::TestBatchRepeatLazyTensorMultiBatch::test_sum
+0.01s call     test/priors/test_multivariate_normal_prior.py::TestMultivariateNormalPrior::test_multivariate_normal_prior_log_prob
+0.01s call     test/distributions/test_multivariate_normal.py::TestMultivariateNormal::test_multivariate_normal_lazy
+0.01s call     test/lazy/test_diag_lazy_tensor.py::TestDiagLazyTensorBatch::test_getitem_tensor_index
+0.01s call     test/lazy/test_diag_lazy_tensor.py::TestDiagLazyTensorBatch::test_inv_matmul_matrix_broadcast
+0.01s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorBatch::test_inv_quad_logdet_no_reduce_cholesky
+0.01s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensor::test_inv_matmul_matrix
+0.01s call     test/lazy/test_sum_batch_lazy_tensor.py::TestSumBatchLazyTensor::test_inv_matmul_vector_with_left
+0.01s call     test/lazy/test_cat_lazy_tensor.py::TestCatLazyTensorBatch::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/likelihoods/test_softmax_likelihood.py::TestSoftmaxLikelihoodNoMixing::test_batch
+0.01s call     test/lazy/test_non_lazy_tensor.py::TestNonLazyTensorMultiBatch::test_getitem_tensor_index
+0.01s call     test/kernels/test_cylindrical_kernel.py::TestCylindricalKernel::test_single_batch_kernel_single_batch_x_no_ard
+0.01s call     test/kernels/test_newton_girard_additive_kernel.py::TestNewtonGirardAdditiveKernel::test_single_batch_kernel_single_batch_x_no_ard
+0.01s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorMultiBatchBroadcastConstant::test_root_decomposition
+0.01s call     test/kernels/test_cylindrical_kernel.py::TestCylindricalKernel::test_no_batch_kernel_single_batch_x_no_ard
+0.01s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorBatch::test_inv_matmul_vector_with_left_cholesky
+0.01s call     test/kernels/test_polynomial_kernel_grad.py::TestPolynomialKernel::test_active_dims_range
+0.01s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensorBatch::test_sum
+0.01s call     test/lazy/test_psd_sum_lazy_tensor.py::TestPsdSumLazyTensor::test_quad_form_derivative
+0.01s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorBatch::test_add
+0.01s call     test/kernels/test_rq_kernel.py::TestRQKernel::test_initialize_lengthscale_batch
+0.01s call     test/models/test_model_list.py::TestExactGP::test_multi_batch_forward_eval
+0.01s call     test/lazy/test_kronecker_product_lazy_tensor.py::TestKroneckerProductLazyTensor::test_matmul_matrix_broadcast
+0.01s call     test/lazy/test_toeplitz_lazy_tensor.py::TestToeplitzLazyTensorMultiBatch::test_add_diag
+0.01s call     test/models/test_exact_gp.py::TestExactGP::test_batch_forward_eval
+0.01s call     test/lazy/test_added_diag_lazy_tensor.py::TestAddedDiagLazyTensor::test_inv_matmul_vector
+0.01s call     test/kernels/test_scale_kernel.py::TestScaleKernel::test_inherit_active_dims
+0.01s call     test/kernels/test_cylindrical_kernel.py::TestCylindricalKernel::test_kernel_getitem_double_batch
+0.01s call     test/lazy/test_chol_lazy_tensor.py::TestCholLazyTensorBatch::test_matmul_matrix_broadcast
+0.01s call     test/lazy/test_constant_mul_lazy_tensor.py::TestConstantMulLazyTensorMultiBatch::test_matmul_matrix
+0.01s call     test/lazy/test_non_lazy_tensor.py::TestNonLazyTensor::test_inv_matmul_matrix_broadcast
+0.01s call     test/lazy/test_block_interleaved_lazy_tensor.py::TestBlockInterleavedLazyTensorBatch::test_sum
+0.01s call     test/models/test_exact_gp.py::TestExactGP::test_multi_batch_forward_eval
+0.01s call     test/lazy/test_sum_batch_lazy_tensor.py::TestSumBatchLazyTensor::test_inv_matmul_matrix_with_left
+0.01s call     test/lazy/test_root_lazy_tensor.py::TestRootLazyTensor::test_sample
+0.01s call     test/kernels/test_rbf_kernel_grad.py::TestRBFKernelGrad::test_kernel_getitem_double_batch
+0.01s call     test/kernels/test_rbf_kernel_grad.py::TestRBFKernelGrad::test_active_dims_range
+0.01s call     test/models/test_exact_gp.py::TestSumExactGP::test_forward_eval_fast
+0.01s call     test/kernels/test_rbf_kernel.py::TestRBFKernel::test_initialize_lengthscale_batch
+
+(0.00 durations hidden.  Use -vv to show these durations.)
+================= 3017 passed, 36 warnings in 82.70s (0:01:22) =================

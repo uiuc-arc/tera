@@ -1,0 +1,12 @@
+.idea/
+*.pyc
+__pycache__
+venv
+logs/
+tool/scripts/data
+.vscode
+obj/
+projects/
+*.tar.gz
+build_logs/
+tool/scripts/azure/results/
