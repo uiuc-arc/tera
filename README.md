@@ -1,5 +1,6 @@
 
-This README accompanies the artifact submission of paper #468: TERA: Optimizing Stochastic Regression Tests in Machine Learning Projects. We provide a docker based installation process for the artifact. We provide both the docker file `root/Dockerfile` and a pre-setup image file to reproduce the experiments. We have tested the artifact on an Ubuntu 18.04 machine using docker version 18.03.1-ce. However, we do not expect any issues on other systems.
+This repository contains the implementation for our  ISSTA'21 paper: TERA: Optimizing Stochastic Regression Tests in Machine Learning Projects. 
+We provide details for a docker based installation process for our tool. We provide both the docker file `root/Dockerfile` and a pre-setup image file to reproduce the experiments. We have tested the tool on an Ubuntu 18.04 machine using docker version 18.03.1-ce. However, we do not expect any issues on other systems. The artifact for our paper is also available at https://zenodo.org/record/4771137.
 
 
 ==============================================
@@ -9,7 +10,7 @@ This README accompanies the artifact submission of paper #468: TERA: Optimizing 
 TERA is a tool for reducing the execution time of tests for Machine Learning algorithms by tuning the algorithm hyper-parameters.
  
 ================================================
-# Getting Started Instructions (Kick-the-tires)
+# Getting Started Instructions
 ===============================================
 
 ### Directory Structure
@@ -44,9 +45,7 @@ Downloading pre-built image
 # Detailed Description 
 =========================================
 
-Note that running all experiments in Tables 2/3/4/5 took us several processor-weeks of compute time on several cloud machines. So we anticipate it might be infeasible for artifact evaluators to run all experiments. In the following sections, we provide instructions on how to run the tool and reproduce smaller scale results. The smaller scale experiments should provide similar speedups/mutation scores as the paper. However, there might be some differences in timings/speedup as it depends on the configuration of the host machine. 
-
-We also provide our original log files which contain all reported results. Reviewers can use that to reproduce all the tables. 
+In the following sections, we provide instructions on how to run the tool and reproduce smaller scale results. The smaller scale experiments should provide similar speedups/mutation scores as the paper. However, there might be some differences in timings/speedup as it depends on the configuration of the host machine. 
 
 ## Running TERA Optimizer (Tables 2/5)
 
@@ -103,7 +102,6 @@ Spec(
     )
 ```
 
-We encourage the reviewers to edit any existing specification (e.g. change the value_range) or add a new one to test the extensibility of TERA.
 
 ## Running the mutation testing experiment (Table 3)
 
@@ -134,7 +132,7 @@ The script `tool/comparison/before_script.sh` can be used to run the optimizer f
 
 Please note that the commit used for optimizer set up is different than the one used for bug reproduction so it is advised to clean the projects directory before switching from one to the other. You can use `bash lib_reset.sh` to do this for all projects.
 
-Note that this artifact does not support all the historical failures, since some of the old dependencies of some projects are not available anymore. For instance, this artifact cannot reproduce the tests from `gensim` project. However, it should work for other projects.
+Note that this package does not support all the historical failures, since some of the old dependencies of some projects are not available anymore. For instance, this package cannot reproduce the tests from `gensim` project. However, it should work for other projects.
 
 ## Reproducing Time Consumed by selected Tests (Table 1)
 
@@ -153,14 +151,14 @@ We provide all the log files from our experiments as shown in Tables 2, 3, and 5
 `python3 logtimestotable.py /path/to/optimization_results` (Table 5)
 
 ==========================================
-# Claims supported by the artifact
+# Claims supported by the package
 ==========================================
 
-We support the following claims in this artifact
+We support the following claims in this package
 
 - Optimization: TERA reduces the execution time of a test while preserving the passing probability of the test. This is supported by the experiments involving the optimizer above. 
 - Fault detection ability of the test remains similar to the original. This is supported by the mutation experiments above.
-- Optimized tests can reproduce historical failures (Table 4). We do not provide full support for reproducing this claim in this artifact, since this requires reproducing some very old builds/dependency versions, which are not available right now. We only provide the code versions and some scripts to run the original and optimized version of the tests for the repositories, although not all of them may work. At the time of submitting this artifact, we were able to reproduce failures for all projects except `gensim`.
+- Optimized tests can reproduce historical failures (Table 4). We do not provide full support for reproducing this claim in this package, since this requires reproducing some very old builds/dependency versions, which are not available right now. We only provide the code versions and some scripts to run the original and optimized version of the tests for the repositories, although not all of them may work. At the time of creating this package, we were able to reproduce failures for all projects except `gensim`.
 
 ### Common runtime issues
 - If you are running docker for the first time, it may take some time to download the ubuntu image file (~2-15 mins depending on network speed). The image is cached for subsequent runs. Please wait for sometime if you do not see any output.
