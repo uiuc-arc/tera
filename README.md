@@ -22,7 +22,7 @@ Install [Docker](https://www.docker.com/get-started)  for your OS, if not alread
 
 Building image using the provided tarball (See below if you want pre-built image)
  
-1. Untar the provided tarball `tera_main.tar.gz`. cd into the folder
+1. Untar the provided tarball/zipped file `tera_main.zip`. cd into the folder
 2. Run `docker build -t tera .` to create docker image
 3. Run `docker run -i -t tera /bin/bash`
 4. Run `bash setup.sh`
