@@ -169,3 +169,17 @@ We support the following claims in this package
 
 - If running a bash script using `./<scriptname>.sh` throws an error, you can either use `bash <scriptname>.sh` or use `chmod +x <scriptname>.sh` to make it executable
 
+========================================
+# Citation
+========================================
+
+If you use our tool for your project please cite us using:
+
+```
+@article{dutta2021tera,
+  title={TERA: Optimizing Stochastic Regression Tests in Machine Learning Projects},
+  journal={ISSTA}
+  author={Dutta, Saikat and Selvam, Jeeva and Jain, Aryaman and Misailovic, Sasa},
+  year={2021}
+}
+```
